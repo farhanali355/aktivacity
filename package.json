@@ -1,0 +1,33 @@
+{
+    "name": "start-app-dir",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
+    },
+    "dependencies": {
+        "@emailjs/browser": "^4.4.1",
+        "aos": "^2.3.4",
+        "emailjs-com": "^3.2.0",
+        "gsap": "^3.13.0",
+        "next": "14.1.4",
+        "ngrok": "^5.0.0-beta.2",
+        "ogl": "^1.0.11",
+        "react": "18.2.0",
+        "react-countup": "^6.5.3",
+        "react-dom": "18.2.0",
+        "react-icons": "^5.5.0",
+        "react-modal-video": "^2.0.1",
+        "react-router-dom": "^7.9.6",
+        "react-scroll-trigger": "^0.6.14",
+        "react-tilt": "^1.0.2",
+        "react-toastify": "^11.0.5",
+        "sass": "^1.72.0",
+        "swiper": "^11.2.10",
+        "wowjs": "^1.1.3"
+    }
+}
