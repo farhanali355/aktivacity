@@ -106,6 +106,9 @@ export default function ContactCTA() {
             </div>
 
             <style jsx>{`
+                .stitle span {
+                    font-style: normal !important;
+                }
                 .bg-theme {
                     background-color: #e9fe49;
                     transition: all 0.3s ease;

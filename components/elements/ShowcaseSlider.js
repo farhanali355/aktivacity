@@ -3,40 +3,24 @@ import React from 'react'
 
 const slides = [
   {
-    category: 'Transportation & Logistics',
-    title: 'Linkbycar Earned 100+ Loyal Customers Through A User-Focused UI/UX Design',
+    category: 'E-Commerce Platform',
+    title: 'Karachi E-commerce Powerhouse: Scaling to Market Dominance',
     bullets: [
-      '"Our collaboration with Linkbycar resulted in a 40% increase in user retention within the first quarter."',
-      'Seamless fleet management dashboard with real-time tracking modules.'
+      'Challenge: 7s load times + 42% bounce rate',
+      'Solution: Custom website development + website performance optimization',
+      'Result: 2.1s load time, 82% conversion lift, 3.4x ROAS'
     ],
-    image: 'https://trio.dev/wp-content/uploads/2025/10/uivsux.png'
+    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2089&auto=format&fit=crop'
   },
   {
-    category: 'E-Commerce',
-    title: 'ShopMax Increased Checkout Conversion With A Streamlined UX',
+    category: 'SaaS Development',
+    title: 'Pakistan SaaS Dashboard: Revolutionizing Internal Workflows',
     bullets: [
-      'Reduced cart abandonment by 28% in 6 weeks.',
-      'Implemented one-click checkout and optimized product pages.'
+      'Challenge: Manual processes + poor mobile experience',
+      'Solution: Web application development + mobile app development',
+      'Result: 67% productivity gain, 95% mobile adoption'
     ],
-    image: '/assets/img/spotlight/slide2.svg'
-  },
-  {
-    category: 'Healthcare',
-    title: 'HealthPlus Improved Patient Retention with Mobile-first Design',
-    bullets: [
-      'Mobile appointment flow reduced support calls by 18%.',
-      'Accessible design for varied user demographics.'
-    ],
-    image: '/assets/img/spotlight/slide3.svg'
-  },
-  {
-    category: 'Fintech',
-    title: 'PayFlow Delivered Secure, Fast Payments With Intuitive UI',
-    bullets: [
-      'Faster onboarding reduced drop-off by 22%.',
-      'Implemented secure micro-interactions for trust signals.'
-    ],
-    image: '/assets/img/spotlight/slide4.svg'
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop'
   }
 ]
 

@@ -13,7 +13,7 @@ export default function Blog1() {
                                 BLOG &amp; News
                             </div>
                             <h2 className="stitle text-white">
-                                Insights on <span className="fw-400 theme-clr">Tech, AI & Digital Growth</span>
+                                Insights on <span className="fw-400 theme-clr" style={{ fontStyle: 'normal' }}>Tech, AI & Digital Growth</span>
                             </h2>
                         </div>
                         <Link href="/blog-grid" className="radius-btn d-inline-flex radius100 py-xxl-2 py-2 px-xxl-5 px-5 theme-border theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 style-2">

@@ -30,7 +30,9 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
     }
 
     useEffect(() => {
-        AOS.init()
+        AOS.init({
+            disable: true
+        })
 
         const handleScroll = () => {
             setScroll(window.scrollY > 20)

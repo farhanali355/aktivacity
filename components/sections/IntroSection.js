@@ -14,7 +14,7 @@ export default function IntroSection() {
                                 WHO WE ARE
                             </div>
                             <h2 className="stitle mb-4 text-white">
-                                Bridge the Gap <span className="theme-clr">Between Vision & Reality</span>
+                                Bridge the Gap Between Vision & Reality
                             </h2>
                             <p className="text-white fs-4 mb-5 opacity-75 fw-light">
                                 Tired of juggling multiple vendors for your digital needs?

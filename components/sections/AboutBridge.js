@@ -8,7 +8,7 @@ export default function AboutBridge() {
                     <div className="col-lg-10">
                         <div className="section-title mb-0" data-aos="fade-up" data-aos-duration="1000">
                             <h2 className="stitle mb-4 text-white">
-                                Bridge the Gap <span className="theme-clr">Between Vision & Reality</span>
+                                Bridge the Gap Between Vision & Reality
                             </h2>
                             <p className="text-white fs-5 mb-4 opacity-75">
                                 Tired of juggling multiple vendors for your digital needs?

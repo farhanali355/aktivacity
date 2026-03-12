@@ -86,6 +86,9 @@ export default function Faq1() {
             </div>
 
             <style jsx>{`
+                .stitle span {
+                    font-style: normal !important;
+                }
                 .faq-item {
                     border: 1px solid rgba(255, 255, 255, 0.1);
                     border-radius: 15px;

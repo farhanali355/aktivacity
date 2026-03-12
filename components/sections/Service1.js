@@ -44,7 +44,7 @@ const Service1 = () => {
         <section className="service-section bg-black text-center position-relative" style={{ padding: '160px 0' }}>
             <div className="container">
                 <div className="section-title mb-5" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 className="stitle text-white mb-3">Our Integrated <span className="theme-clr">Creative Tech Stack</span></h2>
+                    <h2 className="stitle text-white mb-3">Our Integrated <span className="theme-clr" style={{ fontStyle: 'normal' }}>Creative Tech Stack</span></h2>
                     <p className="text-white opacity-75 mx-auto fs-5" style={{ maxWidth: '800px' }}>
                         We provide end-to-end expertise across four core pillars, ensuring your brand vision is executed flawlessly from code to campaign.
                     </p>
@@ -75,10 +75,10 @@ const Service1 = () => {
 
                 <div className="mt-5" data-aos="fade-up" data-aos-duration="1400">
                     <button
-                        onClick={() => navigateToPage('/graphics-services')}
+                        onClick={() => navigateToPage('/service')}
                         className="btn btn-outline-theme rounded-pill py-3 px-5 fw-bold fs-5 text-uppercase theme-border theme-clr bg-transparent"
                     >
-                        View Graphics Services
+                        View All Services
                     </button>
                 </div>
             </div>

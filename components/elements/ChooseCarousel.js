@@ -3,24 +3,28 @@ import React from 'react'
 
 const items = [
   {
-    title: "AI-Enhanced Creative Process",
-    desc: "Our team leverages state-of-the-art AI tools to accelerate design cycles while maintaining artisanal quality and surgical precision."
+    title: "Experienced web development agency in Karachi (8+ years)",
+    desc: "(8+ years)"
   },
   {
-    title: "Multisensory Digital Experiences",
-    desc: "Beyond just visuals, we craft interfaces that evoke emotional responses through micro-interactions, motion, and intuitive flow."
+    title: "Modern design with scalable technology stack",
+    desc: "(React, Next.js, Node.js)"
   },
   {
-    title: "Deep Tech & Architecture Audits",
-    desc: "We dissect your existing infrastructure to identify bottlenecks and transformation opportunities, ensuring your tech isn't a liability."
+    title: "Mobile-first + performance-focused",
+    desc: "builds"
   },
   {
-    title: "Data-Backed Growth Strategies",
-    desc: "Every design decision is rooted in solid data, focusing on measurable performance metrics and actual conversion results."
+    title: "Transparent agile workflow",
+    desc: "with weekly deliverables"
   },
   {
-    title: "Continuous Support & Scale",
-    desc: "Post-launch growth, monitoring and engineering support to keep your product healthy and scaling."
+    title: "Pakistan market understanding ",
+    desc: "global standards"
+  },
+  {
+    title: "Long-term technical support",
+    desc: "maintenance"
   }
 ]
 

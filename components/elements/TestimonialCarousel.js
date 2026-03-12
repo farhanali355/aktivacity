@@ -5,20 +5,20 @@ const items = [
     {
         score: "5.0",
         clientImg: "https://randomuser.me/api/portraits/men/32.jpg",
-        tags: ["$20-80K", "Construction", "7 months"],
-        quote: "Aktivacity is brilliant. We were impressed with their timely delivery, cost-effectiveness, and the people who knew exactly what they were doing!"
+        tags: ["E-commerce Director, Karachi"],
+        quote: "New ecommerce site converted 3x better after their responsive redesign. Load time dropped from 8s to 2s."
     },
     {
         score: "5.0",
         clientImg: "https://randomuser.me/api/portraits/women/44.jpg",
-        tags: ["$50-200K", "Retail", "Ongoing"],
-        quote: "Every expert we've worked with has been super friendly, knowledgeable, and passionate about creating our platform from the ground up."
+        tags: ["SaaS Founder, Lahore"],
+        quote: "Custom SaaS dashboard + mobile app transformed our operations. 67% productivity gain in the first quarter."
     },
     {
         score: "5.0",
         clientImg: "https://randomuser.me/api/portraits/men/85.jpg",
-        tags: ["$50-200K", "Real Estate", "Ongoing"],
-        quote: "The Aktivacity team is highly professional, able to understand the client’s needs and deliver solutions that meet those needs perfectly."
+        tags: ["Agency Owner, Islamabad"],
+        quote: "Their web development team understood Karachi user behavior perfectly. Local + scalable solution."
     }
 ]
 

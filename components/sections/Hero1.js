@@ -35,16 +35,15 @@ export default function Hero1() {
                 {/* Hero Content */}
                 <div className="container hero-content-wrapper h-100 d-flex flex-column align-items-center justify-content-center text-center">
                     <div className="hero-content">
-                        <h1 className="hero-title mb-xxl-4 mb-4">
+                        <h1 className="hero-title mb-xxl-4 mb-4 " style={{fontSize:"40px"}}>
                             <span className="theme-clr" style={{ fontSize: 'inherit', lineHeight: 'inherit' }}>AI-Powered</span> Creative Tech <br /> & Digital Agency
                         </h1>
-                        <p className="hero-subtitle text-white mb-xxl-5 mb-5 mx-auto" style={{ maxWidth: '800px', fontSize: '1.25rem' }}>
-                            Your full-service partner for intelligent Software Development, Digital Marketing, and Video Production.
-                        </p>
-                        <div className="d-flex justify-content-center">
+                        <p className="hero-subtitle  text-white mb-xxl-5 mb-5 mx-auto" style={{ maxWidth: '800px', fontSize: '1rem' }}>
+Your go-to for Software, Digital Marketing & Video.                        </p>
+                        <div className="d-flex justify-content-center mt-4" style={{ marginTop: '10px'   }}>
                             <a href="/contact" className="animated-btn">
                                 <span>Book Free Consultation</span>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="btn-arrow">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="btn-arrow">
                                     <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </a>
@@ -99,6 +98,7 @@ export default function Hero1() {
                 .hero-content-wrapper {
                     position: relative;
                     z-index: 10;
+                    padding-top: 55vh; /* Increased from 25vh */
                 }
 
                 .hero-title {
@@ -126,13 +126,13 @@ export default function Hero1() {
                 /* Animated Button Styles */
                 .animated-btn {
                     position: relative;
-                    padding: 16px 36px;
+                    padding: 8px 20px; /* Further reduced from 12px 28px */
                     display: inline-flex;
                     align-items: center;
-                    gap: 12px;
+                    gap: 10px; /* Slightly reduced gap */
                     text-decoration: none;
                     color: #e9fe49;
-                    font-size: 16px;
+                    font-size: 12px; /* Further reduced from 14px */
                     font-weight: 700;
                     text-transform: uppercase;
                     border: 2px solid #e9fe49;

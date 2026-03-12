@@ -19,7 +19,7 @@ export default function Product1() {
                                         WHY CHOOSE US
                                     </div>
                                     <h2 className="stitle mb-xxl-8 mb-xl-7 mb-xl-5 mb-4" data-aos="fade-up" data-aos-duration={1600}>
-                                        More Than an Agency: <span className="fw-400 theme-clr">Your Digital Growth Partner in Pakistan</span>
+                                        More Than an Agency <span className="fw-400 theme-clr" style={{ fontStyle: 'normal' }}>Your Digital Growth Partner in Pakistan</span>
                                     </h2>
                                     <p className="white-clr mb-xxl-9 mb-xl-7 mb-xl-6 mb-6 fs-5" style={{ lineHeight: '1.6' }} data-aos="fade-up" data-aos-duration={1900}>
                                         This is not a history lesson. It's a value proposition. Our <strong>AI-Powered Creative Tech</strong> model provides a superior advantage by combining data-driven insights with world-class design.

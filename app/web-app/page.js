@@ -26,32 +26,28 @@ export default function WebApp() {
 
     const deliverables = [
         {
-            title: "Full-Stack Web Architectures",
-            desc: "Custom-built, high-performance web applications designed to scale with your business needs, using the latest React and Node frameworks."
+            title: "Custom Website Development",
+            desc: "Your website is your most powerful sales tool — and we build it to perform. We craft fully responsive, visually compelling websites tailored to your brand identity and business goals. Every layout is strategically designed with conversion in mind, guiding visitors through a seamless journey that turns clicks into customers."
         },
         {
-            title: "iOS & Android Mobile App Ecosystems",
-            desc: "Native and hybrid mobile applications that provide seamless user experiences across all devices, integrated with robust backends."
+            title: "Web Application Developmentt",
+            desc: "From complex enterprise platforms to lightweight SaaS tools, we engineer web applications built to scale with your business. Our team develops robust backend systems with clean architecture, ensuring speed, security, and reliability at every layer. We integrate third-party APIs and microservices seamlessly, so your application works as one connected, high-performing ecosystem."
         },
         {
-            title: "Enterprise-Grade E-Commerce Engines",
-            desc: "Secure, scalable online stores optimized for conversion, handling thousands of products and transactions with ease."
+            title: "E-Commerce Website Development",
+            desc: "We build online stores that are designed to sell — not just look good. Whether you need a powerful Shopify store, a fully custom e-commerce solution, or a multi-vendor marketplace, we deliver it with precision. Our builds include secure payment gateway integrations, optimized product pages, and streamlined checkout flows that reduce cart abandonment and maximize revenue."
         },
         {
-            title: "Scalable Cloud-Native Infrastructure",
-            desc: "Cloud solutions on AWS, Azure, or GCP that ensure your digital products are always available and highly performant."
+            title: "Mobile App Development",
+            desc: "We bring your idea to life across every device with native iOS and Android app development built for performance and user delight. Our mobile development process covers everything from architecture planning and UI design to launch and post-deployment support. Whether you need a standalone app or a cross-platform solution, we deliver smooth, fast, and intuitive experiences that users keep coming back to."
         },
         {
-            title: "Custom API & Microservices Integration",
-            desc: "Building the connective tissue for your digital products, allowing for modular growth and system-to-system communication."
+            title: "UI/UX Design",
+            desc: "Great design is more than aesthetics — it's the difference between a user who stays and one who leaves. We begin every project with deep user research, crafting wireframes and interactive prototypes that map the ideal digital experience. Through continuous usability testing and iterative improvements, we ensure every touchpoint is intuitive, engaging, and aligned with your business objectives."
         },
         {
-            title: "AI-Powered Automation & Logic Tools",
-            desc: "Integrating intelligent features like predictive analytics and automated workflows to boost your operational efficiency."
-        },
-        {
-            title: "Blockchain & Web3 Implementation",
-            desc: "Future-proofing your business with decentralized technologies, smart contracts, and secure digital asset management."
+            title: "CMS Development",
+            desc: "We build content management systems that give your team full control without the technical headaches. From custom-built CMS platforms and WordPress development to modern headless architectures powered by tools like Contentful or Sanity, we tailor the solution to your workflow. Our CMS builds are fast, flexible, and scalable — making it easy to publish, update, and manage your content as your business grows."
         }
     ]
 
@@ -84,15 +80,15 @@ export default function WebApp() {
                                                 Web & App
                                             </h1>
                                             <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                                Custom Web & Mobile Development Tailored for Growth.
+                                              Web Development Agency in Karachi, Pakistan
                                             </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-                                                We turn your complex ideas into scalable digital products. From responsive web applications to intuitive mobile apps, our team delivers tech that works for your business.
+                                               Based in Karachi, Aktivacity is one of the leading web development service providers in Karachi, Pakistan. We help you in optimizing user engagement, expanding digital presence, growth business online, and in developing measurable outcomes. Partner with us and enjoy domination on the leading boards.
                                             </p>
                                             <div className="hero-cta-form">
                                                 <form className="d-flex flex-sm-row flex-column gap-3">
                                                     <button type="submit" className="hero-box-btn py-3 px-xxl-10 px-6 fw-bold whitespace-nowrap">
-                                                        Get Started
+                                                        Book a Free Consultation
                                                         <span className="rot60 d-inline-block ms-2">
                                                             <i className="fas fa-arrow-up" />
                                                         </span>
@@ -261,7 +257,7 @@ export default function WebApp() {
                 <section className="brand-marquee-section pt-xxl-20 pb-xxl-30 pt-xl-15 pb-xl-20 pt-10 pb-15 ">
                     <div className="container mb-xxl-12 mb-10">
                         <div className="text-center">
-                            <h6 className="white-clr text-uppercase fw-bold letter-spacing-2">Trusted by 300+ Global Brands</h6>
+                            <h6 className="white-clr text-uppercase fw-bold letter-spacing-2">Built With the Best Tools in the Industry</h6>
                         </div>
                     </div>
 
@@ -424,54 +420,69 @@ export default function WebApp() {
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-                                        Is Your Digital Product <span className="theme-clr italic" style={{ fontSize: 'inherit', lineHeight: 'inherit' }}>Holding You Back?</span>
+                                      The Web & App Challenges We Solve
                                     </h2>
-                                    <p className="pra-clr fs-5 mb-0">
+                                    {/* <p className="pra-clr fs-5 mb-0">
                                         Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
-                                    </p>
+                                    </p> */}
                                 </div>
 
-                                <div className="problem-cards-wrap d-flex flex-column gap-6">
+                                <div className="problem-cards-wrap d-flex flex-column gap-4">
                                     {/* Card 1 */}
-                                    <div className="problem-card p-xxl-8 p-xl-6 p-5 rounded-4">
+                                    <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-chart-line theme-clr fs-3" />
+                                                <i className="fas fa-bolt-slash theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">The Scalability Trap</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Outdated or Slow Websites</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    We refactor rigid architectures into elastic systems that grow with your user base.
+                                                    Poor performance drives 67% of users away within 3 seconds.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
 
                                     {/* Card 2 */}
-                                    <div className="problem-card p-xxl-8 p-xl-6 p-5 rounded-4 active">
+                                    <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-users-slash theme-clr fs-3" />
+                                                <i className="fas fa-user-minus theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Engagement Friction</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Low Engagement & Conversions</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    We eliminate friction with high-performance code and intuitive UX.
+                                                    Bad UI/UX design limits business growth and revenue.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
 
                                     {/* Card 3 */}
-                                    <div className="problem-card p-xxl-8 p-xl-6 p-5 rounded-4">
+                                    <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-history theme-clr fs-3" />
+                                                <i className="fas fa-mobile-screen-button theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Legacy Liability</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Lack of Mobile Optimization</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    We bridge legacy systems with modern AI-driven features to keep you ahead.
+                                                    58% of traffic abandons non-responsive platforms.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card 4 */}
+                                    <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
+                                        <div className="d-flex align-items-start gap-4">
+                                            <div className="card-icon">
+                                                <i className="fas fa-layer-group theme-clr fs-3" />
+                                            </div>
+                                            <div className="card-text">
+                                                <h5 className="white-clr mb-2 fw-bold">Scalability Issues</h5>
+                                                <p className="pra-clr mb-0 small">
+                                                    Web systems fail as traffic increases without proper architecture.
                                                 </p>
                                             </div>
                                         </div>
@@ -491,7 +502,7 @@ export default function WebApp() {
                                         <div className="image-overlay-glow" />
                                     </div>
                                     {/* Decorative Elements */}
-                                    <div className="decor-box position-absolute top-0 end-0 translate-middle-y mt-n10 d-none d-xl-block" />
+                                    {/* Decorative Elements removed as per user request */}
                                     <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-5 bg-theme rounded-4 d-none d-md-block shadow-lg">
                                         <h3 className="black-clr fw-bold mb-0 text-nowrap">Why Choose Us?</h3>
                                     </div>
@@ -511,8 +522,7 @@ export default function WebApp() {
                             background: rgba(255, 255, 255, 0.02);
                             border: 1px solid rgba(255, 255, 255, 0.05);
                             transition: all 0.4s ease;
-                            /* Teenon cards ki height same rakhne ke liye */
-                            min-height: 170px;
+                            /* Removed min-height to fix excessive bottom spacing */
                         }
                         .problem-card:hover, .problem-card.active {
                             background: rgba(255, 255, 255, 0.05);
@@ -522,7 +532,7 @@ export default function WebApp() {
                         .bg-theme { background-color: #e9fe49; }
                         .black-clr { color: #000; }
                         .why-image-wrapper {
-                            padding: 20px;
+                            padding: 0;
                         }
                         .image-hover-effect {
                             height: 600px;
@@ -574,8 +584,7 @@ export default function WebApp() {
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-                                    Shaping Futures With <span className="theme-clr italic" style={{ fontSize: 'inherit', lineHeight: 'inherit' }}>Creative Tech Deliverables</span>
-                                </h2>
+Our Web & App Development Services                                </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
                                     We don't just build products; we deliver competitive advantages. Every line of code is an investment in your market dominance.
@@ -670,12 +679,11 @@ export default function WebApp() {
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-                                    Starting from scratch or refreshing an existing product? We can help.
-                                </h3>
+Ready to Build a High-Performing Digital Platform?                                  </h3>
                             </div>
 
                             <Link href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase z-1 d-flex align-items-center gap-3 fs-6">
-                                Book A Call
+Get a Free Strategy Call
                                 <span className="rot60 d-inline-block transition-all">
                                     <i className="fas fa-arrow-up theme-clr" />
                                 </span>
@@ -757,13 +765,11 @@ export default function WebApp() {
                                             Our Process
                                         </div>
                                     </div>
-                                    <h2 className="white-clr display-3 fw-bold mb-8 lh-1">
-                                        Streamlined <br />
-                                        <span className="theme-clr italic">Tech Approach</span>
+                                    <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{fontSize:"37px"}}>
+                                        Our Streamlined Development Process
                                     </h2>
-                                    <p className="pra-clr fs-5 lh-base opacity-75">
-                                        Our localized engineering process ensures every line of code translates into scalable business growth and market dominance.
-                                    </p>
+                                    <p className="pra-clr fs-6 lh-base opacity-75" >
+This structured approach eliminates bottlenecks, accelerates launch timelines, and guarantees scalable solutions that evolve with your Karachi business needs.                                    </p>
                                 </div>
                             </div>
 
@@ -771,28 +777,28 @@ export default function WebApp() {
                             {[
                                 {
                                     step: "01",
-                                    title: "Local Market Insight",
-                                    points: ["Audience Behavior", "Trend Analysis", "Competitive Landscape", "Localized Logic"]
+                                    title: "Requirements Analysis",
+                                    points: ["We conduct thorough business goals and user needs analysis tailored specifically for the Karachi market."]
                                 },
                                 {
                                     step: "02",
-                                    title: "Strategic Blueprint",
-                                    points: ["Tool Selection", "UI/UX Mapping", "Database Scaling", "Security Audit"]
+                                    title: "UI/UX Prototyping",
+                                    points: ["We create conversion-focused designs with mobile-first wireframes for optimal user engagement."]
                                 },
                                 {
                                     step: "03",
-                                    title: "Agile Engineering",
-                                    points: ["Rapid Iterations", "CI/CD Pipeline", "Weekly Demos", "Feature Control"]
+                                    title: "Agile Development",
+                                    points: ["We build web applications and cross-platform mobile apps using proven agile methodologies."]
                                 },
                                 {
                                     step: "04",
-                                    title: "Precision QA",
-                                    points: ["Load Testing", "Cross-Device Sync", "UX Refinement", "Bug Squashing"]
+                                    title: "Testing & Quality Assurance",
+                                    points: ["We perform comprehensive performance testing and ensure device compatibility across platforms."]
                                 },
                                 {
                                     step: "05",
-                                    title: "Launch & Support",
-                                    points: ["Zero-Downtime Rollout", "Post-Launch Growth", "Scaling API", "24/7 Monitoring"]
+                                    title: "Deployment & Maintenance",
+                                    points: ["We handle secure cloud deployment with ongoing optimization and maintenance support."]
                                 }
                             ].map((item, index) => (
                                 <div key={index} className="col-lg-4 mb-4">
@@ -879,8 +885,7 @@ export default function WebApp() {
                                 Case Studies
                             </div>
                             <h2 className="white-clr display-4 fw-bold mb-0 text-uppercase ls-2">
-                                UI/UX Designs <br />
-                                <span className="theme-clr">That Drive Results</span>
+                                Real <span className="theme-clr" style={{ fontSize: 'inherit' }}>Digital Results</span>
                             </h2>
                         </div>
 
@@ -931,7 +936,7 @@ export default function WebApp() {
                                 Our Edge
                             </div>
                             <h2 className="white-clr display-4 fw-bold mb-0">
-                                WHY YOU CHOOSE US
+                                Why Choose Aktivacity
                             </h2>
                         </div>
 
@@ -982,8 +987,7 @@ export default function WebApp() {
                                         <span className="white-clr fs-xs fw-bold ls-1 text-uppercase">100+ Reviews</span>
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-0 text-lg-end lh-sm max-w-700">
-                                        Many offer services, but only a few are true partners in success.
-                                    </h2>
+What Our Clients Say                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -1056,25 +1060,49 @@ export default function WebApp() {
                             </div>
                             {/* Right: FAQ Accordion */}
                             <div className="col-lg-8">
-                                <h2 className="white-clr display-3 fw-bold mb-12">FAQ</h2>
+                                <h2 className="white-clr display-3 fw-bold mb-12">Web & App Development FAQs</h2>
 
                                 <div className="faq-wrapper d-flex flex-column gap-6">
                                     {[
                                         {
-                                            q: "How much does a UI/UX design project cost?",
-                                            a: "Project costs vary based on complexity, number of screens, and platform depth. We provide tailored quotes after an initial strategy session to ensure we match your business goals with the right budget."
+                                            q: "How long does web development take in Pakistan?",
+                                            a: "The timeline for web development depends on the complexity and scope of your project. A simple business or portfolio website typically takes 4 to 6 weeks from design to launch. Custom web applications and SaaS platforms require 3 to 6 months, covering architecture, development, testing, and deployment. Mobile app development — both iOS and Android — generally takes 12 to 20 weeks. At our Karachi-based agency, we share a clear project timeline before work begins so you always know exactly where your project stands."
                                         },
                                         {
-                                            q: "How long does a typical UI/UX design project take?",
-                                            a: "A standard project usually takes 4-8 weeks from discovery to final handoff. This includes strategy, wireframing, high-fidelty design, and prototype iterations."
+                                            q: "Do you build mobile-friendly websites in Pakistan?",
+                                            a: "Yes — every website we develop is fully mobile-friendly by default. We follow a mobile-first development approach, meaning your site is designed and optimized for smartphones before scaling up to desktop. All our builds include responsive web design that adapts seamlessly across all screen sizes and devices. We also integrate Progressive Web App (PWA) capabilities, allowing your website to function like a native app — fast, offline-capable, and installable — giving Pakistani users the best possible experience on any device."
                                         },
                                         {
-                                            q: "What deliverables can I expect from a UI/UX project?",
-                                            a: "You will receive a complete design system, high-fidelity UI screens, an interactive prototype (Figma), and comprehensive handoff documentation for your development team."
+                                            q: "Do you offer web development services across Pakistan?",
+                                            a: "Yes — while our headquarters is based in Karachi, we actively serve clients across all major cities including Lahore, Islamabad, and Faisalabad. Our remote delivery model means geography is never a barrier — we work with businesses from every corner of Pakistan through streamlined digital collaboration, regular video calls, and project management tools that keep communication clear and efficient. Whether you're a startup in Islamabad or an enterprise in Lahore, we deliver the same quality of service."
                                         },
                                         {
-                                            q: "Do you provide development support after design?",
-                                            a: "Yes, we ensure a seamless handoff and provide ongoing consultancy to your developers to ensure the vision is implemented accurately without any tech liability."
+                                            q: "Can you develop custom web applications for my business?",
+                                            a: "Absolutely. We specialize in building fully custom web applications tailored to your specific business processes and goals. Our team develops scalable backend systems using modern frameworks, with clean code architecture built to handle growth. We handle complex third-party API integrations — payment gateways, CRMs, ERPs, and more — to make your application work as one connected platform. All our web applications are deployed on cloud infrastructure, ensuring high availability, security, and performance for businesses operating in Pakistan and beyond."
+                                        },
+                                        {
+                                            q: "Do you provide ongoing support after website launch?",
+                                            a: "Yes — our relationship doesn't end at launch. We offer comprehensive monthly maintenance packages that include regular security updates, bug fixes, and software upgrades to keep your website protected and up to date. Our team also provides continuous performance monitoring, ensuring fast load times and a smooth user experience at all times. Whether you need minor content updates or major feature additions down the road, our support plans are flexible and designed to grow with your business needs."
+                                        },
+                                        {
+                                            q: "How much does web development cost in Pakistan?",
+                                            a: "Web development costs in Pakistan vary based on project type and complexity. A basic business website typically ranges from PKR 50,000 to PKR 150,000. A custom web application or e-commerce store can range from PKR 200,000 to PKR 800,000 or more, depending on features and integrations. Mobile app development is generally priced between PKR 300,000 and PKR 1,500,000 for a fully custom native app. We provide detailed proposals with transparent pricing after understanding your specific requirements — no hidden charges, no surprises."
+                                        },
+                                        {
+                                            q: "Which is the best web development company in Karachi, Pakistan?",
+                                            a: "The best web development company for your business is one that combines technical expertise, industry experience, and a deep understanding of the Pakistani market. Our Karachi-based agency offers end-to-end web and app development services — from custom website design and e-commerce development to mobile apps and CMS solutions. We have delivered projects for businesses across retail, real estate, healthcare, and e-commerce sectors throughout Pakistan, with a proven track record of on-time delivery and measurable results."
+                                        },
+                                        {
+                                            q: "Should I choose WordPress or a custom website for my business in Pakistan?",
+                                            a: "Both are valid options — the right choice depends on your business needs and budget. WordPress is ideal for blogs, small business websites, and content-heavy platforms. It is cost-effective, easy to manage, and has a large ecosystem of plugins. A custom-built website is the better choice when you need unique functionality, complex integrations, high performance, or a scalable web application that WordPress cannot accommodate. For most small to medium businesses in Pakistan, we recommend starting with WordPress and migrating to a custom solution as your business grows."
+                                        },
+                                        {
+                                            q: "What is the difference between a website and a web application?",
+                                            a: "A website is primarily informational — it presents your brand, services, and content to visitors, like a digital brochure or blog. A web application is interactive and functional — it allows users to log in, manage data, process transactions, and perform complex tasks, like an online store, booking system, or project management tool. In Pakistan, many growing businesses start with a website and later invest in a custom web application as their operations scale. Our team develops both, and we help you determine which solution best fits your current and future business needs."
+                                        },
+                                        {
+                                            q: "Do I need a mobile app or is a website enough for my business in Pakistan?",
+                                            a: "For most Pakistani businesses, a well-optimized, mobile-first website is the strongest starting point. It covers the majority of your audience across all devices without the added cost of app development. However, a dedicated mobile app becomes valuable when you need push notifications, offline functionality, loyalty programs, or a highly personalized user experience — common in e-commerce, food delivery, health, and fintech sectors. The best approach depends on your audience behavior, business model, and growth stage. We consult with you to recommend the right solution — whether that's a PWA, a native app, or both."
                                         }
                                     ].map((item, index) => (
                                         <div key={index} className="faq-item">
@@ -1141,10 +1169,9 @@ export default function WebApp() {
                     <div className="container position-relative z-1">
                         {/* THE CARD */}
                         <div className="conversion-card mx-auto p-xxl-15 p-xl-12 p-8 text-center">
-                            <h2 className="display-2 fw-black black-clr mb-8">Ready to discuss <br /> your project with us?</h2>
+                            <h2 className="display-2 fw-black black-clr mb-8">Let's Build Your Digital Platform</h2>
                             <p className="black-clr fs-4 opacity-75 mb-12 max-w-700 mx-auto">
-                                Let’s talk about how we can craft a user experience that not only looks great but drives real growth for your product.
-                            </p>
+Stop losing customers to slow, outdated websites. Web development agency in Karachi delivers high-performance web development services in Karachi that convert visitors into revenue.                            </p>
 
                             <button onClick={() => setModalOpen(true)} className="book-call-btn d-inline-flex align-items-center gap-4 py-4 px-10 rounded-pill bg-theme text-black fw-bold text-uppercase ls-2">
                                 BOOK A CALL
@@ -1158,19 +1185,19 @@ export default function WebApp() {
                         <div className="social-proof-wrap mt-20">
                             <div className="row g-10 justify-content-center align-items-center">
                                 {[
-                                    { label: "Clutch", score: "4.9 AVG. SCORE", sub: "", icon: "/assets/img/icons/clutch-icon.png" },
-                                    { label: "Upwork", score: "TOP RATED COMPANY", sub: "", icon: "/assets/img/icons/upwork-icon.png" },
-                                    { label: "Trustpilot", score: "5.0 EXPERT SCORE", sub: "", icon: "/assets/img/icons/trustpilot.png" },
-                                    { label: "Google", score: "PREMIUM PARTNER", sub: "", icon: "/assets/img/icons/google-ads.png" }
+                                    { label: "Clutch", score: "", sub: "", icon: "/assets/img/icons/clutch-icon.png" },
+                                    { label: "Upwork", score: "", sub: "", icon: "/assets/img/icons/upwork-icon.png" },
+                                    { label: "Trustpilot", score: "", sub: "", icon: "/assets/img/icons/trustpilot.png" },
+                                    { label: "Google", score: "", sub: "", icon: "/assets/img/icons/google-ads.png" }
                                 ].map((badge, idx) => (
                                     <div key={idx} className="col-lg-3 col-md-6 text-center badge-item">
                                         <div className="badge-icon-box mb-6 opacity-30 grayscale-filter d-flex flex-column align-items-center">
                                             <div className="icon-container mb-3 d-flex align-items-center justify-content-center" style={{ height: '50px' }}>
                                                 <img src={badge.icon} alt={badge.label} style={{ maxHeight: '100%', maxWidth: '120px', objectFit: 'contain' }} />
                                             </div>
-                                            <div className="stars d-flex gap-1 justify-content-center">
+                                            {/* <div className="stars d-flex gap-1 justify-content-center">
                                                 {[1, 2, 3, 4, 5].map(s => <i key={s} className="fas fa-star theme-clr fs-xs" />)}
-                                            </div>
+                                            </div> */}
                                         </div>
                                         <h5 className="white-clr fs-xs fw-bold ls-1 mb-1">{badge.score}</h5>
                                         <p className="pra-clr fs-xxs opacity-50 mb-0">{badge.sub}</p>
@@ -1197,8 +1224,7 @@ export default function WebApp() {
                             background: #fff;
                             width: 100%;
                             max-width: 1100px;
-                            border-radius: 80px;
-                            border-top-right-radius: 200px;
+                            border-radius: 40px;
                             position: relative;
                             z-index: 1;
                             box-shadow: 0 50px 100px rgba(0,0,0,0.4);
@@ -1227,7 +1253,7 @@ export default function WebApp() {
                         .ls-1 { letter-spacing: 1px; }
 
                         @media (max-width: 991px) {
-                            .conversion-card { border-radius: 40px; border-top-right-radius: 80px; padding: 40px 20px !important; }
+                            .conversion-card { border-radius: 30px; padding: 40px 20px !important; }
                             .display-2 { font-size: 2.5rem; }
                             .social-proof-wrap { margin-top: 60px; }
                         }

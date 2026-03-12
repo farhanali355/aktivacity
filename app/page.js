@@ -28,7 +28,6 @@ export default function Home() {
                     <TextSLider1 />
                     <CaseStudy1 />
                     <Watch1 />
-                    <Team1 />
                     <TextSLider2 />
                     <Testimonial1 />
                     <Blog1 />
