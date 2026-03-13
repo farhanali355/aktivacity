@@ -75,16 +75,13 @@ export default function WebApp() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                                Build Your Next <br />
-                                                <span className="high-perf-tag">High-Performance</span> <br />
-                                                Web & App
+                                               Web Development Services in Karachi
                                             </h1>
                                             <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              Web Development Agency in Karachi, Pakistan
+                                              Your Trusted Partner for Custom Websites & Web Applications That Drive Real Business Growth
                                             </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-                                               Based in Karachi, Aktivacity is one of the leading web development service providers in Karachi, Pakistan. We help you in optimizing user engagement, expanding digital presence, growth business online, and in developing measurable outcomes. Partner with us and enjoy domination on the leading boards.
-                                            </p>
+ Aktivacity is a Karachi-based web development agency helping businesses across Pakistan build powerful digital experiences. We specialize in custom websites, web applications, e-commerce stores, and mobile apps — combining modern technology with strategic design to drive user engagement, expand your digital presence, and deliver measurable business growth. Partner with us and get a digital solution built to perform.                                            </p>
                                             <div className="hero-cta-form">
                                                 <form className="d-flex flex-sm-row flex-column gap-3">
                                                     <button type="submit" className="hero-box-btn py-3 px-xxl-10 px-6 fw-bold whitespace-nowrap">
@@ -267,27 +264,27 @@ export default function WebApp() {
                             <div className="marquee-row marquee-right">
                                 <div className="marquee-content">
                                     {[
-                                        'https://cdn.worldvectorlogo.com/logos/google-2.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/microsoft-5.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/apple-11.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/amazon-2.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/meta-1.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/netflix-3.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/tesla-9.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/adobe-2.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/spotify-1.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg'
+                                        '/assets/img/web-app/flutter.png',
+                                        '/assets/img/web-app/kotlin.png',
+                                        '/assets/img/web-app/laravel.png',
+                                        '/assets/img/web-app/nodejs.png',
+                                        '/assets/img/web-app/python.png',
+                                        '/assets/img/web-app/react-native.png',
+                                        '/assets/img/web-app/shopify-logo.png',
+                                        '/assets/img/web-app/swift.png',
+                                        '/assets/img/web-app/webflow.png',
+                                        '/assets/img/web-app/wordpress-logo.png'
                                     ].concat([
-                                        'https://cdn.worldvectorlogo.com/logos/google-2.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/microsoft-5.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/apple-11.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/amazon-2.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/meta-1.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/netflix-3.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/tesla-9.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/adobe-2.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/spotify-1.svg',
-                                        'https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg'
+                                        '/assets/img/web-app/flutter.png',
+                                        '/assets/img/web-app/kotlin.png',
+                                        '/assets/img/web-app/laravel.png',
+                                        '/assets/img/web-app/nodejs.png',
+                                        '/assets/img/web-app/python.png',
+                                        '/assets/img/web-app/react-native.png',
+                                        '/assets/img/web-app/shopify-logo.png',
+                                        '/assets/img/web-app/swift.png',
+                                        '/assets/img/web-app/webflow.png',
+                                        '/assets/img/web-app/wordpress-logo.png'
                                     ]).map((src, i) => (
                                         <div className="marquee-item" key={`r1-${i}`}>
                                             <img src={src} alt="Brand Logo" />
@@ -301,8 +298,8 @@ export default function WebApp() {
                     <style jsx>{`
                         .brand-marquee-section {
                             /* Section ke top aur bottom ka space equal */
-                            padding-top: 80px !important;
-                            padding-bottom: 80px !important;
+                            padding-top: 60px !important;
+                            padding-bottom: 60px !important;
                         }
                         .letter-spacing-2 { letter-spacing: 2px; }
                         .marquee-box {
@@ -338,7 +335,7 @@ export default function WebApp() {
                             display: flex;
                             overflow: hidden;
                             width: 100%;
-                            height: 120px;
+                            height: 90px;
                             position: relative;
                         }
                         .marquee-content {
@@ -362,7 +359,6 @@ export default function WebApp() {
                             height: 100%;
                             object-fit: contain;
                             opacity: 1;
-                            filter: brightness(0) invert(1); /* Ensure icons are pure white */
                             transition: all 0.4s ease;
                         }
                         .marquee-item img:hover {
@@ -503,8 +499,8 @@ export default function WebApp() {
                                     </div>
                                     {/* Decorative Elements */}
                                     {/* Decorative Elements removed as per user request */}
-                                    <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-5 bg-theme rounded-4 d-none d-md-block shadow-lg">
-                                        <h3 className="black-clr fw-bold mb-0 text-nowrap">Why Choose Us?</h3>
+                                    <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
+                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">No Website, No Business Growth</h3>
                                     </div>
                                 </div>
                             </div>
@@ -813,7 +809,6 @@ This structured approach eliminates bottlenecks, accelerates launch timelines, a
                                         <ul className="list-unstyled d-flex flex-column gap-3">
                                             {item.points.map((pt, pIdx) => (
                                                 <li key={pIdx} className="d-flex align-items-center gap-3">
-                                                    <span className="dot bg-theme rounded-circle opacity-50" style={{ width: '5px', height: '5px' }} />
                                                     <span className="pra-clr fs-xs">{pt}</span>
                                                 </li>
                                             ))}
@@ -1183,24 +1178,20 @@ Stop losing customers to slow, outdated websites. Web development agency in Kara
 
                         {/* SOCIAL PROOF LOGOS */}
                         <div className="social-proof-wrap mt-20">
+                            <p className="text-center text-uppercase fw-bold mb-10" style={{ color: 'rgba(255,255,255,0.65)', fontSize: '1rem', letterSpacing: '3px' }}>
+                                Verified &amp; Listed On Leading Platforms
+                            </p>
                             <div className="row g-10 justify-content-center align-items-center">
                                 {[
-                                    { label: "Clutch", score: "", sub: "", icon: "/assets/img/icons/clutch-icon.png" },
-                                    { label: "Upwork", score: "", sub: "", icon: "/assets/img/icons/upwork-icon.png" },
-                                    { label: "Trustpilot", score: "", sub: "", icon: "/assets/img/icons/trustpilot.png" },
-                                    { label: "Google", score: "", sub: "", icon: "/assets/img/icons/google-ads.png" }
+                                    { label: "Clutch", icon: "/assets/img/icons/clutch-icon.png" },
+                                    { label: "Upwork", icon: "/assets/img/icons/upwork-icon.png" },
+                                    { label: "Trustpilot", icon: "/assets/img/icons/trustpilot.png" },
+                                    { label: "Google", icon: "/assets/img/icons/google-ads.png" }
                                 ].map((badge, idx) => (
                                     <div key={idx} className="col-lg-3 col-md-6 text-center badge-item">
-                                        <div className="badge-icon-box mb-6 opacity-30 grayscale-filter d-flex flex-column align-items-center">
-                                            <div className="icon-container mb-3 d-flex align-items-center justify-content-center" style={{ height: '50px' }}>
-                                                <img src={badge.icon} alt={badge.label} style={{ maxHeight: '100%', maxWidth: '120px', objectFit: 'contain' }} />
-                                            </div>
-                                            {/* <div className="stars d-flex gap-1 justify-content-center">
-                                                {[1, 2, 3, 4, 5].map(s => <i key={s} className="fas fa-star theme-clr fs-xs" />)}
-                                            </div> */}
+                                        <div className="badge-icon-box opacity-50 grayscale-filter d-flex align-items-center justify-content-center" style={{ height: '60px' }}>
+                                            <img src={badge.icon} alt={badge.label} style={{ height: '40px', width: 'auto', maxWidth: '150px' }} />
                                         </div>
-                                        <h5 className="white-clr fs-xs fw-bold ls-1 mb-1">{badge.score}</h5>
-                                        <p className="pra-clr fs-xxs opacity-50 mb-0">{badge.sub}</p>
                                     </div>
                                 ))}
                             </div>

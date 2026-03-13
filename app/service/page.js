@@ -92,7 +92,7 @@ export default function Service() {
                                 </div>
                                 <h1 className="white-clr display-1 fw-black mb-10 leading-tight">
                                     High-Performance <br />
-                                    Digital <span className="theme-clr font-italic underline-offset-8">Arsenal.</span>
+                                    Digital <span className="theme-clr font-italic underline-offset-8">Arsenal</span>
                                 </h1>
                                 <p className="white-clr opacity-50 fs-4 mb-15 tracking-tight" style={{ maxWidth: '650px' }}>
                                     Aktivacity is a specialized engineering lab focused on dismantling the mediocre and rebuilding it with cinematic intensity and technical perfection.
@@ -111,23 +111,6 @@ export default function Service() {
                     <div className="hero-scroll-indicator">
                         <div className="line"></div>
                         <span className="tiny tracking-widest fw-black">SCROLL_DOWN</span>
-                    </div>
-                </section>
-
-                {/* --- METRIC NEXUS (Counters) --- */}
-                <section className="metric-nexus py-30 bg-dark-v1 position-relative">
-                    <div className="container">
-                        <div className="row g-10">
-                            {stats.map((s, i) => (
-                                <div key={i} className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay={i * 100}>
-                                    <div className="metric-box p-10 border-start border-theme border-opacity-20 hover-border-opacity-100 transition-all">
-                                        <i className={`fas ${s.icon} theme-clr fs-1 mb-6`}></i>
-                                        <h2 className="white-clr display-5 fw-black mb-2">{s.val}</h2>
-                                        <p className="white-clr opacity-50 small fw-bold tracking-widest text-uppercase">{s.label}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
                     </div>
                 </section>
 
@@ -167,6 +150,23 @@ export default function Service() {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </section>
+
+                {/* --- METRIC NEXUS (Counters) --- */}
+                <section className="metric-nexus py-30 bg-dark-v1 position-relative">
+                    <div className="container">
+                        <div className="row g-10">
+                            {stats.map((s, i) => (
+                                <div key={i} className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay={i * 100}>
+                                    <div className="metric-box p-10 border-start border-theme border-opacity-20 hover-border-opacity-100 transition-all">
+                                        <i className={`fas ${s.icon} theme-clr fs-1 mb-6`}></i>
+                                        <h2 className="white-clr display-5 fw-black mb-2">{s.val}</h2>
+                                        <p className="white-clr opacity-50 small fw-bold tracking-widest text-uppercase">{s.label}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </section>
 
@@ -315,6 +315,7 @@ export default function Service() {
                     
                     /* HERO V3 RELOADED */
                     .hero-v3-cinematic { overflow: hidden; }
+                    .hero-v3-cinematic h1 span { font-size: inherit !important; }
                     .massive-parallax-text {
                         position: absolute;
                         top: 50%; left: 0;

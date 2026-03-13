@@ -3,21 +3,21 @@ import React from 'react'
 
 const items = [
     {
-        score: "5.0",
+        name: "E-commerce Director",
+        location: "Karachi",
         clientImg: "https://randomuser.me/api/portraits/men/32.jpg",
-        tags: ["E-commerce Director, Karachi"],
         quote: "New ecommerce site converted 3x better after their responsive redesign. Load time dropped from 8s to 2s."
     },
     {
-        score: "5.0",
+        name: "SaaS Founder",
+        location: "Lahore",
         clientImg: "https://randomuser.me/api/portraits/women/44.jpg",
-        tags: ["SaaS Founder, Lahore"],
         quote: "Custom SaaS dashboard + mobile app transformed our operations. 67% productivity gain in the first quarter."
     },
     {
-        score: "5.0",
+        name: "Agency Owner",
+        location: "Islamabad",
         clientImg: "https://randomuser.me/api/portraits/men/85.jpg",
-        tags: ["Agency Owner, Islamabad"],
         quote: "Their web development team understood Karachi user behavior perfectly. Local + scalable solution."
     }
 ]
@@ -77,9 +77,9 @@ export default function TestimonialCarousel() {
 
     return (
         <div className="testimonial-carousel-outer">
-            <div className="carousel-container position-relative py-5 ">
+            <div className="carousel-container position-relative py-5">
                 <div className="testimonial-carousel" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-                    <div className="overflow-hidden ">
+                    <div className="overflow-hidden">
                         <div className="track d-flex" style={{
                             width: `${(extendedItems.length / visible) * 100}%`,
                             transform: `translateX(${(index * -100) / extendedItems.length}%)`,
@@ -87,35 +87,24 @@ export default function TestimonialCarousel() {
                         }}>
                             {extendedItems.map((item, i) => (
                                 <div key={i} className="slide-item mt-5 px-3" style={{ width: `${100 / extendedItems.length}%` }}>
-                                    <div className="testimonial-card p-xxl-10 p-xl-8 p-6 h-100 position-relative">
-                                        <div className="d-flex align-items-center gap-4 mb-6">
-                                            <div className="client-avatar-wrap" style={{ width: '60px', height: '60px' }}>
-                                                <img src={item.clientImg} alt="Client" className="rounded-circle border border-white-opacity w-100 h-100" style={{ objectFit: 'cover' }} />
+                                    <div className="testimonial-card p-xxl-10 p-xl-8 p-6 h-100 position-relative d-flex flex-column">
+                                        <div className="d-flex align-items-center justify-content-between mb-8">
+                                            <div className="client-avatar-wrap" style={{ width: '64px', height: '64px' }}>
+                                                <img src={item.clientImg} alt="Client" className="rounded-circle border border-2 border-theme w-100 h-100" style={{ objectFit: 'cover' }} />
                                             </div>
-                                            <div className="d-flex flex-column gap-1">
-                                                <div className="d-flex align-items-center gap-2">
-                                                    <span className="white-clr fs-4 fw-bold">{item.score}</span>
-                                                    <div className="stars d-flex gap-1">
-                                                        {[1, 2, 3, 4, 5].map(s => <i key={s} className="fas fa-star theme-clr fs-xs" />)}
-                                                    </div>
-                                                </div>
+                                            <div className="stars d-flex gap-1">
+                                                {[1, 2, 3, 4, 5].map(s => <i key={s} className="fas fa-star theme-clr fs-6" />)}
                                             </div>
                                         </div>
 
-                                        <div className="line border-top border-white-opacity mb-6" />
-
-                                        <div className="d-flex flex-wrap gap-2 mb-8">
-                                            {item.tags.map((tag, tIdx) => (
-                                                <span key={tIdx} className="tag-pill py-1 px-3 fs-xs black-clr fw-bold rounded-pill" style={{ backgroundColor: '#e9fe49' }}>
-                                                    {tag}
-                                                </span>
-                                            ))}
-                                        </div>
-
-                                        <p className="pra-clr fs-5 mb-0 lh-base opacity-75">
+                                        <p className="pra-clr fs-5 mb-10 lh-base opacity-75 italic-italic">
                                             “{item.quote}”
                                         </p>
-                                        <div className="corner-decor" />
+
+                                        <div className="mt-auto">
+                                            <h4 className="white-clr mb-1 fw-bold fs-5">{item.name}</h4>
+                                            <p className="theme-clr mb-0 fw-bold text-uppercase ls-1 fs-xs">{item.location}</p>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
@@ -123,30 +112,19 @@ export default function TestimonialCarousel() {
                     </div>
                 </div>
 
-                <button aria-label="Previous" className="nav-btn prev" onClick={prev}>
-                    <i className="fas fa-chevron-left" />
-                </button>
-                <button aria-label="Next" className="nav-btn next" onClick={next}>
-                    <i className="fas fa-chevron-right" />
-                </button>
-            </div>
-
-            <div className="dots d-flex gap-2 mt-5 justify-content-center">
-                {items.map((_, i) => (
-                    <button
-                        key={i}
-                        className={`dot ${i === (index % items.length) ? 'active' : ''}`}
-                        onClick={() => {
-                            setIsTransitioning(true);
-                            setIndex(i + items.length);
-                        }}
-                    />
-                ))}
+                <div className="nav-controls d-flex justify-content-center gap-4 mt-12">
+                     <button aria-label="Previous" className="nav-btn-alt prev" onClick={prev}>
+                        <i className="fas fa-chevron-left" />
+                    </button>
+                    <button aria-label="Next" className="nav-btn-alt next" onClick={next}>
+                        <i className="fas fa-chevron-right" />
+                    </button>
+                </div>
             </div>
 
             <style jsx>{`
         .testimonial-carousel-outer { width: 100%; margin: 0 auto; }
-        .carousel-container { padding-left: 40px; padding-right: 40px; margin: -20px 0; }
+        .carousel-container { padding: 0; }
         .overflow-hidden { overflow: hidden; }
         .track { will-change: transform; display: flex; flex-wrap: nowrap; }
         .slide-item { box-sizing: border-box; flex: 0 0 auto; }
@@ -155,66 +133,41 @@ export default function TestimonialCarousel() {
             border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 40px;
             transition: all 0.4s ease;
-            min-height: 380px;
+            min-height: 420px;
             position: relative;
         }
         .testimonial-card:hover {
             background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(233, 254, 73, 0.5);
+            border: 1px solid rgba(233, 254, 73, 0.3);
             transform: translateY(-10px);
         }
-        .corner-decor {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(225deg, transparent 50%, rgba(255, 255, 255, 0.02) 50%);
-            border-radius: 0 40px 0 0;
-        }
-        .border-white-opacity { border-color: rgba(255, 255, 255, 0.1) !important; }
-        .nav-btn { 
-            position: absolute; 
-            top: 50%; 
-            transform: translateY(-50%); 
-            z-index: 20; 
-            width: 50px; 
-            height: 50px; 
-            border-radius: 50%; 
-            background: rgba(0, 0, 0, 0.7); 
-            color: #e9fe49; 
-            border: 1px solid rgba(255, 255, 255, 0.1); 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 1rem; 
-            cursor: pointer; 
+        .border-theme { border-color: #e9fe49 !important; }
+        .italic-italic { font-style: normal; }
+        .ls-1 { letter-spacing: 1px; }
+        .fs-xs { font-size: 0.8rem; }
+        
+        .nav-btn-alt {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            cursor: pointer;
             transition: all 0.3s ease;
         }
-        .nav-btn:hover {
+        .nav-btn-alt:hover {
             background: #e9fe49;
             color: #000;
+            border-color: #e9fe49;
         }
-        .nav-btn.prev { left: -15px; }
-        .nav-btn.next { right: -15px; }
-        .dot { 
-            width: 8px; 
-            height: 8px; 
-            border-radius: 50%; 
-            background: rgba(255, 255, 255, 0.2); 
-            border: none; 
-            transition: all 0.3s ease;
-            padding: 0;
-            cursor: pointer;
-        }
-        .dot.active { 
-            background: #e9fe49; 
-            width: 24px; 
-            border-radius: 10px;
-        }
+
         @media (max-width: 991px) { 
-            .nav-btn { display: none; } 
-            .carousel-container { padding: 0; }
+            .testimonial-card { min-height: 350px; border-radius: 30px; }
         }
       `}</style>
         </div>

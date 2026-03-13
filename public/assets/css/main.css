@@ -5547,11 +5547,10 @@ input.main-search-input::placeholder {
 .navbar-logo {
     height: 100px;
     transition: all 0.3s ease;
-    margin-left: -220px;
 }
 
 .header-fixed.shrink-navbar .navbar-logo {
-    height: 100px;
+    height: 70px;
 }
 
 

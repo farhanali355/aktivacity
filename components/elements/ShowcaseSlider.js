@@ -44,7 +44,7 @@ export default function ShowcaseSlider() {
       {slides.map((s, i) => (
         <div key={i} className={`slide-item ${i === index ? 'active' : 'inactive'}`} aria-hidden={i !== index}>
           <div className="row g-0 align-items-stretch">
-            <div className="col-lg-6 p-xxl-15 p-xl-12 p-lg-10 p-6 d-flex flex-column justify-content-center bg-white-opacity">
+            <div className="col-lg-6 p-xxl-15 p-xl-12 p-lg-10 p-6 d-flex flex-column justify-content-center bg-white-opacity" style={{ minHeight: '600px' }}>
               <div className="d-flex align-items-center gap-3 mb-6">
                 <span className="category-tag text-uppercase fw-bold ls-2 fs-xs theme-clr">{s.category}</span>
                 <div className="line theme-bg" style={{ width: '40px', height: '1px' }} />
@@ -60,7 +60,7 @@ export default function ShowcaseSlider() {
                 ))}
               </div>
             </div>
-            <div className="col-lg-6 position-relative min-vh-50">
+            <div className="col-lg-6 position-relative" style={{ minHeight: '600px' }}>
               <div className="mockup-bg h-100 w-100" style={{ backgroundImage: `url("${s.image}")`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="overlay-gradient" />
               </div>

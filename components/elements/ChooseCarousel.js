@@ -3,43 +3,44 @@ import React from 'react'
 
 const items = [
   {
-    title: "Experienced web development agency in Karachi (8+ years)",
-    desc: "(8+ years)"
+    title: "Experienced Web Development Team",
+    desc: "Years of hands-on experience building websites and applications for businesses across Pakistan — we know what works in your market."
   },
   {
-    title: "Modern design with scalable technology stack",
-    desc: "(React, Next.js, Node.js)"
+    title: "Modern Tech Stack, Built to Scale",
+    desc: "We build with React, Next.js, and Node.js — the same technologies powering the world's fastest, most scalable digital products."
   },
   {
-    title: "Mobile-first + performance-focused",
-    desc: "builds"
+    title: "Mobile-First, Performance",
+    desc: "Every build is optimized for speed, Core Web Vitals, and flawless performance across all devices — because slow websites lose customers."
   },
   {
-    title: "Transparent agile workflow",
-    desc: "with weekly deliverables"
+    title: "Agile Workflow, Full Transparency",
+    desc: "No black boxes. You get a clear roadmap, weekly deliverables, and constant communication — so you're always in control of your project."
   },
   {
-    title: "Pakistan market understanding ",
-    desc: "global standards"
+    title: "Local Insight, Global Standards",
+    desc: "We understand the Pakistani market deeply while delivering code quality and design standards that compete on a global level."
   },
   {
-    title: "Long-term technical support",
-    desc: "maintenance"
+    title: "Long-Term Support, Not Just Delivery",
+    desc: "We stay with you after launch — handling maintenance, updates, and technical support so your digital product keeps growing."
   }
+  
 ]
 
 export default function ChooseCarousel() {
   // Create a looped array for seamless sliding
   const extendedItems = [...items, ...items, ...items]
   const [index, setIndex] = React.useState(items.length) // Start at the middle set
-  const [visible, setVisible] = React.useState(4)
+  const [visible, setVisible] = React.useState(3)
   const [isTransitioning, setIsTransitioning] = React.useState(true)
   const touchStart = React.useRef(null)
 
   React.useEffect(() => {
     const handle = () => {
       const w = window.innerWidth
-      if (w >= 1100) setVisible(4)
+      if (w >= 1100) setVisible(3)
       else if (w >= 768) setVisible(2)
       else setVisible(1)
     }
@@ -96,8 +97,8 @@ export default function ChooseCarousel() {
               {extendedItems.map((it, i) => (
                 <div key={i} className="slide-item px-2" style={{ width: `${100 / extendedItems.length}%` }}>
                   <div className="choose-card p-xxl-8 p-xl-7 p-6 h-100 position-relative d-flex flex-column justify-content-center">
-                    <h5 className="white-clr mb-4 fw-bold lh-sm">{it.title}</h5>
-                    <p className="pra-clr opacity-75 mb-0" style={{ fontSize: '0.9rem', lineHeight: '1.6' }}>
+                    <h4 className="white-clr mb-5 fw-bold lh-sm display-6" style={{ fontSize: '1.75rem' }}>{it.title}</h4>
+                    <p className="pra-clr opacity-75 mb-0 fs-5" style={{ lineHeight: '1.7' }}>
                       {it.desc}
                     </p>
                     <div className="plus-icon-wrap position-absolute bottom-0 end-0 m-xxl-7 m-xl-6 m-5">
@@ -142,9 +143,9 @@ export default function ChooseCarousel() {
         .choose-card { 
             background: rgba(255,255,255,0.02); 
             border: 1px solid rgba(255,255,255,0.05); 
-            border-radius: 24px; 
-            min-height: 260px; 
-            padding-bottom: 60px !important;
+            border-radius: 32px; 
+            min-height: 380px; 
+            padding-bottom: 80px !important;
             transition: all 0.4s ease;
         }
         .choose-card:hover {

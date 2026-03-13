@@ -14,24 +14,18 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                     border: 'none'
                 }}
             >
-                <div className="container">
+                <div className="container-fluid">
                     <div className="main-navbar">
                         <nav className="navbar-custom">
                             {/* Match Header1 layout: simple left logo, center menu, right actions */}
                             <div className="d-flex align-items-center justify-content-between">
                                 {/* Logo - Left */}
-                                <Link href="/" className="brand-logo d-flex align-items-center gap-2">
+                                <Link href="/" className="brand-logo d-flex align-items-center">
                                     <img
                                         className="navbar-logo"
-                                        src="/assets/img/element/download.png"
+                                        src="/assets/img/logo/aktivacity.png"
                                         alt="Aktivacity Logo"
-                                        style={{ height: '75px', width: 'auto' }}
-                                    />
-                                    <img
-                                        className="navbar-text-logo"
-                                        src="/assets/img/logo/logo.png"
-                                        alt="Aktivacity Text Logo"
-                                        style={{ height: '28px', width: 'auto' }}
+                                        style={{ width: 'auto' }}
                                     />
                                 </Link>
 

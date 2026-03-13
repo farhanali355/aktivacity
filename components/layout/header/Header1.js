@@ -6,31 +6,28 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
         <>
 
             <header
-                className={`header-section cmn-fixed transition-all duration-500 ${scroll ? "header-fixed shrink-navbar" : "bg-transparent py-4"}`}
+                className={`header-section cmn-fixed transition-all duration-500 ${scroll ? "header-fixed shrink-navbar" : "bg-transparent py-1"}`}
                 style={{
                     backgroundColor: scroll ? "#000000" : "transparent",
                     zIndex: 9999,
                     transition: 'all 0.4s ease',
+                    minHeight: scroll ? '70px' : '90px',
+                    display: 'flex',
+                    alignItems: 'center',
                     border: 'none'
                 }}
             >
-                <div className="container">
+                <div className="container-fluid">
                     <div className="main-navbar">
-                        <nav className="navbar-custom">
-                            <div className="d-flex align-items-center justify-content-between">
+                        <nav className="navbar-custom w-100">
+                            <div className="d-flex align-items-center justify-content-between px-lg-4">
                                 {/* Logo - Left */}
-                                <Link href="/" className="brand-logo d-flex align-items-center gap-2">
+                                <Link href="/" className="brand-logo d-flex align-items-center">
                                     <img
                                         className="navbar-logo"
-                                        src="/assets/img/element/download.png"
+                                        src="/assets/img/logo/aktivacity.png"
                                         alt="Aktivacity Logo"
-                                        style={{ height: '75px', width: 'auto' }}
-                                    />
-                                    <img
-                                        className="navbar-text-logo"
-                                        src="/assets/img/logo/logo.png"
-                                        alt="Aktivacity Text Logo"
-                                        style={{ height: '28px', width: 'auto' }}
+                                        style={{ width: 'auto' }}
                                     />
                                 </Link>
 
@@ -40,7 +37,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 </div>
 
                                 {/* Right Side: CTA & Toggle */}
-                                <div className="d-flex align-items-center gap-3">
+                                <div className="d-flex align-items-center gap-3 me-xl-5 me-lg-4">
                                     {/* Desktop CTA */}
                                     <div className="d-none d-lg-flex">
                                         <Link href="/contact" className="d-flex align-items-center gap-2 touch-btn cmn-btn">

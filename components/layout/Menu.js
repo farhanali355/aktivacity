@@ -79,7 +79,7 @@ export default function Menu() {
                     <Link href="//about">about</Link>
                 </li>
             </ul> */}
-            <ul className="custom-nav d-lg-flex d-grid align-items-center gap-xxl-10 gap-xl-8 gap-lg-5 gap-md-2 gap-2 pt-lg-0 pt-5">
+            <ul className="custom-nav d-lg-flex d-grid align-items-center gap-xxl-8 gap-xl-6 gap-lg-4 gap-md-2 gap-2 pt-lg-0 pt-5">
                 {/* <li className="menu-item position-relative"> */}
                 <li className="menu-item hover-this">
                     <Link href="/" className='linkss'><span>Home</span></Link>
