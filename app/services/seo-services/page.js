@@ -6,7 +6,7 @@ import ShowcaseSlider from '@/components/elements/ShowcaseSlider'
 import ChooseCarousel from '@/components/elements/ChooseCarousel'
 import TestimonialCarousel from '@/components/elements/TestimonialCarousel'
 
-export default function WebApp() {
+export default function SEOServices() {
     const [activeDeliv, setActiveDeliv] = useState(0)
     const [openFaq, setOpenFaq] = useState(null);
     const [modalOpen, setModalOpen] = useState(false)
@@ -24,32 +24,36 @@ export default function WebApp() {
         setActiveDeliv(activeDeliv === index ? null : index)
     }
 
-    const deliverables = [
-        {
-            title: "Custom Website Development",
-            desc: "Your website is your most powerful sales tool — and we build it to perform. We craft fully responsive, visually compelling websites tailored to your brand identity and business goals. Every layout is strategically designed with conversion in mind, guiding visitors through a seamless journey that turns clicks into customers."
-        },
-        {
-            title: "Web Application Developmentt",
-            desc: "From complex enterprise platforms to lightweight SaaS tools, we engineer web applications built to scale with your business. Our team develops robust backend systems with clean architecture, ensuring speed, security, and reliability at every layer. We integrate third-party APIs and microservices seamlessly, so your application works as one connected, high-performing ecosystem."
-        },
-        {
-            title: "E-Commerce Website Development",
-            desc: "We build online stores that are designed to sell — not just look good. Whether you need a powerful Shopify store, a fully custom e-commerce solution, or a multi-vendor marketplace, we deliver it with precision. Our builds include secure payment gateway integrations, optimized product pages, and streamlined checkout flows that reduce cart abandonment and maximize revenue."
-        },
-        {
-            title: "Mobile App Development",
-            desc: "We bring your idea to life across every device with native iOS and Android app development built for performance and user delight. Our mobile development process covers everything from architecture planning and UI design to launch and post-deployment support. Whether you need a standalone app or a cross-platform solution, we deliver smooth, fast, and intuitive experiences that users keep coming back to."
-        },
-        {
-            title: "UI/UX Design",
-            desc: "Great design is more than aesthetics — it's the difference between a user who stays and one who leaves. We begin every project with deep user research, crafting wireframes and interactive prototypes that map the ideal digital experience. Through continuous usability testing and iterative improvements, we ensure every touchpoint is intuitive, engaging, and aligned with your business objectives."
-        },
-        {
-            title: "CMS Development",
-            desc: "We build content management systems that give your team full control without the technical headaches. From custom-built CMS platforms and WordPress development to modern headless architectures powered by tools like Contentful or Sanity, we tailor the solution to your workflow. Our CMS builds are fast, flexible, and scalable — making it easy to publish, update, and manage your content as your business grows."
-        }
-    ]
+  const deliverables = [
+    {
+        title: "SEO Audit",
+        desc: "We conduct a deep technical and competitor analysis to uncover exactly what is holding your website back from ranking. Every issue — from broken links to content gaps — is identified, prioritized, and mapped into a clear action plan."
+    },
+    {
+        title: "Keyword Research",
+        desc: "We go beyond search volume to understand the real intent behind every query — mapping local Karachi searches alongside national keywords that drive qualified traffic. You rank for terms your actual customers are typing, not just popular ones."
+    },
+    {
+        title: "On-Page SEO",
+        desc: "Every page is optimized from the ground up — title tags, meta descriptions, heading structure, schema markup, and content aligned with search intent. We ensure Google and AI search systems fully understand what each page is about and who it serves."
+    },
+    {
+        title: "Technical SEO",
+        desc: "We fix the foundational issues that silently kill rankings — slow page speed, crawl errors, poor indexing, duplicate content, and broken internal links. A technically clean website is the non-negotiable base every SEO strategy must be built on."
+    },
+    {
+        title: "Local SEO",
+        desc: "We optimize your Google Business Profile, build local citations, and strengthen geo-specific signals so your business appears in Karachi's local search results and Google Maps when nearby customers are ready to buy."
+    },
+    {
+        title: "Semantic Content",
+        desc: "We build topic clusters and pillar content strategies that establish your brand as a topical authority in your niche. Search engines and AI systems reward websites that cover subjects deeply and consistently — and that is exactly how we build your content."
+    },
+    {
+        title: "Tracking & Reporting",
+        desc: "You get access to real-time dashboards showing keyword rankings, organic traffic, and lead performance updated continuously. No confusing reports, no vanity metrics — just clear data showing exactly how your SEO investment is performing."
+    }
+];
 
     return (
         <>
@@ -75,18 +79,15 @@ export default function WebApp() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                               Web Development Services in Karachi
+                                              SEO Services in Karachi That Drive Rankings, Traffic & Leads
                                             </h1>
                                             <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              Your Trusted Partner for Custom Websites & Web Applications That Drive Real Business Growth
-                                            </h4>
+Result-Driven SEO Agency Built for Google, AI Search & the Pakistan Market                                            </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
- Aktivacity is a Karachi-based web development agency helping businesses across Pakistan build powerful digital experiences. We specialize in custom websites, web applications, e-commerce stores, and mobile apps — combining modern technology with strategic design to drive user engagement, expand your digital presence, and deliver measurable business growth. Partner with us and get a digital solution built to perform.                                            </p>
-                                            <div className="hero-cta-form">
+At Aktivacity, we deliver professional SEO services in Karachi combining technical SEO, audience-focused content, and deep local market insights. We optimize your brand for Google's evolving algorithms and AI-driven search systems — building sustainable visibility that drives real, measurable growth for your business across Pakistan.</p>                                            <div className="hero-cta-form">
                                                 <form className="d-flex flex-sm-row flex-column gap-3">
                                                     <button type="submit" className="hero-box-btn py-3 px-xxl-10 px-6 fw-bold whitespace-nowrap">
-                                                        Book a Free Consultation
-                                                        <span className="rot60 d-inline-block ms-2">
+Book Your Free SEO Strategy Call                                                        <span className="rot60 d-inline-block ms-2">
                                                             <i className="fas fa-arrow-up" />
                                                         </span>
                                                     </button>
@@ -96,12 +97,12 @@ export default function WebApp() {
                                     </div>
                                     <div className="col-lg-5">
                                         <div className="services-hero-thumb position-relative text-center">
-                                            <img src="/assets/img/web-app/web-app-hero-image.png" alt="Web & App Development" className="img-fluid floating-img" />
+                                            <img src="/assets/img/seo-page/hero-section.png" alt="SEO Services" className="img-fluid floating-img" />
                                             {/* Tech Tags */}
-                                            <div className="tech-tag tag-react">React</div>
-                                            <div className="tech-tag tag-node">Node.js</div>
-                                            <div className="tech-tag tag-ios">iOS/Android</div>
-                                            <div className="tech-tag tag-aws">AWS</div>
+                                            <div className="tech-tag tag-react">Rankings</div>
+                                            <div className="tech-tag tag-node">Backlinks</div>
+                                            <div className="tech-tag tag-ios">Local SEO</div>
+                                            <div className="tech-tag tag-aws">Traffic</div>
 
                                             {/* Glow Effect behind image */}
                                             <div className="img-glow-effect" />
@@ -254,7 +255,7 @@ export default function WebApp() {
                 <section className="brand-marquee-section pt-xxl-20 pb-xxl-30 pt-xl-15 pb-xl-20 pt-10 pb-15 ">
                     <div className="container mb-xxl-12 mb-10">
                         <div className="text-center">
-                            <h6 className="white-clr text-uppercase fw-bold letter-spacing-2">Built With the Best Tools in the Industry</h6>
+                            <h6 className="white-clr text-uppercase fw-bold letter-spacing-2">Powered by Industry-Leading SEO Tools</h6>
                         </div>
                     </div>
 
@@ -264,27 +265,21 @@ export default function WebApp() {
                             <div className="marquee-row marquee-right">
                                 <div className="marquee-content">
                                     {[
-                                        '/assets/img/web-app/flutter.png',
-                                        '/assets/img/web-app/kotlin.png',
-                                        '/assets/img/web-app/laravel.png',
-                                        '/assets/img/web-app/nodejs.png',
-                                        '/assets/img/web-app/python.png',
-                                        '/assets/img/web-app/react-native.png',
-                                        '/assets/img/web-app/shopify-logo.png',
-                                        '/assets/img/web-app/swift.png',
-                                        '/assets/img/web-app/webflow.png',
-                                        '/assets/img/web-app/wordpress-logo.png'
+                                        '/assets/img/seo-page/ahrefs-icon.png',
+                                        '/assets/img/seo-page/semrush-icon.png',
+                                        '/assets/img/seo-page/moz-icon.png',
+                                        '/assets/img/seo-page/google-search-console-icon.png',
+                                        '/assets/img/seo-page/google-analytics-icon.png',
+                                        '/assets/img/seo-page/google-bussiness-profile-icon.png',
+                                        '/assets/img/seo-page/Screaming Frog-icon.jpg'
                                     ].concat([
-                                        '/assets/img/web-app/flutter.png',
-                                        '/assets/img/web-app/kotlin.png',
-                                        '/assets/img/web-app/laravel.png',
-                                        '/assets/img/web-app/nodejs.png',
-                                        '/assets/img/web-app/python.png',
-                                        '/assets/img/web-app/react-native.png',
-                                        '/assets/img/web-app/shopify-logo.png',
-                                        '/assets/img/web-app/swift.png',
-                                        '/assets/img/web-app/webflow.png',
-                                        '/assets/img/web-app/wordpress-logo.png'
+                                        '/assets/img/seo-page/ahrefs-icon.png',
+                                        '/assets/img/seo-page/semrush-icon.png',
+                                        '/assets/img/seo-page/moz-icon.png',
+                                        '/assets/img/seo-page/google-search-console-icon.png',
+                                        '/assets/img/seo-page/google-analytics-icon.png',
+                                        '/assets/img/seo-page/google-bussiness-profile-icon.png',
+                                        '/assets/img/seo-page/Screaming Frog-icon.jpg'
                                     ]).map((src, i) => (
                                         <div className="marquee-item" key={`r1-${i}`}>
                                             <img src={src} alt="Brand Logo" />
@@ -416,8 +411,7 @@ export default function WebApp() {
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-                                      The Web & App Challenges We Solve
-                                    </h2>
+Why Businesses Are Invisible on Google                                    </h2>
                                     {/* <p className="pra-clr fs-5 mb-0">
                                         Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
                                     </p> */}
@@ -428,12 +422,12 @@ export default function WebApp() {
                                     <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-bolt-slash theme-clr fs-3" />
+                                                <i className="fas fa-search-minus theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Outdated or Slow Websites</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Poor Keyword Research</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Poor performance drives 67% of users away within 3 seconds.
+                                                    Targeting broad, high-competition keywords without local intent means your business never appears when Karachi customers are actively searching for your services.
                                                 </p>
                                             </div>
                                         </div>
@@ -443,12 +437,12 @@ export default function WebApp() {
                                     <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-user-minus theme-clr fs-3" />
+                                                <i className="fas fa-chart-line theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Low Engagement & Conversions</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Slow Website Speed</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Bad UI/UX design limits business growth and revenue.
+                                                   Unoptimized images and poor hosting increase bounce rates and signal poor user experience — two factors Google directly penalizes in its ranking algorithm.
                                                 </p>
                                             </div>
                                         </div>
@@ -458,12 +452,12 @@ export default function WebApp() {
                                     <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-mobile-screen-button theme-clr fs-3" />
+                                                <i className="fas fa-user-clock theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Lack of Mobile Optimization</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Weak Technical SEO Setup</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    58% of traffic abandons non-responsive platforms.
+                                                Broken links, missing sitemaps, and no mobile optimization prevent Google from properly crawling and indexing your website — keeping you permanently off page one.
                                                 </p>
                                             </div>
                                         </div>
@@ -473,12 +467,12 @@ export default function WebApp() {
                                     <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-layer-group theme-clr fs-3" />
+                                                <i className="fas fa-map-marker-alt theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Scalability Issues</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">No Local SEO</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Web systems fail as traffic increases without proper architecture.
+                                                    Strategy Without Google Business Profile optimization and local citations, your business stays hidden from high-intent "near me" searches driving the most ready-to-buy customers in Karachi.
                                                 </p>
                                             </div>
                                         </div>
@@ -500,7 +494,7 @@ export default function WebApp() {
                                     {/* Decorative Elements */}
                                     {/* Decorative Elements removed as per user request */}
                                     <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
-                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">No Website, No Business Growth</h3>
+                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">No SEO, No Online Visibility</h3>
                                     </div>
                                 </div>
                             </div>
@@ -580,10 +574,10 @@ export default function WebApp() {
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-Our Web & App Development Services                                </h2>
+What Our SEO Services Include                               </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
-                                    We don't just build products; we deliver competitive advantages. Every line of code is an investment in your market dominance.
+                                  Our comprehensive SEO services include on-page optimization, technical SEO audits, and high-quality link building to improve your search rankings. We provide keyword research, content strategy, and performance tracking to drive organic traffic. Our data-driven approach ensures long-term visibility and sustainable growth for your business.
                                 </p>
                             </div>
 
@@ -675,11 +669,11 @@ Our Web & App Development Services                                </h2>
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-Ready to Build a High-Performing Digital Platform?                                  </h3>
+Ready to Rank Higher in Pakistan's Search Results?                                 </h3>
                             </div>
 
                             <Link href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase z-1 d-flex align-items-center gap-3 fs-6">
-Get a Free Strategy Call
+Book a CALL
                                 <span className="rot60 d-inline-block transition-all">
                                     <i className="fas fa-arrow-up theme-clr" />
                                 </span>
@@ -762,10 +756,10 @@ Get a Free Strategy Call
                                         </div>
                                     </div>
                                     <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{fontSize:"37px"}}>
-                                        Our Streamlined Development Process
+                                        Streamlined SEO Process
                                     </h2>
                                     <p className="pra-clr fs-6 lh-base opacity-75" >
-This structured approach eliminates bottlenecks, accelerates launch timelines, and guarantees scalable solutions that evolve with your Karachi business needs.                                    </p>
+Our 5-step SEO process is engineered for efficiency, eliminating guesswork with proven phases that align technical precision, local insights, and AI-ready optimization, delivering faster rankings and sustained growth for businesses.                    </p>
                                 </div>
                             </div>
 
@@ -773,28 +767,28 @@ This structured approach eliminates bottlenecks, accelerates launch timelines, a
                             {[
                                 {
                                     step: "01",
-                                    title: "Requirements Analysis",
-                                    points: ["We conduct thorough business goals and user needs analysis tailored specifically for the Karachi market."]
+                                    title: "Market & Website Analysis",
+                                    points: ["In-depth Karachi market competitor benchmarking combined with a full technical audit of your website."]
                                 },
                                 {
                                     step: "02",
-                                    title: "UI/UX Prototyping",
-                                    points: ["We create conversion-focused designs with mobile-first wireframes for optimal user engagement."]
+                                    title: "Local Market Insight",
+                                    points: ["Understanding Pakistan search behavior and mapping Karachi-specific intent to target the right local audience."]
                                 },
                                 {
                                     step: "03",
-                                    title: "Agile Development",
-                                    points: ["We build web applications and cross-platform mobile apps using proven agile methodologies."]
+                                    title: "SEO Strategy & Intent Mapping",
+                                    points: ["Building targeted topical clusters and a complete semantic SEO plan aligned with your business goals."]
                                 },
                                 {
                                     step: "04",
-                                    title: "Testing & Quality Assurance",
-                                    points: ["We perform comprehensive performance testing and ensure device compatibility across platforms."]
+                                    title: "Technical + Content Optimization",
+                                    points: ["Implementing Core Web Vitals fixes and strengthening E-E-A-T signals across every page of your website."]
                                 },
                                 {
                                     step: "05",
-                                    title: "Deployment & Maintenance",
-                                    points: ["We handle secure cloud deployment with ongoing optimization and maintenance support."]
+                                    title: "Tracking, Learning & Scaling",
+                                    points: ["Weekly ranking monitoring combined with continuous optimization to grow traffic and leads every month."]
                                 }
                             ].map((item, index) => (
                                 <div key={index} className="col-lg-4 mb-4">
@@ -873,7 +867,7 @@ This structured approach eliminates bottlenecks, accelerates launch timelines, a
                         }
                     `}</style>
                 </section>
-                <section className="portfolio-spotlight-section py-xxl-20 py-15 bg-black position-relative overflow-hidden">
+                {/* <section className="portfolio-spotlight-section py-xxl-20 py-15 bg-black position-relative overflow-hidden">
                     <div className="container mt-20">
                         <div className="text-center mb-xxl-15 mb-xl-12 mb-10">
                             <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-2 px-4 theme-clr gap-3 mb-4">
@@ -922,7 +916,7 @@ This structured approach eliminates bottlenecks, accelerates launch timelines, a
                             .min-vh-50 { min-height: 400px; }
                         }
                     `}</style>
-                </section>
+                </section> */}
                 <section className="why-choose-section py-xxl-20 py-15 bg-black position-relative overflow-hidden">
                     <div className="grid-overlay" />
                     <div className="container position-relative z-1 mt-20">
@@ -931,8 +925,7 @@ This structured approach eliminates bottlenecks, accelerates launch timelines, a
                                 Our Edge
                             </div>
                             <h2 className="white-clr display-4 fw-bold mb-0">
-                                Why Choose Aktivacity
-                            </h2>
+Why Businesses Choose Aktivacity                            </h2>
                         </div>
 
                         <ChooseCarousel />
@@ -1055,49 +1048,41 @@ What Our Clients Say                                    </h2>
                             </div>
                             {/* Right: FAQ Accordion */}
                             <div className="col-lg-8">
-                                <h2 className="white-clr display-3 fw-bold mb-12">Web & App Development FAQs</h2>
+                                <h2 className="white-clr display-3 fw-bold mb-12">SEO Services – FAQs</h2>
 
                                 <div className="faq-wrapper d-flex flex-column gap-6">
                                     {[
                                         {
-                                            q: "How long does web development take in Pakistan?",
-                                            a: "The timeline for web development depends on the complexity and scope of your project. A simple business or portfolio website typically takes 4 to 6 weeks from design to launch. Custom web applications and SaaS platforms require 3 to 6 months, covering architecture, development, testing, and deployment. Mobile app development — both iOS and Android — generally takes 12 to 20 weeks. At our Karachi-based agency, we share a clear project timeline before work begins so you always know exactly where your project stands."
+                                            q: "How long does SEO take to show results in Karachi?",
+                                            a: "SEO is a long-term investment with different timelines depending on your goals. Most Karachi businesses begin seeing ranking traction within 3 to 6 months of consistent optimization. Competitive national keywords and authority positions typically require 9 to 12 months to dominate. Local SEO for Karachi-specific searches moves faster — Google Business Profile optimization and geo-targeted content can show visible results within 1 to 3 months. The stronger your technical foundation from day one, the faster your results come."
                                         },
                                         {
-                                            q: "Do you build mobile-friendly websites in Pakistan?",
-                                            a: "Yes — every website we develop is fully mobile-friendly by default. We follow a mobile-first development approach, meaning your site is designed and optimized for smartphones before scaling up to desktop. All our builds include responsive web design that adapts seamlessly across all screen sizes and devices. We also integrate Progressive Web App (PWA) capabilities, allowing your website to function like a native app — fast, offline-capable, and installable — giving Pakistani users the best possible experience on any device."
+                                            q: "Is local SEO important for businesses in Karachi?",
+                                            a: "Local SEO is absolutely critical for any Karachi-based business. 68% of searches in Karachi carry local intent — meaning customers are actively looking for services near them. Without a properly optimized Google Business Profile, local citations, and geo-specific content, your business simply does not appear when high-intent local customers are ready to buy. Local SEO is the fastest and most cost-effective way to generate leads from your immediate market before scaling nationally."
                                         },
                                         {
-                                            q: "Do you offer web development services across Pakistan?",
-                                            a: "Yes — while our headquarters is based in Karachi, we actively serve clients across all major cities including Lahore, Islamabad, and Faisalabad. Our remote delivery model means geography is never a barrier — we work with businesses from every corner of Pakistan through streamlined digital collaboration, regular video calls, and project management tools that keep communication clear and efficient. Whether you're a startup in Islamabad or an enterprise in Lahore, we deliver the same quality of service."
+                                            q: "Do you offer SEO services for small businesses and startups in Karachi?",
+                                            a: "Yes — every Karachi startup and small business gets the same technical rigor we apply to larger brands, scaled intelligently to fit your budget. We start by targeting high-intent local keywords with lower competition, building a strong foundation before moving to broader national terms. This approach ensures small businesses see faster wins, quicker ROI, and sustainable growth without overspending in the early stages."
                                         },
                                         {
-                                            q: "Can you develop custom web applications for my business?",
-                                            a: "Absolutely. We specialize in building fully custom web applications tailored to your specific business processes and goals. Our team develops scalable backend systems using modern frameworks, with clean code architecture built to handle growth. We handle complex third-party API integrations — payment gateways, CRMs, ERPs, and more — to make your application work as one connected platform. All our web applications are deployed on cloud infrastructure, ensuring high availability, security, and performance for businesses operating in Pakistan and beyond."
+                                            q: " What makes Aktivacity different from other SEO agencies in Pakistan?",
+                                            a: "Our approach combines four things most agencies in Pakistan do not offer together — deep Pakistan market expertise, a technical-first SEO foundation, AI search readiness, and full transparency through weekly reporting. We do not rely on outdated tactics or vanity metrics. Every strategy is built around your specific business goals, your local Karachi audience, and the evolving demands of both Google's algorithm and AI-driven search platforms like ChatGPT and Perplexity."
                                         },
                                         {
-                                            q: "Do you provide ongoing support after website launch?",
-                                            a: "Yes — our relationship doesn't end at launch. We offer comprehensive monthly maintenance packages that include regular security updates, bug fixes, and software upgrades to keep your website protected and up to date. Our team also provides continuous performance monitoring, ensuring fast load times and a smooth user experience at all times. Whether you need minor content updates or major feature additions down the road, our support plans are flexible and designed to grow with your business needs."
+                                            q: "What is the difference between local SEO and national SEO?",
+                                            a: "Local SEO targets customers searching for services in a specific city or area — like SEO agency in Karachi — and focuses on Google Business Profile, local citations, and geo-specific content. National SEO targets broader keywords across Pakistan without location restrictions — like best SEO services in Pakistan — and requires stronger domain authority and deeper content strategy. Most Karachi businesses benefit from starting with local SEO for quick wins and building toward national visibility as their authority grows."
                                         },
                                         {
-                                            q: "How much does web development cost in Pakistan?",
-                                            a: "Web development costs in Pakistan vary based on project type and complexity. A basic business website typically ranges from PKR 50,000 to PKR 150,000. A custom web application or e-commerce store can range from PKR 200,000 to PKR 800,000 or more, depending on features and integrations. Mobile app development is generally priced between PKR 300,000 and PKR 1,500,000 for a fully custom native app. We provide detailed proposals with transparent pricing after understanding your specific requirements — no hidden charges, no surprises."
+                                            q: "How much do SEO services cost in Karachi, Pakistan?",
+                                            a: "SEO pricing in Karachi varies based on competition, scope, and business size. Basic local SEO packages for small businesses typically start from PKR 30,000 to PKR 60,000 per month. Full-service SEO covering technical audits, content strategy, link building, and reporting ranges from PKR 80,000 to PKR 200,000 monthly depending on your industry and goals. We provide a custom proposal after understanding your business — with clear deliverables and no hidden charges."
                                         },
                                         {
-                                            q: "Which is the best web development company in Karachi, Pakistan?",
-                                            a: "The best web development company for your business is one that combines technical expertise, industry experience, and a deep understanding of the Pakistani market. Our Karachi-based agency offers end-to-end web and app development services — from custom website design and e-commerce development to mobile apps and CMS solutions. We have delivered projects for businesses across retail, real estate, healthcare, and e-commerce sectors throughout Pakistan, with a proven track record of on-time delivery and measurable results."
+                                            q: "What is AI search optimization and do Karachi businesses need it?",
+                                            a: "AI search optimization — also called GEO (Generative Engine Optimization) — is the practice of making your content visible and citable in AI-powered search platforms like ChatGPT, Google AI Overviews, and Perplexity. As more Pakistani users begin searching through AI tools, businesses that are not optimized for these systems will lose visibility fast. At Aktivacity, every SEO strategy we build includes semantic content structure, entity optimization, and topical authority signals that satisfy both traditional Google rankings and AI-generated answers."
                                         },
                                         {
-                                            q: "Should I choose WordPress or a custom website for my business in Pakistan?",
-                                            a: "Both are valid options — the right choice depends on your business needs and budget. WordPress is ideal for blogs, small business websites, and content-heavy platforms. It is cost-effective, easy to manage, and has a large ecosystem of plugins. A custom-built website is the better choice when you need unique functionality, complex integrations, high performance, or a scalable web application that WordPress cannot accommodate. For most small to medium businesses in Pakistan, we recommend starting with WordPress and migrating to a custom solution as your business grows."
-                                        },
-                                        {
-                                            q: "What is the difference between a website and a web application?",
-                                            a: "A website is primarily informational — it presents your brand, services, and content to visitors, like a digital brochure or blog. A web application is interactive and functional — it allows users to log in, manage data, process transactions, and perform complex tasks, like an online store, booking system, or project management tool. In Pakistan, many growing businesses start with a website and later invest in a custom web application as their operations scale. Our team develops both, and we help you determine which solution best fits your current and future business needs."
-                                        },
-                                        {
-                                            q: "Do I need a mobile app or is a website enough for my business in Pakistan?",
-                                            a: "For most Pakistani businesses, a well-optimized, mobile-first website is the strongest starting point. It covers the majority of your audience across all devices without the added cost of app development. However, a dedicated mobile app becomes valuable when you need push notifications, offline functionality, loyalty programs, or a highly personalized user experience — common in e-commerce, food delivery, health, and fintech sectors. The best approach depends on your audience behavior, business model, and growth stage. We consult with you to recommend the right solution — whether that's a PWA, a native app, or both."
+                                            q: "Do I need SEO if I am already running Google Ads in Karachi?",
+                                            a: "Yes — SEO and Google Ads serve completely different purposes and work best together. Google Ads gives you immediate visibility but stops the moment your budget runs out. SEO builds long-term organic rankings that generate consistent traffic and leads without paying per click. Businesses in Karachi that combine both see significantly better results — ads capture immediate demand while SEO builds sustainable authority that reduces your cost per lead over time."
                                         }
                                     ].map((item, index) => (
                                         <div key={index} className="faq-item">
@@ -1164,12 +1149,12 @@ What Our Clients Say                                    </h2>
                     <div className="container position-relative z-1">
                         {/* THE CARD */}
                         <div className="conversion-card mx-auto p-xxl-15 p-xl-12 p-8 text-center">
-                            <h2 className="display-2 fw-black black-clr mb-8">Let's Build Your Digital Platform</h2>
+                            <h2 className="display-2 fw-black black-clr mb-8">Let's Grow Your Organic Visibility</h2>
                             <p className="black-clr fs-4 opacity-75 mb-12 max-w-700 mx-auto">
-Stop losing customers to slow, outdated websites. Web development agency in Karachi delivers high-performance web development services in Karachi that convert visitors into revenue.                            </p>
+Stop losing leads to competitors ranking higher. Professional SEO services in Pakistan built for Karachi businesses and national growth.                           </p>
 
                             <button onClick={() => setModalOpen(true)} className="book-call-btn d-inline-flex align-items-center gap-4 py-4 px-10 rounded-pill bg-theme text-black fw-bold text-uppercase ls-2">
-                                BOOK A CALL
+                                Talk to an SEO Expert
                                 <div className="calendar-icon-wrap d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style={{ width: '45px', height: '45px' }}>
                                     <i className="far fa-calendar-alt" style={{ color: '#000' }} />
                                 </div>
@@ -1177,7 +1162,7 @@ Stop losing customers to slow, outdated websites. Web development agency in Kara
                         </div>
 
                         {/* SOCIAL PROOF LOGOS */}
-                        <div className="social-proof-wrap mt-20">
+                        {/* <div className="social-proof-wrap mt-20">
                             <p className="text-center text-uppercase fw-bold mb-10" style={{ color: 'rgba(255,255,255,0.65)', fontSize: '1rem', letterSpacing: '3px' }}>
                                 Verified &amp; Listed On Leading Platforms
                             </p>
@@ -1189,13 +1174,13 @@ Stop losing customers to slow, outdated websites. Web development agency in Kara
                                     { label: "Google", icon: "/assets/img/icons/google-ads.png" }
                                 ].map((badge, idx) => (
                                     <div key={idx} className="col-lg-3 col-md-6 text-center badge-item">
-                                        <div className="badge-icon-box d-flex align-items-center justify-content-center" style={{ height: '70px' }}>
-                                            <img src={badge.icon} alt={badge.label} style={{ height: '50px', width: 'auto', maxWidth: '160px' }} />
+                                        <div className="badge-icon-box opacity-50 grayscale-filter d-flex align-items-center justify-content-center" style={{ height: '60px' }}>
+                                            <img src={badge.icon} alt={badge.label} style={{ height: '40px', width: 'auto', maxWidth: '150px' }} />
                                         </div>
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <style jsx>{`

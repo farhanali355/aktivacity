@@ -6,19 +6,19 @@ const items = [
         name: "E-commerce Director",
         location: "Karachi",
         clientImg: "https://randomuser.me/api/portraits/men/32.jpg",
-        quote: "New ecommerce site converted 3x better after their responsive redesign. Load time dropped from 8s to 2s."
+        quote: "Organic leads doubled in 4 months after fixing technical SEO gaps"
     },
     {
-        name: "SaaS Founder",
-        location: "Lahore",
+        name: "Professional Services",
+        location: "Pakistan",
         clientImg: "https://randomuser.me/api/portraits/women/44.jpg",
-        quote: "Custom SaaS dashboard + mobile app transformed our operations. 67% productivity gain in the first quarter."
+        quote: "Karachi searches now convert - visibility up 89% for local services"
     },
     {
-        name: "Agency Owner",
-        location: "Islamabad",
+        name: "SaaS Company",
+        location: "Lahore",
         clientImg: "https://randomuser.me/api/portraits/men/85.jpg",
-        quote: "Their web development team understood Karachi user behavior perfectly. Local + scalable solution."
+        quote: "Cost per lead dropped 41% with their intent-based content strategy"
     }
 ]
 

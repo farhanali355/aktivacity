@@ -11,7 +11,7 @@ const Service1 = () => {
             title: "Web & App Development",
             description: "Building scalable, high-performance web and mobile applications using cutting-edge AI and code.",
             image: "/assets/img/element/development.jpg",
-            page: "/web-app"
+            page: "/services/web-development-services"
         },
         {
             id: 2,
@@ -25,7 +25,7 @@ const Service1 = () => {
             title: "AI Film & Video Production",
             description: "Cinematic storytelling powered by AI for next-gen visual experiences and production efficiency.",
             image: "/assets/img/element/video.jpg",
-            page: "/seo-services"
+            page: "/services/seo-services"
         },
         {
             id: 4,
@@ -75,7 +75,7 @@ const Service1 = () => {
 
                 <div className="mt-5" data-aos="fade-up" data-aos-duration="1400">
                     <button
-                        onClick={() => navigateToPage('/service')}
+                        onClick={() => navigateToPage('/services')}
                         className="btn btn-outline-theme rounded-pill py-3 px-5 fw-bold fs-5 text-uppercase theme-border theme-clr bg-transparent"
                     >
                         View All Services

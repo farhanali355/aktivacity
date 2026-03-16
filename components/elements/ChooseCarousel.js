@@ -3,28 +3,28 @@ import React from 'react'
 
 const items = [
   {
-    title: "Experienced Web Development Team",
-    desc: "Years of hands-on experience building websites and applications for businesses across Pakistan — we know what works in your market."
+    title: "Local SEO Experts in Karachi",
+    desc: "We understand how Pakistani customers search — and build strategies that capture that exact local demand."
   },
   {
-    title: "Modern Tech Stack, Built to Scale",
-    desc: "We build with React, Next.js, and Node.js — the same technologies powering the world's fastest, most scalable digital products."
+    title: "Data-Led, White-Hat SEO Only",
+    desc: "Every decision is backed by real data and follows Google's guidelines — no shortcuts, no penalties, no risk."
   },
   {
-    title: "Mobile-First, Performance",
-    desc: "Every build is optimized for speed, Core Web Vitals, and flawless performance across all devices — because slow websites lose customers."
+    title: "Built for Google & AI Search",
+    desc: "We optimize for both traditional Google rankings and AI-driven search systems like ChatGPT and Perplexity."
   },
   {
-    title: "Agile Workflow, Full Transparency",
-    desc: "No black boxes. You get a clear roadmap, weekly deliverables, and constant communication — so you're always in control of your project."
+    title: "Transparent Reporting Always",
+    desc: "You get clear, real-time dashboards showing exactly where your rankings, traffic, and leads stand every week."
   },
   {
-    title: "Local Insight, Global Standards",
-    desc: "We understand the Pakistani market deeply while delivering code quality and design standards that compete on a global level."
+    title: "Integrated Digital Marketing",
+    desc: "SEO works best when connected — we align your strategy with content, social, and paid channels for maximum impact."
   },
   {
-    title: "Long-Term Support, Not Just Delivery",
-    desc: "We stay with you after launch — handling maintenance, updates, and technical support so your digital product keeps growing."
+    title: "Proven Pakistan Market Results",
+    desc: "Our strategies are tested and refined specifically for Pakistan's search behavior, competition, and buyer intent."
   }
   
 ]

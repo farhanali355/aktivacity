@@ -11,7 +11,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                     backgroundColor: scroll ? "#000000" : "transparent",
                     zIndex: 9999,
                     transition: 'all 0.4s ease',
-                    minHeight: scroll ? '70px' : '90px',
+                    minHeight: scroll ? '80px' : '100px',
                     display: 'flex',
                     alignItems: 'center',
                     border: 'none'
@@ -20,24 +20,24 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                 <div className="container-fluid">
                     <div className="main-navbar">
                         <nav className="navbar-custom w-100">
-                            <div className="d-flex align-items-center justify-content-between px-lg-4">
+                            <div className="d-flex align-items-center justify-content-between" style={{ marginRight: '50px' }}>
                                 {/* Logo - Left */}
-                                <Link href="/" className="brand-logo d-flex align-items-center">
+                                <Link href="/" className="brand-logo d-flex align-items-center ">
                                     <img
                                         className="navbar-logo"
                                         src="/assets/img/logo/aktivacity.png"
                                         alt="Aktivacity Logo"
-                                        style={{ width: 'auto' }}
+                                        style={{ height: '150px', width: 'auto', marginTop: '-25px', marginBottom: '-25px' }}
                                     />
                                 </Link>
 
                                 {/* Desktop Menu - Center */}
-                                <div className="navbar-toggle-item d-none d-lg-block">
+                                <div className="navbar-toggle-item d-none d-lg-block" style={{ marginLeft: '-50px' }}>
                                     <Menu />
                                 </div>
 
                                 {/* Right Side: CTA & Toggle */}
-                                <div className="d-flex align-items-center gap-3 me-xl-5 me-lg-4">
+                                <div className="d-flex align-items-center ">
                                     {/* Desktop CTA */}
                                     <div className="d-none d-lg-flex">
                                         <Link href="/contact" className="d-flex align-items-center gap-2 touch-btn cmn-btn">

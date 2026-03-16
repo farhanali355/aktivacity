@@ -34,31 +34,26 @@ export default function Testimonial1() {
     const testimonialData = [
         {
             name: "Daniel Smith",
-            role: "SENIOR ENGINEER",
             img: "https://i.pravatar.cc/150?u=daniel",
             text: "The level of professionalism and technical expertise provided by Aktivacity is simply unmatched. Our project was delivered on time and exceeded expectations."
         },
         {
             name: "Sarah Johnson",
-            role: "MARKETING DIRECTOR",
             img: "https://i.pravatar.cc/150?u=sarah",
             text: "Working with this team has been a game-changer for our digital presence. They truly understand how to bridge the gap between vision and reality."
         },
         {
             name: "Michael Brown",
-            role: "FOUNDER & CEO",
             img: "https://i.pravatar.cc/150?u=michael",
             text: "Exceptional quality and attention to detail. The AI-powered insights they provided allowed us to scale our operations much faster than anticipated."
         },
         {
             name: "Emily Davis",
-            role: "CREATIVE HEAD",
             img: "https://i.pravatar.cc/150?u=emily",
             text: "Stunning design and smooth user experience. The team at Aktivacity really knows how to create digital products that people love to use."
         },
         {
             name: "Robert Wilson",
-            role: "PROJECT MANAGER",
             img: "https://i.pravatar.cc/150?u=robert",
             text: "Communication was seamless and the results were measurable. I highly recommend them for any complex web or app development needs."
         }
@@ -104,7 +99,6 @@ export default function Testimonial1() {
                                                 </div>
                                                 <div className="card-footer border-0 bg-transparent p-0 mt-2">
                                                     <h4 className="user-name text-white fw-bold mb-1">{item.name}</h4>
-                                                    <span className="user-role theme-clr fw-bold small text-uppercase">{item.role}</span>
                                                 </div>
                                             </div>
                                         </SwiperSlide>

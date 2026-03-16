@@ -6,7 +6,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
         <>
 
             <header
-                className={`header-section cmn-fixed py-lg-0 py-6 ${scroll ? "animated fadeInDown header-fixed" : ""}`}
+                className={`header-section cmn-fixed py-lg-0 py-2 ${scroll ? "animated fadeInDown header-fixed" : ""}`}
                 style={{
                     backgroundColor: scroll ? "#000000" : "transparent",
                     zIndex: 9999,
@@ -18,19 +18,19 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                     <div className="main-navbar">
                         <nav className="navbar-custom">
                             {/* Match Header1 layout: simple left logo, center menu, right actions */}
-                            <div className="d-flex align-items-center justify-content-between">
+                            <div className="d-flex align-items-center justify-content-between px-lg-10" style={{ marginRight: '50px' }}>
                                 {/* Logo - Left */}
                                 <Link href="/" className="brand-logo d-flex align-items-center">
                                     <img
                                         className="navbar-logo"
                                         src="/assets/img/logo/aktivacity.png"
                                         alt="Aktivacity Logo"
-                                        style={{ width: 'auto' }}
+                                        style={{ height: '150px', width: 'auto', marginTop: '-25px', marginBottom: '-25px' }}
                                     />
                                 </Link>
 
                                 {/* Desktop Menu - Center */}
-                                <div className="navbar-toggle-item d-none d-lg-block">
+                                <div className="navbar-toggle-item d-none d-lg-block" style={{ marginLeft: '-50px' }}>
                                     <Menu />
                                 </div>
 
@@ -54,8 +54,8 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isSide
                                         </span>
                                     </Link>
 
-                                    <div className="d-flex align-items-center gap-3 ms-2">
-                                        <div className="d-none d-lg-flex remove-click remove-clickbg-adding d-center m-auto rounded-circle" onClick={handleSidebar} style={{ background: 'rgba(255,255,255,0.1)', cursor: 'pointer' }}>
+                                    <div className="d-flex align-items-center gap-3 ">
+                                        <div className="d-none d-lg-flex remove-click remove-clickbg-adding d-center m-auto rounded-circle " onClick={handleSidebar} style={{ background: 'rgba(255,255,255,0.1)', cursor:  'pointer'  }}>
                                             <i className="fas fa-bars text-white" />
                                         </div>
                                         <button className={`navbar-toggle-btn d-block d-lg-none ${isMobileMenu ? "open" : ""}`} type="button" onClick={handleMobileMenu}>

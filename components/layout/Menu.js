@@ -144,7 +144,7 @@ export default function Menu() {
                 {/* <li className="menu-item position-relative"> */}
                 <li className="menu-item mega-menu-parent position-relative">
                     <button className="mega-menu-trigger fw_500 white-clr cus-z1 no-arrow">
-                        <Link href="/service" className='linkss'><span>Services</span></Link>
+                        <Link href="/services" className='linkss'><span>Services</span></Link>
                     </button>
 
                     {/* Mega Menu Content */}
@@ -155,10 +155,11 @@ export default function Menu() {
                                 <div className="col-lg-6 border-end-custom">
                                     <div className="mega-links-grid d-flex flex-column gap-4">
                                         {[
-                                            { title: "Web & App Development", link: "/web-app" },
-                                            { title: "Digital Marketing", link: "/service" },
-                                            { title: "Ai Film & Video Production", link: "/service" },
-                                            { title: "Brand Design", link: "/service" }
+                                            { title: "Web & App Development", link: "/services/web-development-services" },
+                                            { title: "SEO Optimization", link: "/services/seo-services" },
+                                            { title: "Digital Marketing", link: "/services" },
+                                            { title: "Ai Film & Video Production", link: "/services" },
+                                            { title: "Brand Design", link: "/services" }
                                         ].map((item, idx) => (
                                             <Link href={item.link} key={idx} className="mega-menu-link d-flex align-items-center justify-content-between py-2">
                                                 <div className="d-flex align-items-center gap-3">
