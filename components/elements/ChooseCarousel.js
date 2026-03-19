@@ -3,28 +3,34 @@ import React from 'react'
 
 const items = [
   {
-    title: "Local SEO Experts in Karachi",
-    desc: "We understand how Pakistani customers search — and build strategies that capture that exact local demand."
+    title: "Experienced UI/UX designers in Karachi (200+ projects)",
+    // icon: "fas fa-award"
+    // desc: "We understand how Pakistani customers search — and build strategies that capture that exact local demand."
   },
   {
-    title: "Data-Led, White-Hat SEO Only",
-    desc: "Every decision is backed by real data and follows Google's guidelines — no shortcuts, no penalties, no risk."
+    title: "Strategy-driven design, not just pixel-perfect visuals",
+    // icon: "fas fa-layer-group"
+    // desc: "Every decision is backed by real data and follows Google's guidelines — no shortcuts, no penalties, no risk."
   },
   {
-    title: "Built for Google & AI Search",
-    desc: "We optimize for both traditional Google rankings and AI-driven search systems like ChatGPT and Perplexity."
+    title: "Conversion-focused user experiences proven results",
+    // icon: "fas fa-calendar-check"
+    // desc: "We optimize for both traditional Google rankings and AI-driven search systems like ChatGPT and Perplexity."
   },
   {
-    title: "Transparent Reporting Always",
-    desc: "You get clear, real-time dashboards showing exactly where your rankings, traffic, and leads stand every week."
+    title: "Mobile-first & responsive approach across platforms",
+    // icon: "fas fa-industry"
+    // desc: "You get clear, real-time dashboards showing exactly where your rankings, traffic, and leads stand every week."
   },
   {
-    title: "Integrated Digital Marketing",
-    desc: "SEO works best when connected — we align your strategy with content, social, and paid channels for maximum impact."
+    title: "Figma experts + design system specialists",
+    // icon: "fas fa-flag"
+    // desc: "SEO works best when connected — we align your strategy with content, social, and paid channels for maximum impact."
   },
   {
-    title: "Proven Pakistan Market Results",
-    desc: "Our strategies are tested and refined specifically for Pakistan's search behavior, competition, and buyer intent."
+    title: "Ongoing optimization + performance tracking",
+    // icon: "fas fa-handshake"
+    // desc: "Our strategies are tested and refined specifically for Pakistan's search behavior, competition, and buyer intent."
   }
   
 ]
@@ -97,6 +103,9 @@ export default function ChooseCarousel() {
               {extendedItems.map((it, i) => (
                 <div key={i} className="slide-item px-2" style={{ width: `${100 / extendedItems.length}%` }}>
                   <div className="choose-card p-xxl-8 p-xl-7 p-6 h-100 position-relative d-flex flex-column justify-content-center">
+                    <div className="card-icon mb-6">
+                      <i className={`${it.icon} theme-clr fs-1`} />
+                    </div>
                     <h4 className="white-clr mb-5 fw-bold lh-sm display-6" style={{ fontSize: '1.75rem' }}>{it.title}</h4>
                     <p className="pra-clr opacity-75 mb-0 fs-5" style={{ lineHeight: '1.7' }}>
                       {it.desc}

@@ -13,7 +13,16 @@ import TextSLider3 from "@/components/sections/TextSLider3"
 import Watch1 from "@/components/sections/Watch1"
 import Faq1 from "@/components/sections/Faq1"
 import ContactCTA from "@/components/sections/ContactCTA"
-export default function Home() {
+import { client } from "@/sanity/lib/client"
+
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
+export default async function Home() {
+    const pageData = await client.fetch(`*[_type == "homePage"][0]{..., "timestamp": now()}`, {}, {
+        next: { revalidate: 0 },
+        cache: 'no-store'
+    })
 
     return (
         <>
@@ -21,19 +30,32 @@ export default function Home() {
             <Layout headerStyle={1} footerStyle={1}>
                 <div className="position-relative overflow-hidden">
                     <div className="line-shape cus-z-1 first w-100 h-100 d-flex flex-wrap" />
-                    <Hero1 />
-                    <IntroSection />
-                    <Product1 />
-                    <Service1 />
-                    <TextSLider1 />
-                    <CaseStudy1 />
+                    {pageData?.pageBuilder?.map((block, index) => {
+                        switch (block._type) {
+                            case 'heroBlock':
+                                return <Hero1 key={index} data={block} />
+                            case 'introBlock':
+                                return <IntroSection key={index} data={block} />
+                            case 'aboutBlock':
+                                return <Product1 key={index} data={block} />
+                            case 'serviceBlock':
+                                return <Service1 key={index} data={block} />
+                            case 'textSliderBlock':
+                                return <TextSLider1 key={index} data={block} />
+                            case 'caseStudyBlock':
+                                return <CaseStudy1 key={index} data={block} />
+                            case 'testimonialBlock':
+                                return <Testimonial1 key={index} data={block} />
+                            case 'faqBlock':
+                                return <Faq1 key={index} data={block} />
+                            // Unknown blocks will be ignored or can show a fallback
+                            default:
+                                return null
+                        }
+                    })}
                     <Watch1 />
-                    <TextSLider2 />
-                    <Testimonial1 />
                     <Blog1 />
-                    <Faq1 />
                     <ContactCTA />
-                    <TextSLider3 />
                 </div>
             </Layout>
         </>

@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef } from "react";
 
-export default function Hero1() {
+export default function Hero1({ data }) {
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -35,14 +35,12 @@ export default function Hero1() {
                 {/* Hero Content */}
                 <div className="container hero-content-wrapper h-100 d-flex flex-column align-items-center justify-content-center text-center">
                     <div className="hero-content">
-                        <h1 className="hero-title mb-xxl-4 mb-4 " style={{fontSize:"40px"}}>
-                            <span className="theme-clr" style={{ fontSize: 'inherit', lineHeight: 'inherit' }}>AI-Powered</span> Creative Tech <br /> & Digital Agency
-                        </h1>
+                        <h1 className="hero-title mb-xxl-4 mb-4 " style={{fontSize:"40px"}} dangerouslySetInnerHTML={{ __html: data?.title || '<span class="theme-clr" style="font-size: inherit; line-height: inherit;">AI-Powered</span> Creative Tech <br /> & Digital Agency' }} />
                         <p className="hero-subtitle  text-white mb-xxl-5 mb-5 mx-auto" style={{ maxWidth: '800px', fontSize: '1rem' }}>
-Your go-to for Software, Digital Marketing & Video.                        </p>
+{data?.subtitle || 'Your go-to for Software, Digital Marketing & Video.'}                        </p>
                         <div className="d-flex justify-content-center mt-4" style={{ marginTop: '10px'   }}>
-                            <a href="/contact" className="animated-btn">
-                                <span>Book Free Consultation</span>
+                            <a href={data?.buttonLink || "/contact"} className="animated-btn">
+                                <span>{data?.buttonText || "Book Free Consultation"}</span>
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="btn-arrow">
                                     <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>

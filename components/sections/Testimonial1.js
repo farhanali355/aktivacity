@@ -30,8 +30,10 @@ const swiperOptions = {
     },
 }
 
-export default function Testimonial1() {
-    const testimonialData = [
+import { urlForImage } from "@/sanity/lib/image"
+
+export default function Testimonial1({ data }) {
+    const testimonialData = data?.testimonials || [
         {
             name: "Daniel Smith",
             img: "https://i.pravatar.cc/150?u=daniel",
@@ -65,11 +67,9 @@ export default function Testimonial1() {
                 <div className="container">
                     <div className="section-title text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
                         <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-2 px-4 theme-clr gap-3 mb-4">
-                            TESTIMONIALS
+                            {data?.tagline || 'TESTIMONIALS'}
                         </div>
-                        <h2 className="stitle mb-4 text-white">
-                            What Our Clients <span className="theme-clr" style={{ fontStyle: 'normal' }}>Say About Us</span>
-                        </h2>
+                        <h2 className="stitle mb-4 text-white" dangerouslySetInnerHTML={{ __html: data?.heading || 'What Our Clients <span class="theme-clr" style="font-style: normal;">Say About Us</span>' }} />
                     </div>
                     <div className="row">
                         <div className="col-lg-12 ">
@@ -81,7 +81,7 @@ export default function Testimonial1() {
                                                 <div className="card-header d-flex justify-content-between align-items-center mb-4">
                                                     <div className="user-info d-flex align-items-center">
                                                         <div className="user-img">
-                                                            <img src={item.img} alt={item.name} />
+                                                            <img src={item.image && item.image.asset ? urlForImage(item.image).url() : (item.imageUrl || item.img || "https://i.pravatar.cc/150")} alt={item.name} />
                                                         </div>
                                                     </div>
                                                     <div className="star-rating theme-clr">

@@ -148,50 +148,62 @@ export default function Menu() {
                     </button>
 
                     {/* Mega Menu Content */}
-                    <div className="mega-menu-content p-xxl-10 p-xl-8 p-lg-6">
+                    {/* Mega Menu Content */}
+                    <div className="mega-menu-content p-xxl-12 p-xl-10 p-lg-8">
                         <div className="container-fluid">
-                            <div className="row g-10 align-items-center">
-                                {/* Left Column: Links */}
-                                <div className="col-lg-6 border-end-custom">
-                                    <div className="mega-links-grid d-flex flex-column gap-4">
-                                        {[
-                                            { title: "Web & App Development", link: "/services/web-development-services" },
-                                            { title: "SEO Optimization", link: "/services/seo-services" },
-                                            { title: "Digital Marketing", link: "/services" },
-                                            { title: "Ai Film & Video Production", link: "/services" },
-                                            { title: "Brand Design", link: "/services" }
-                                        ].map((item, idx) => (
-                                            <Link href={item.link} key={idx} className="mega-menu-link d-flex align-items-center justify-content-between py-2">
-                                                <div className="d-flex align-items-center gap-3">
-                                                    <span className="dot" />
-                                                    <span className="link-text fw-bold">{item.title}</span>
-                                                </div>
-                                                <span className="arrow">
-                                                    <i className="fas fa-chevron-right" />
-                                                </span>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {/* Right Column: Info & Logos */}
-                                <div className="col-lg-6 d-none d-lg-block">
-                                    <div className="mega-info-section text-start ps-lg-5">
-                                        <h3 className="black-clr fw-bold mb-6 mega-title">5-Star Rated,<br />Works with Global Giants</h3>
-                                        <div className="mega-logo-grid">
-                                            {[
-                                                'https://cdn.worldvectorlogo.com/logos/google-2.svg',
-                                                'https://cdn.worldvectorlogo.com/logos/microsoft-5.svg',
-                                                'https://cdn.worldvectorlogo.com/logos/apple-11.svg',
-                                                'https://cdn.worldvectorlogo.com/logos/amazon-2.svg'
-                                            ].map((logo, i) => (
-                                                <div className="mega-logo-item" key={i}>
-                                                    <img src={logo} alt="Partner" />
-                                                </div>
-                                            ))}
+                            <div className="row g-6">
+                                {[
+                                    {
+                                        category: "Development",
+                                        links: [
+                                            { title: "Web Development Services", href: "/services/web-development-services" },
+                                            { title: "Software Development", href: "/services/software-development" },
+                                            { title: "Mobile App Development", href: "/services" },
+                                            { title: "SaaS Development", href: "/services" }
+                                        ]
+                                    },
+                                    {
+                                        category: "Digital Marketing",
+                                        links: [
+                                            { title: "SEO Optimization", href: "/services/seo-services" },
+                                            { title: "Social Media Marketing", href: "/services" },
+                                            { title: "Paid Ads (PPC)", href: "/services" },
+                                            { title: "Content Marketing", href: "/services" }
+                                        ]
+                                    },
+                                    {
+                                        category: "AI Film Production",
+                                        links: [
+                                            { title: "AI Video Generation", href: "/services" },
+                                            { title: "Video Editing & Post", href: "/services" },
+                                            { title: "Motion Graphics", href: "/services" },
+                                            { title: "3D Animation", href: "/services" }
+                                        ]
+                                    },
+                                    {
+                                        category: "Brand Design",
+                                        links: [
+                                            { title: "Logo & Visual Identity", href: "/services" },
+                                            { title: "UI/UX Design", href: "/services/ui-ux-design" },
+                                            { title: "Brand Strategy", href: "/services" },
+                                            { title: "Packaging Design", href: "/services" }
+                                        ]
+                                    }
+                                ].map((col, idx) => (
+                                    <div key={idx} className="col-lg-3">
+                                        <div className="mega-column" style={{ animationDelay: `${idx * 0.1}s` }}>
+                                            <h5 className="category-title mb-6 fw-bold text-uppercase ls-1">{col.category}</h5>
+                                            <div className="mega-links-grid d-flex flex-column gap-3">
+                                                {col.links.map((item, lIdx) => (
+                                                    <Link href={item.href} key={lIdx} className="mega-menu-link d-flex align-items-center gap-2 py-1">
+                                                        <span className="dot-small" />
+                                                        <span className="link-text">{item.title}</span>
+                                                    </Link>
+                                                ))}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -275,18 +287,36 @@ export default function Menu() {
                     transform: translateX(-50%) translateY(0) !important;
                     pointer-events: auto !important;
                 }
+                .mega-menu-parent:hover .mega-column {
+                    animation: fadeInUp 0.5s ease forwards;
+                }
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                .mega-column {
+                    opacity: 0;
+                }
                 .mega-menu-content {
                     position: absolute;
                     top: 100%;
                     left: 50%;
                     transform: translateX(-50%) translateY(20px);
-                    width: 1000px;
+                    width: 1150px;
                     background: #e9fe49;
-                    border-radius: 30px;
+                    border-radius: 40px;
                     opacity: 0;
                     visibility: hidden;
                     pointer-events: none;
-                    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+                    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                                visibility 0.4s ease;
                     box-shadow: 0 40px 100px rgba(0,0,0,0.5);
                     z-index: 1000;
                     margin-top: 10px;
@@ -294,61 +324,52 @@ export default function Menu() {
                 .mega-menu-content * {
                     color: #000 !important;
                 }
+                .category-title {
+                    font-size: 1.1rem;
+                    color: #000 !important;
+                    border-bottom: 2px solid rgba(0,0,0,0.1);
+                    padding-bottom: 15px;
+                    display: inline-block;
+                    width: 100%;
+                    transition: border-color 0.3s ease;
+                }
+                .mega-column:hover .category-title {
+                    border-color: rgba(0,0,0,0.3);
+                }
                 .mega-menu-link {
                     text-decoration: none;
-                    transition: all 0.3s ease;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                 }
                 .mega-menu-link:hover {
-                   transform: translateX(10px);
+                   transform: translateX(12px);
                 }
-                .mega-menu-link .dot {
-                    width: 12px;
-                    height: 12px;
+                .mega-menu-link .dot-small {
+                    width: 6px;
+                    height: 6px;
                     background: #000 !important;
                     border-radius: 50%;
+                    opacity: 0.1;
+                    transition: all 0.3s ease;
+                }
+                .mega-menu-link:hover .dot-small {
+                    opacity: 1;
+                    transform: scale(1.5);
+                    background: #000 !important;
                 }
                 .mega-menu-link .link-text {
-                    font-size: 1.25rem;
-                    text-transform: uppercase;
-                    letter-spacing: 0.5px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    opacity: 0.7;
+                    transition: opacity 0.3s ease;
                 }
-                .mega-menu-link .arrow {
-                    font-size: 1.1rem;
-                    opacity: 1 !important;
+                .mega-menu-link:hover .link-text {
+                    opacity: 1;
                 }
-                .border-end-custom {
-                    border-right: 1px solid rgba(0, 0, 0, 0.1);
-                }
-                .mega-title {
-                    font-size: 2.2rem;
-                    line-height: 1.1;
-                    text-transform: none;
-                }
-                .mega-logo-grid {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 20px;
-                    margin-top: 40px;
-                }
-                .mega-logo-item {
-                    height: 60px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: rgba(0,0,0,0.03);
-                    border-radius: 15px;
-                    padding: 15px;
-                }
-                .mega-logo-item img {
-                    max-width: 100%;
-                    max-height: 100%;
-                    object-fit: contain;
-                    filter: brightness(0) !important;
-                }
+                .ls-1 { letter-spacing: 1px; }
                 
-                @media (max-width: 1200px) {
+                @media (max-width: 1250px) {
                     .mega-menu-content {
-                        width: 700px;
+                        width: 950px;
                     }
                 }
                 @media (max-width: 991px) {
@@ -364,10 +385,10 @@ export default function Menu() {
                         opacity: 1;
                         visibility: visible;
                     }
+                    .mega-column { margin-bottom: 30px; }
                     .mega-menu-link { color: #fff !important; }
-                    .mega-menu-link .dot { background: #e9fe49; }
-                    .mega-title { display: none; }
-                    .border-end-custom { border-right: none; }
+                    .mega-menu-link .dot-small { background: #e9fe49 !important; opacity: 1; }
+                    .category-title { color: #e9fe49 !important; border-bottom-color: rgba(255,255,255,0.1); }
                 }
             `}</style>
         </>

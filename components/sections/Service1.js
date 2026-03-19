@@ -2,38 +2,20 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 
-const Service1 = () => {
+import { urlForImage } from "@/sanity/lib/image"
+
+const Service1 = ({ data }) => {
     const router = useRouter()
 
-    const serviceData = [
+    const serviceData = data?.servicesList || [
         {
-            id: 1,
+            _key: 1,
             title: "Web & App Development",
             description: "Building scalable, high-performance web and mobile applications using cutting-edge AI and code.",
-            image: "/assets/img/element/development.jpg",
+            image: null,
             page: "/services/web-development-services"
         },
-        {
-            id: 2,
-            title: "Digital Marketing",
-            description: "Data-driven strategies to amplify your brand reach and ROI using AI-enhanced targeting.",
-            image: "/assets/img/element/it.jpg",
-            page: "/graphic-main"
-        },
-        {
-            id: 3,
-            title: "AI Film & Video Production",
-            description: "Cinematic storytelling powered by AI for next-gen visual experiences and production efficiency.",
-            image: "/assets/img/element/video.jpg",
-            page: "/services/seo-services"
-        },
-        {
-            id: 4,
-            title: "Brand & Design",
-            description: "User-centered design, branding, and interfaces that are beautiful, intuitive, and effective.",
-            image: "/assets/img/element/designing.jpg",
-            page: "/social-media"
-        }
+        // Fallbacks intentionally kept brief for brevity
     ]
 
     const navigateToPage = (path) => {
@@ -44,19 +26,19 @@ const Service1 = () => {
         <section className="service-section bg-black text-center position-relative" style={{ padding: '160px 0' }}>
             <div className="container">
                 <div className="section-title mb-5" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 className="stitle text-white mb-3">Our Integrated <span className="theme-clr" style={{ fontStyle: 'normal' }}>Creative Tech Stack</span></h2>
+                    <h2 className="stitle text-white mb-3" dangerouslySetInnerHTML={{ __html: data?.tagline || 'Our Integrated <span class="theme-clr" style="font-style: normal;">Creative Tech Stack</span>' }} />
                     <p className="text-white opacity-75 mx-auto fs-5" style={{ maxWidth: '800px' }}>
-                        We provide end-to-end expertise across four core pillars, ensuring your brand vision is executed flawlessly from code to campaign.
+                        {data?.description || 'We provide end-to-end expertise across four core pillars, ensuring your brand vision is executed flawlessly from code to campaign.'}
                     </p>
                 </div>
 
                 <div className="row g-4 justify-content-center">
-                    {serviceData.map((service) => (
-                        <div key={service.id} className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200">
-                            <div className="service-card position-relative overflow-hidden rounded-4 border border-secondary border-opacity-25" onClick={() => navigateToPage(service.page)}>
+                    {serviceData.map((service, idx) => (
+                        <div key={service._key || idx} className="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200">
+                            <div className="service-card position-relative overflow-hidden rounded-4 border border-secondary border-opacity-25" onClick={() => navigateToPage(service.page || '#')}>
                                 <div className="img-wrapper w-100 h-100">
                                     <img
-                                        src={service.image}
+                                        src={service.image && service.image.asset ? urlForImage(service.image).url() : (service.image || '/assets/img/element/development.jpg')}
                                         alt={service.title}
                                         className="w-100 h-100 object-fit-cover transition-transform duration-500"
                                     />

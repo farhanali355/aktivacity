@@ -1,10 +1,10 @@
 'use client'
 import { useState } from 'react'
 
-export default function Faq1() {
+export default function Faq1({ data }) {
     const [activeIndex, setActiveIndex] = useState(0)
 
-    const faqData = [
+    const faqData = data?.faqs || [
         {
             question: "What makes an \"AI-Powered Creative Tech Agency\" different from a regular digital agency?",
             answer: "Unlike traditional agencies, we integrate Artificial Intelligence into every step—from data-driven strategy and automated marketing to AI-enhanced design and development. This ensures faster delivery, smarter insights, and superior measurable results."
@@ -36,11 +36,9 @@ export default function Faq1() {
             <div className="container">
                 <div className="section-title text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
                     <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-xxl-7 mb-xl-6 mb-5">
-                        FAQ
+                        {data?.tagline || 'FAQ'}
                     </div>
-                    <h2 className="stitle text-white">
-                        Your Questions, <span className="theme-clr">Answered</span>
-                    </h2>
+                    <h2 className="stitle text-white" dangerouslySetInnerHTML={{ __html: data?.heading || 'Your Questions, <span class="theme-clr">Answered</span>' }} />
                 </div>
 
                 <div className="row justify-content-center">
@@ -48,7 +46,7 @@ export default function Faq1() {
                         <div className="accordion-wrapper">
                             {faqData.map((item, index) => (
                                 <div
-                                    key={index}
+                                    key={item._key || index}
                                     className={`faq-item mb-4 ${activeIndex === index ? 'active' : ''}`}
                                 >
                                     <div

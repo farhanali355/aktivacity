@@ -3,22 +3,22 @@ import React from 'react'
 
 const items = [
     {
-        name: "E-commerce Director",
+        name: "Fintech Product Manager",
         location: "Karachi",
         clientImg: "https://randomuser.me/api/portraits/men/32.jpg",
-        quote: "Organic leads doubled in 4 months after fixing technical SEO gaps"
+        quote: "E-commerce conversion jumped 68% with their checkout redesign. Best investment we've made."
     },
     {
-        name: "Professional Services",
-        location: "Pakistan",
-        clientImg: "https://randomuser.me/api/portraits/women/44.jpg",
-        quote: "Karachi searches now convert - visibility up 89% for local services"
-    },
-    {
-        name: "SaaS Company",
+        name: "E-commerce Director",
         location: "Lahore",
+        clientImg: "https://randomuser.me/api/portraits/women/44.jpg",
+        quote: "Their SaaS platform scaled from 100 to 25K users without downtime. True enterprise capability."
+    },
+    {
+        name: "SaaS Founder",
+        location: "Islamabad",
         clientImg: "https://randomuser.me/api/portraits/men/85.jpg",
-        quote: "Cost per lead dropped 41% with their intent-based content strategy"
+        quote: "They understood our Karachi users perfectly. Engagement up 247% in first month."
     }
 ]
 
