@@ -25,10 +25,15 @@ export default function Service() {
     const services = [
         {
             id: '01',
-            title: "Web & App Development",
+            title: "Development Services",
             tagline: "Scalable Digital Foundations.",
             desc: "We architect high-performance, future-ready digital platforms. From complex web ecosystems to immersive mobile experiences, we build for scale.",
-            subCapabilities: ["Web App Development", "Next.js 14 Ecosystems", "Cross-Platform Apps", "AWS Cloud Infrastructure", "Enterprise Database Design"],
+            subCapabilities: [
+                { title: "Web Development Services", href: "/services/web-development-services" },
+                { title: "Software Development", href: "/services/software-development" },
+                { title: "Mobile App Development", href: "/404" },
+                { title: "SaaS Development", href: "/404" }
+            ],
             page: "/services/web-development-services",
             tags: ["Next.js 14", "React Native", "Cloud Ops"],
             image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1470&auto=format&fit=crop"
@@ -38,17 +43,28 @@ export default function Service() {
             title: "Digital Marketing",
             tagline: "Growth Engineering at Scale.",
             desc: "Precision growth through data-driven campaigns and proprietary algorithms. We transform market data into dominant brand presence and ROI.",
-            subCapabilities: ["Technical SEO Strategy", "Performance Ad Ops", "Conversion Engineering", "Data-Driven Content", "Market Intelligence"],
-            page: "/services/seo-services",
+            subCapabilities: [
+                { title: "SEO Optimization", href: "/services/seo-services" },
+                { title: "Digital Marketing", href: "/services/digital-marketing-services" },
+                { title: "Social Media Marketing", href: "/404" },
+                { title: "Paid Ads (PPC)", href: "/404" },
+                { title: "Content Marketing", href: "/404" }
+            ],
+            page: "/services/digital-marketing-services",
             tags: ["SEO/SEM", "Performance", "Conversion"],
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1426&auto=format&fit=crop"
         },
         {
             id: '03',
-            title: "AI Film & Video Production",
+            title: "AI Services",
             tagline: "The Future of Storytelling.",
             desc: "Pioneering cinematic production through GenAI and Unreal Engine 5. We create visual assets that push the boundaries of reality.",
-            subCapabilities: ["Unreal Engine 5 Pre-Vis", "Generative AI Workflows", "Virtual Production", "Cinematic VFX Labels", "3D Environment Design"],
+            subCapabilities: [
+                { title: "Ai Automation", href: "/services/ai-automation-services" },
+                { title: "Ai Film Making & Video Production", href: "/services/ai-film-making-video-production" },
+                { title: "Motion Graphics", href: "/404" },
+                { title: "3D Animation", href: "/404" }
+            ],
             tags: ["UE5", "GenAI", "Virtual Prod"],
             image: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=1470&auto=format&fit=crop"
         },
@@ -57,7 +73,11 @@ export default function Service() {
             title: "Brand Design",
             tagline: "Visual Identity Systems.",
             desc: "Minimalist excellence translated into high-fidelity brand identities. We craft visual languages that resonate and endure in a noisy market.",
-            subCapabilities: ["Visual Identity Systems", "Premium UI/UX Design", "Atomic Design Systems", "Typography Engineering", "Strategic Brand DNA"],
+            subCapabilities: [
+                { title: "Logo & Visual Identity", href: "/404" },
+                { title: "UI/UX Design", href: "/services/ui-ux-design" },
+                { title: "Brand Strategy", href: "/404" }
+            ],
             tags: ["Visual Strategy", "Figma", "Design Ops"],
             image: "https://5.imimg.com/data5/SELLER/Default/2024/12/475690892/EW/EI/LJ/140006600/logo-branding-design-services.jpg"
         }
@@ -103,8 +123,8 @@ export default function Service() {
                     <div className="container position-relative z-index-2">
                         <div className="row align-items-center">
                             <div className="col-lg-7" data-aos="fade-right">
-                                <div className="capsule-badge d-inline-flex align-items-center mb-8 rounded-pill py-2 px-6">
-                                    <span className="theme-clr fw-bold tracking-widest tiny text-uppercase">SYSTEM_ACTIVE // LOCATION: GLOBAL</span>
+                                <div className="capsule-badge d-inline-flex align-items-center mb-8 rounded-pill py-2">
+                                    <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">SYSTEM ACTIVE LOCATION GLOBAL</span>
                                 </div>
                                 <h1 className="white-clr display-1 fw-black mb-10 leading-tight">
                                     High-Performance <br />
@@ -130,31 +150,28 @@ export default function Service() {
                 <section className="showcase-v3-extended" style={{ paddingTop: '100px', paddingBottom: '120px' }}>
                     <div className="container">
                         <div className="section-head mb-3" data-aos="fade-up">
-                            <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2 px-6">
-                                <span className="theme-clr fw-bold tracking-widest tiny text-uppercase">THE SPECTRUM</span>
+                            <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2">
+                                <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">THE SPECTRUM</span>
                             </div>
                             <h2 className="display-2 white-clr fw-black">Core Capabilities</h2>
                         </div>
 
                         {services.map((item, idx) => (
-                            <div key={item.id} className={`showcase-unit row align-items-center ${idx % 2 !== 0 ? 'flex-row-reverse' : ''}`} style={{ marginBottom: '80px', marginTop: '40px' }}>
+                            <div key={item.id} className={`mt-10 showcase-unit row align-items-center ${idx % 2 !== 0 ? 'flex-row-reverse' : ''}`} style={{ marginBottom: '80px', marginTop: '40px' }}>
                                 <div className="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-right">
-                                    <h3 className="white-clr display-5 fw-bold mb-6 leading-none">{item.title}</h3>
-                                    <p className="white-clr opacity-50 fs-6 mb-10 leading-relaxed" style={{ maxWidth: '90%' }}>{item.desc}</p>
+                                    <h3 className="white-clr display-6 fw-bold mb-6 leading-none text-nowrap">{item.title}</h3>
+                                    <p className="white-clr opacity-50 fs-5 mb-10 leading-relaxed" style={{ maxWidth: '95%' }}>{item.desc}</p>
 
                                     <div className="sub-capabilities-wrap d-flex flex-column gap-3">
                                         {item.subCapabilities.map((sub, sIdx) => {
-                                            const isLink = sIdx === 0 && item.page;
                                             return (
                                                 <div key={sIdx} className="sub-capability-item d-flex align-items-center gap-3">
-                                                    <span className="dot theme-clr" style={{ width: '6px', height: '6px', borderRadius: '50%' }}></span>
-                                                    {isLink ? (
-                                                        <Link href={item.page} className="white-clr opacity-75 small fw-medium tracking-wide" style={{ textDecoration: 'none' }}>
-                                                            {sub}
-                                                        </Link>
-                                                    ) : (
-                                                        <span className="white-clr opacity-75 small fw-medium tracking-wide">{sub}</span>
-                                                    )}
+                                                    <span className="dot theme-clr d-inline-flex align-items-center" style={{ fontSize: '6px' }}>
+                                                        <i className="fas fa-circle" />
+                                                    </span>
+                                                    <Link href={sub.href} onMouseEnter={(e) => e.target.style.color = '#e9fe49'} onMouseLeave={(e) => e.target.style.color = ''} className="white-clr opacity-75 small fw-medium tracking-wide hover-text-white" style={{ textDecoration: 'none' }}>
+                                                        {sub.title}
+                                                    </Link>
                                                 </div>
                                             );
                                         })}
@@ -219,8 +236,8 @@ export default function Service() {
                     <div className="container position-relative z-index-2">
                         <div className="row g-5">
                             <div className="col-lg-4" data-aos="fade-right">
-                                <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2 px-6">
-                                    <span className="theme-clr fw-bold tracking-widest tiny text-uppercase">SPECIALIZATIONS</span>
+                                <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2">
+                                    <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">SPECIALIZATIONS</span>
                                 </div>
                                 <h2 className="display-3 white-clr fw-black mt-6 mb-10">Industry <br /> Niche Ops</h2>
                                 <p className="white-clr opacity-50 fs-5 mb-12">We don't do general. We do specific. Deep immersion into high-stakes sectors.</p>
@@ -247,7 +264,7 @@ export default function Service() {
                 <section className="protocol-path bg-dark-v1" style={{ paddingTop: '100px', paddingBottom: '120px' }}>
                     <div className="container">
                         <div className="section-head mb-20">
-                            <h2 className="display-2 white-clr fw-black" data-aos="fade-up">THE <span className="theme-clr">PATH</span></h2>
+                            <h2 className="display-2 white-clr fw-black" data-aos="fade-up">THE PATH</h2>
                         </div>
                         <div className="row g-0">
                             {[
@@ -271,27 +288,32 @@ export default function Service() {
 
                 {/* --- FINAL PROTOCOL (The Call) --- */}
                 <section className="final-protocol-cta d-flex align-items-center position-relative bg-black" style={{ paddingTop: '100px', paddingBottom: '120px' }}>
-                    <div className="massive-bg-text-cta" style={{ transform: `scale(${1 + scrollProgress})` }}>AKTIVACITY</div>
+                    <div className="massive-bg-text-cta" style={{ transform: `scale(${1 + scrollProgress})` }}></div>
                     <div className="container position-relative z-index-2 text-center">
                         <div className="cta-content-inner p-20" data-aos="zoom-out">
-                            <span className="theme-clr fw-black tracking-widest small mb-6 d-block">READY TO INITIATE?</span>
-                            <h2 className="display-1 white-clr fw-black mb-15" style={{ lineHeight: '1.2' }}>Your Next High-Performance <br /> Asset Starts Here.</h2>
-                            <Link
-                                href="/contact"
-                                className="cinematic-cta-btn"
-                                style={{
-                                    border: "2px solid white",  // Sirf ek value width ke liye
-                                    borderRadius: "100px",
-                                    padding: "10px 20px",
-                                    letterSpacing: "1px"
-                                }}
-                            >
-                                <span className="white-clr fw-bold">CONNECT TO LAB</span>
-                                <span className="rot60 d-inline-block theme-clr ms-2">
-                                    <i className="fas fa-arrow-up" />
-                                </span>
-                                <div className="btn-glow-pulse"></div>
-                            </Link>
+                            <div className="capsule-badge d-inline-flex align-items-center mb-8 rounded-pill py-2 px-5">
+                                <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">READY TO INITIATE?</span>
+                            </div>
+                            <h2 className="display-1 white-clr fw-black mb-15 mt-2" style={{ lineHeight: '1.2' }}>Your Next High-Performance <br /> Asset Starts Here.</h2>
+                            <div className="d-flex justify-content-center">
+                                <Link
+                                    href="/contact"
+                                    className="cinematic-cta-btn"
+                                    style={{
+                                        border: "2px solid white",  // Sirf ek value width ke liye
+                                        borderRadius: "100px",
+                                        padding: "10px 10px",
+                                        letterSpacing: "1px",
+                                        width: "250px"
+                                    }}
+                                >
+                                    <span className="white-clr fw-bold">CONNECT TO LAB</span>
+                                    <span className="rot60 d-inline-block theme-clr ms-2">
+                                        <i className="fas fa-arrow-up" />
+                                    </span>
+                                    <div className="btn-glow-pulse"></div>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -514,9 +536,11 @@ export default function Service() {
                     .massive-service-container a span {
                         transition: all 0.3s ease !important;
                     }
+                    .sub-capability-item { cursor: pointer; }
                     .massive-service-container a:hover,
                     .massive-service-container a:hover h3,
                     .massive-service-container a:hover span,
+                    .sub-capability-item:hover .hover-target,
                     .sub-capability-item:hover a,
                     .sub-capability-item a:hover {
                         color: #e9fe49 !important;
@@ -535,12 +559,11 @@ export default function Service() {
                     
                     .sub-capability-item .dot {
                         transition: all 0.3s ease;
-                        box-shadow: 0 0 10px rgba(233, 254, 73, 0.2);
-                        background-color: #e9fe49 !important;
+                        color: #e9fe49 !important;
                     }
                     .sub-capability-item:hover .dot {
-                        transform: scale(1.5);
-                        box-shadow: 0 0 20px rgba(233, 254, 73, 0.6);
+                        transform: scale(1.3);
+                        text-shadow: 0 0 10px rgba(233, 254, 73, 0.6);
                     }
                     .protocol-path h2 span {
                         font-size: inherit !important;

@@ -155,44 +155,54 @@ export default function Menu() {
                                 {[
                                     {
                                         category: "Development",
+                                        titleHref: "/services/web-development-services",
                                         links: [
                                             { title: "Web Development Services", href: "/services/web-development-services" },
                                             { title: "Software Development", href: "/services/software-development" },
-                                            { title: "Mobile App Development", href: "/services" },
-                                            { title: "SaaS Development", href: "/services" }
+                                            { title: "Mobile App Development", href: "/oops" },
+                                            { title: "SaaS Development", href: "/oops" }
                                         ]
                                     },
                                     {
                                         category: "Digital Marketing",
+                                        titleHref: "/services/digital-marketing-services",
                                         links: [
                                             { title: "SEO Optimization", href: "/services/seo-services" },
-                                            { title: "Social Media Marketing", href: "/services" },
-                                            { title: "Paid Ads (PPC)", href: "/services" },
-                                            { title: "Content Marketing", href: "/services" }
+                                            { title: "Social Media Marketing", href: "/oops" },
+                                            { title: "Paid Ads (PPC)", href: "/oops" },
+                                            { title: "Content Marketing", href: "/oops" }
                                         ]
                                     },
                                     {
-                                        category: "AI Film Production",
+                                        category: "AI Services",
+                                        titleHref: "/services/ai-automation-services",
                                         links: [
-                                            { title: "AI Video Generation", href: "/services" },
-                                            { title: "Video Editing & Post", href: "/services" },
-                                            { title: "Motion Graphics", href: "/services" },
-                                            { title: "3D Animation", href: "/services" }
+                                            { title: "AI Automation", href: "/services/ai-automation-services" },
+                                            { title: "Ai Film Making & Video Production", href: "/services/ai-film-making-video-production" },
+                                            { title: "Motion Graphics", href: "/oops" },
+                                            { title: "3D Animation", href: "/oops" }
                                         ]
                                     },
                                     {
                                         category: "Brand Design",
+                                        titleHref: "/services/ui-ux-design",
                                         links: [
-                                            { title: "Logo & Visual Identity", href: "/services" },
+                                            { title: "Logo & Visual Identity", href: "/oops" },
                                             { title: "UI/UX Design", href: "/services/ui-ux-design" },
-                                            { title: "Brand Strategy", href: "/services" },
-                                            { title: "Packaging Design", href: "/services" }
+                                            { title: "Brand Strategy", href: "/oops" },
+                                            { title: "Packaging Design", href: "/oops" }
                                         ]
                                     }
                                 ].map((col, idx) => (
                                     <div key={idx} className="col-lg-3">
                                         <div className="mega-column" style={{ animationDelay: `${idx * 0.1}s` }}>
-                                            <h5 className="category-title mb-6 fw-bold text-uppercase ls-1">{col.category}</h5>
+                                            {col.titleHref ? (
+                                                <Link href={col.titleHref} className="category-title-link">
+                                                    <h5 className="category-title mb-6 fw-bold text-uppercase ls-1">{col.category}</h5>
+                                                </Link>
+                                            ) : (
+                                                <h5 className="category-title mb-6 fw-bold text-uppercase ls-1">{col.category}</h5>
+                                            )}
                                             <div className="mega-links-grid d-flex flex-column gap-3">
                                                 {col.links.map((item, lIdx) => (
                                                     <Link href={item.href} key={lIdx} className="mega-menu-link d-flex align-items-center gap-2 py-1">
@@ -364,6 +374,16 @@ export default function Menu() {
                 }
                 .mega-menu-link:hover .link-text {
                     opacity: 1;
+                }
+                .category-title-link {
+                    text-decoration: none !important;
+                    display: block;
+                }
+                .category-title-link:hover .category-title {
+                    color: #fff !important;
+                    border-color: rgba(0,0,0,0.5) !important;
+                    background: rgba(0,0,0,0.05);
+                    padding-left: 10px;
                 }
                 .ls-1 { letter-spacing: 1px; }
                 
