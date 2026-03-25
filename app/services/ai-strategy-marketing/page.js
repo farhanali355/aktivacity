@@ -2,11 +2,11 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState, useEffect } from 'react'
-import DigitalMarketingShowcaseSlider from '@/components/elements/DigitalMarketingShowcaseSlider'
-import DigitalMarketingChooseCarousel from '@/components/elements/DigitalMarketingChooseCarousel'
+import AiStrategyCaseSlider from '@/components/elements/AiStrategyCaseSlider'
+import AiStrategyChooseCarousel from '@/components/elements/AiStrategyChooseCarousel'
 import TestimonialCarousel from '@/components/elements/TestimonialCarousel'
 
-export default function DigitalMarketing() {
+export default function AiStrategyMarketing() {
     const [activeDeliv, setActiveDeliv] = useState(0)
     const [openFaq, setOpenFaq] = useState(null);
     const [modalOpen, setModalOpen] = useState(false)
@@ -26,35 +26,38 @@ export default function DigitalMarketing() {
 
     const deliverables = [
         {
-            title: "Digital Marketing Strategy & Campaign Planning",
-            desc: "End-to-end digital marketing strategy, market research, audience definition, and campaign planning aligned with your revenue and growth goals."
+            title: "AI Strategy Development",
+            desc: "We start by analyzing your business goals, data ecosystem, and competitive landscape. From there, we create a custom AI strategy that aligns with your growth objectives and ensures data-driven decision-making to achieve sustainable success."
         },
         {
-            title: "SEO Services for Organic Growth",
-            desc: "Search engine optimization (SEO), local SEO, search intent targeting, on-site optimization, and content planning to improve Google search visibility and organic traffic growth."
+            title: "AI Marketing Strategy",
+            desc: "Our AI marketing services focus on crafting personalized, targeted strategies that leverage machine learning to drive smarter marketing decisions. We optimize customer engagement, conversion rates, and marketing ROI by using predictive insights and data-backed tactics."
         },
         {
-            title: "Google Ads & PPC Management",
-            desc: "Performance-led pay-per-click (PPC) campaigns, including Google Ads management, search, display, and remarketing, positioned as a performance marketing agency in Karachi with clear ROI targets."
+            title: "Predictive Analytics & Customer Insights",
+            desc: "Using advanced machine learning and predictive analytics, we help you understand customer behavior and anticipate future actions. This allows you to enhance lead targeting, personalize content, and improve customer retention before your competitors act."
         },
         {
-            title: "Social Media Marketing & Advertising",
-            desc: "Full-funnel social media marketing services Karachi, including social media advertising, Facebook & Instagram ads, content publishing, and community management to build engagement and demand."
+            title: "AI Campaign Optimization",
+            desc: "We design and implement AI-powered campaign optimization frameworks that continuously test and learn, ensuring that your marketing campaigns evolve for maximum performance across all channels, delivering sustained results with reduced cost-per-click and increased ROI."
         },
         {
-            title: "Content Marketing & Brand Messaging",
-            desc: "Strategic content marketing, brand storytelling, landing page copywriting, and creative campaign concepts that support both brand positioning and lead generation."
+            title: "AI-Powered Personalization",
+            desc: "Our AI-powered personalization engines deliver relevant content to the right customers at the right time, increasing engagement, loyalty, and driving higher conversion rates across web, mobile, and email marketing platforms."
         },
         {
-            title: "Conversion Rate Optimization (CRO)",
-            desc: "Landing page optimization, funnel analysis, A/B testing, and user journey optimization to turn existing traffic into more leads and sales."
+            title: "Marketing Automation & Workflows",
+            desc: "We help automate time-consuming tasks, such as lead nurturing and customer segmentation, using AI-driven workflows. This ensures that your marketing operates continuously and efficiently, while freeing up valuable time for your team to focus on strategy."
         },
         {
-            title: "Performance Tracking & Analytics Reporting",
-            desc: "Robust marketing analytics, KPI dashboards, campaign performance tracking, and ROI measurement so you see exactly what’s working and where to scale."
+            title: "AI Consulting & Implementation Strategy",
+            desc: "Our AI consulting services ensure that you adopt AI in a way that aligns with your business needs. We assess your readiness, identify the right AI use cases, and build a clear roadmap to implement AI solutions, ensuring a smooth transition to a more data-driven business."
+        },
+        {
+            title: "Performance Tracking & ROI Measurement",
+            desc: "We build real-time dashboards and provide continuous tracking of your AI marketing campaigns to ensure you measure success accurately. This helps optimize strategies, increase ROI, and ensure that you’re scaling the right initiatives at the right time."
         }
-    ]
-
+    ];
     return (
         <>
             <Layout headerStyle={2} footerStyle={3}>
@@ -78,25 +81,21 @@ export default function DigitalMarketing() {
                                             <div className="hero-badge mb-4 d-inline-block">
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
-                                            <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                              Digital Marketing Services in Karachi
+                                            <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold lh-sm">
+                                                AI Strategy & Marketing Services in Karachi
                                             </h1>
                                             <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              From search visibility to lead generation, we create digital marketing strategies that drive growth.
+                                                Boost growth, enhance engagement, and maximize ROI with AI-powered marketing strategies.
                                             </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-                                               Aktivacity delivers digital marketing services focused on increasing visibility, generating qualified leads, and improving ROI. We combine SEO, paid media, and social strategies with data-driven execution to help your business grow consistently.</p>
+                                              Aktivacity empowers businesses in Karachi with intelligent, AI-powered marketing strategies and expert AI consulting services. We transform your data into scalable, smart marketing solutions that deliver measurable results, increase customer engagement, and maximize ROI.</p>
                                             <div className="hero-cta-form">
-                                                <form className="d-flex flex-sm-row flex-column gap-3">
-                                                    <Link href="/contact">
-                                                    <button type="submit" className="hero-box-btn py-3 px-xxl-10 px-6 fw-bold whitespace-nowrap">
-                                                        Book a Free Strategy Consultation
-                                                        <span className="rot60 d-inline-block ms-2">
-                                                            <i className="fas fa-arrow-up" />
-                                                        </span>
-                                                    </button>
-                                                    </Link>
-                                                </form>
+                                                <Link href="/contact" className="hero-box-btn py-3 px-xxl-8 px-6 fw-bold whitespace-nowrap d-inline-flex align-items-center text-decoration-none">
+                                                    Book a Free AI Strategy Consultation
+                                                    <span className="rot60 d-inline-block ms-3">
+                                                        <i className="fas fa-arrow-up" />
+                                                    </span>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -104,10 +103,10 @@ export default function DigitalMarketing() {
                                         <div className="services-hero-thumb position-relative text-center">
                                             <img src="/assets/img/web-app/web-app-hero-image.png" alt="Web & App Development" className="img-fluid floating-img" />
                                             {/* Tech Tags */}
-                                            <div className="tech-tag tag-react">SEO</div>
-                                            <div className="tech-tag tag-node">Google Ads</div>
-                                            <div className="tech-tag tag-ios">Social Media Ads</div>
-                                            <div className="tech-tag tag-aws">CRO &Analytics</div>
+                                            <div className="tech-tag tag-react">Machine Learning</div>
+                                            <div className="tech-tag tag-node">RPA</div>
+                                            <div className="tech-tag tag-ios">System Integration</div>
+                                            <div className="tech-tag tag-aws">AI Agents</div>
 
                                             {/* Glow Effect behind image */}
                                             <div className="img-glow-effect" />
@@ -119,10 +118,20 @@ export default function DigitalMarketing() {
                     </div>
 
                     <style jsx>{`
+                        :global(.section-pill) {
+                            display: inline-block;
+                            padding: 8px 22px;
+                            border-radius: 40px;
+                            border: 1px solid rgba(233,254,73,0.45);
+                            color: #e9fe49 !important;
+                            background: transparent;
+                            font-weight: 700;
+                            letter-spacing: 2px;
+                        }
                         .services-hero-section {
                             padding-top: 140px; /* Space for fixed navbar */
                             padding-bottom: 60px;
-                            background: #000; /* Dark background behind the yellow box */
+                            background: #000; /* Unified dark background */
                         }
                         .hero-main-box { 
                             background: #e9fe49; 
@@ -166,9 +175,9 @@ export default function DigitalMarketing() {
                             margin-left: 0;
                             display: inline-block;
                         }
-                        .hero-box-btn {
-                            background: #000;
-                            color: #fff;
+                        :global(.hero-box-btn) {
+                            background: #000 !important;
+                            color: #fff !important;
                             border: none;
                             border-radius: 100px;
                             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -176,7 +185,7 @@ export default function DigitalMarketing() {
                             overflow: hidden;
                             z-index: 2;
                         }
-                        .hero-box-btn:hover {
+                        :global(.hero-box-btn:hover) {
                             transform: translateY(-5px) scale(1.03);
                             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
                         }
@@ -355,7 +364,7 @@ export default function DigitalMarketing() {
                             justify-content: center;
                             width: 150px;
                             height: 60px;
-                            padding: 0 40px;
+                            padding: 0 40px; 
                         }
                         .marquee-item img {
                             width: 100%;
@@ -409,20 +418,20 @@ export default function DigitalMarketing() {
                         }
                     `}</style>
                 </section> */}
-                <section className="why-section py-xxl-20 py-15 bg-black overflow-hidden">
+                <section className="why-section pt-xxl-20 pt-15 pb-xxl-10 pb-10 overflow-hidden">
                     <div className="container">
-                        <div className="row g-xxl-15 g-xl-12 g-10 align-items-center mt-10">
+                        <div className="row g-xxl-15 g-xl-12 g-10 align-items-center">
                             {/* Left Column: Content + Cards */}
                             <div className="col-lg-6">
                                 <div className="section-title text-start mb-xxl-12 mb-10">
-                                    <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-2 px-4 theme-clr gap-3 mb-4">
+                                    <div className="section-pill text-uppercase d-inline-flex align-items-center mb-4">
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-                                       Why Digital Marketing Matters For Business?
+                                        Why AI Marketing Matters for Your Business
                                     </h2>
                                     <p className="pra-clr fs-5 mb-0">
-                                      Improve visibility & generate leads
+                                        AI marketing empowers your business with data-driven strategies that drive growth, optimize decision-making, and improve customer engagement. If any of these challenges sound familiar, we’re here to help.
                                     </p>
                                 </div>
 
@@ -431,12 +440,12 @@ export default function DigitalMarketing() {
                                     <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-bolt-slash theme-clr fs-3" />
+                                                <i className="fas fa-robot theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Low Online Visibility</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Marketing Without Data Intelligence</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Your brand isn’t reaching the right audience, and search visibility on Google is limited for your key services and Karachi-based searches.
+                                                    Decisions based on guesswork lead to wasted budgets. With AI marketing, we replace intuition with predictive insights that guide smarter, more efficient campaigns.
                                                 </p>
                                             </div>
                                         </div>
@@ -446,12 +455,12 @@ export default function DigitalMarketing() {
                                     <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-user-minus theme-clr fs-3" />
+                                                <i className="fas fa-unlink theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">High Ad Spend, Low ROI</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Disconnected Systems</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                  Poor targeting and weak campaign strategy lead to wasted budget without meaningful returns.
+                                                    Your CRM, advertising platforms, and analytics tools should work together. We integrate your marketing stack to align with AI-powered solutions, creating a unified growth strategy.
                                                 </p>
                                             </div>
                                         </div>
@@ -461,12 +470,12 @@ export default function DigitalMarketing() {
                                     <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-mobile-screen-button theme-clr fs-3" />
+                                                <i className="fas fa-expand-arrows-alt theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Weak Brand Engagement</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Slow Optimization Cycles</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Content and social activity fail to generate real interest, inquiries, or customer action.
+                                                    Manual analysis is reactive and time-consuming. AI marketing accelerates optimization, providing real-time data and insights to improve campaign performance instantly.
                                                 </p>
                                             </div>
                                         </div>
@@ -476,12 +485,12 @@ export default function DigitalMarketing() {
                                     <div className="problem-card p-xxl-6 p-xl-5 p-4 rounded-4">
                                         <div className="d-flex align-items-start gap-4">
                                             <div className="card-icon">
-                                                <i className="fas fa-layer-group theme-clr fs-3" />
+                                                <i className="fas fa-hourglass-half theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Poor Conversion Funnels</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">No Clear AI Adoption Roadmap</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Traffic doesn’t convert due to unclear messaging, weak landing pages, and lack of optimization.
+                                                    AI isn’t one-size-fits-all. We help businesses develop a custom AI marketing roadmap, guiding you through effective integration with clear, actionable steps for success.
                                                 </p>
                                             </div>
                                         </div>
@@ -503,7 +512,7 @@ export default function DigitalMarketing() {
                                     {/* Decorative Elements */}
                                     {/* Decorative Elements removed as per user request */}
                                     <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
-                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">Traffic Without Strategy Fails</h3>
+                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">Unlock Smarter Marketing with AI</h3>
                                     </div>
                                 </div>
                             </div>
@@ -512,10 +521,9 @@ export default function DigitalMarketing() {
 
                     <style jsx>{`
                         .why-section {
-                            background: #030303;
+                            background: #000;
                             position: relative;
-                            /* Top padding aur thora kam kiya */
-                            padding-top: 30px !important;
+                            padding-top: 60px !important;
                         }
                         .problem-card {
                             background: rgba(255, 255, 255, 0.02);
@@ -563,6 +571,7 @@ export default function DigitalMarketing() {
                             to { transform: rotate(360deg); }
                         }
                         .italic { font-style: italic; }
+                        .bg-black-2 { background-color: #080808; }
 
                         @media (max-width: 991px) {
                             .image-hover-effect { height: 400px; margin-top: 50px; }
@@ -578,14 +587,14 @@ export default function DigitalMarketing() {
                         <div className="row g-xxl-15 g-xl-12 g-10">
                             {/* Left Column: Heading */}
                             <div className="col-lg-5">
-                                <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-2 px-4 theme-clr gap-3 mb-4">
+                                <div className="section-pill text-uppercase d-inline-flex align-items-center mb-4">
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-                                    Our Digital Marketing Services                          </h2>
+                                    Our AI Strategy & Marketing Services                           </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
-                                    We solve key marketing challenges with an integrated mix of SEO, paid media, and content strategies focused on driving measurable business results.
+                                    We combine AI strategy, marketing execution, and expert consulting to turn data into scalable growth, driving measurable results for your business.
                                 </p>
                             </div>
 
@@ -666,8 +675,8 @@ export default function DigitalMarketing() {
                         }
                     `}</style>
                 </section>
-                <section className="cta-banner-section py-xxl-15 py-12 bg-black overflow-hidden ">
-                    <div className="container mt-10">
+                <section className="cta-banner-section pb-xxl-15 pb-12 pt-xxl-20 pt-15 bg-black overflow-hidden ">
+                    <div className="container mt-xxl-15 mt-10 mb-xxl-10 mb-5">
                         <div className="cta-capsule-wrapper position-relative p-xxl-6 p-xl-5 p-lg-4 p-4 rounded-pill d-flex align-items-center justify-content-between flex-wrap gap-4">
                             {/* Animated Background Dots */}
                             <div className="cta-particles" />
@@ -677,15 +686,15 @@ export default function DigitalMarketing() {
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-                                    Ready to Scale Your Digital Growth?                                 </h3>
+                                    Build a smarter, scalable AI marketing strategy </h3>
                             </div>
 
-                            <Link href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase z-1 d-flex align-items-center gap-3 fs-6">
-                                Get a Free Marketing Audit
+                            <a href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase d-flex align-items-center gap-3 fs-6" style={{ position: 'relative', zIndex: 10 }}>
+                                Get Your AI Strategy Audit
                                 <span className="rot60 d-inline-block transition-all">
                                     <i className="fas fa-arrow-up theme-clr" />
                                 </span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
 
@@ -705,6 +714,7 @@ export default function DigitalMarketing() {
                         .cta-particles {
                             position: absolute;
                             inset: 0;
+                            pointer-events: none;
                             background-image: 
                                 radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05) 1px, transparent 1px),
                                 radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05) 1px, transparent 1px),
@@ -759,44 +769,39 @@ export default function DigitalMarketing() {
                             <div className="col-lg-4 mb-4">
                                 <div className="section-title h-100 d-flex flex-column justify-content-center pe-lg-15">
                                     <div className="d-flex align-items-center gap-3 mb-5">
-                                        <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-2 px-4 theme-clr gap-3 mb-0">
+                                        <div className="section-pill text-uppercase d-inline-flex align-items-center mb-0">
                                             Our Process
                                         </div>
                                     </div>
                                     <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{ fontSize: "37px" }}>
-                                        Our Digital Marketing Process
+                                        Our Strategic Process
                                     </h2>
                                     <p className="pra-clr fs-6 lh-base opacity-75" >
-                                       A structured, data-driven approach to plan, execute, and optimize marketing campaigns for consistent growth.                                   </p>
+                                        We don't hand you a template and wish you luck. Our process is collaborative, structured, and built around delivering real results, not just deliverables.                                 </p>
                                 </div>
                             </div>
 
                             {/* Steps */}
                             {[
                                 {
-                                    step: "01",
-                                    title: "Market & Competitor Analysis",
-                                    points: ["We analyze your market, competitors, and current digital presence to identify opportunities and gaps."]
+                                    "step": "01",
+                                    "title": "Discover",
+                                    "points": ["We analyze your business goals, data ecosystems, and existing marketing infrastructure to understand where you are and where you need to go."]
                                 },
                                 {
-                                    step: "02",
-                                    title: "Strategy & Campaign Planning",
-                                    points: ["We define the right channels, targeting, messaging, and budgets aligned with your business goals."]
+                                    "step": "02",
+                                    "title": "Identify",
+                                    "points": ["We pinpoint the highest-impact AI opportunities specific to your business, filtering out the noise so you focus resources where they count."]
                                 },
                                 {
-                                    step: "03",
-                                    title: "Campaign Execution",
-                                    points: ["We launch and manage SEO, paid ads, and content campaigns with clear targeting and creative alignment."]
+                                    "step": "03",
+                                    "title": "Design",
+                                    "points": ["We build AI-enabled marketing frameworks tailored to your brand, audience, and growth objectives, practical, executable, and built to last."]
                                 },
                                 {
-                                    step: "04",
-                                    title: "Optimization & Scaling",
-                                    points: ["We continuously optimize campaigns using data, testing, and performance insights to improve ROI."]
-                                },
-                                {
-                                    step: "05",
-                                    title: "Reporting & Insights",
-                                    points: ["We track key metrics, provide clear reports, and refine strategies based on performance data."]
+                                    "step": "04",
+                                    "title": "Optimize",
+                                    "points": ["We guide implementation, monitor performance, and continuously optimize so your AI-driven strategy keeps delivering as your business evolves."]
                                 }
                             ].map((item, index) => (
                                 <div key={index} className="col-lg-4 mb-4">
@@ -878,18 +883,18 @@ export default function DigitalMarketing() {
                 <section className="portfolio-spotlight-section py-xxl-20 py-15 bg-black position-relative overflow-hidden">
                     <div className="container mt-20">
                         <div className="text-center mb-xxl-15 mb-xl-12 mb-10">
-                            <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-2 px-4 theme-clr gap-3 mb-4">
-                                Case Studies
+                            <div className="section-pill text-uppercase d-inline-flex align-items-center mb-4">
+                                Use Cases
                             </div>
                             <h2 className="white-clr display-4 fw-bold mb-0 text-uppercase ls-2">
-                                Real <span className="theme-clr" style={{ fontSize: 'inherit' }}>Marketing Results</span>
+                                AI Strategy Case Studies
                             </h2>
-                            <p className="pra-clr fs-5 mb-10 max-w-700 mx-auto mt-4">
-                                Karachi E-commerce Brand – Performance Marketing & SEO
+                            <p className="mt-4 pra-clr fs-5 max-w-700 mx-auto">
+                                Our AI strategy and marketing solutions drive measurable growth through data-driven insights and intelligent execution.
                             </p>
                         </div>
 
-                        <DigitalMarketingShowcaseSlider />
+                        <AiStrategyCaseSlider />
                     </div>
 
                     <style jsx>{`
@@ -940,7 +945,7 @@ export default function DigitalMarketing() {
                             </h2>
                         </div>
 
-                        <DigitalMarketingChooseCarousel />
+                        <AiStrategyChooseCarousel />
                     </div>
 
                     <style jsx>{`
@@ -975,7 +980,7 @@ export default function DigitalMarketing() {
                     `}</style>
                 </section>
                 <section className="testimonials-section py-xxl-20 py-15 bg-black position-relative overflow-hidden">
-                    {/* <div className="container mt-20">
+                    <div className="container mt-20">
                         <div className="row align-items-center mb-xxl-15 mb-xl-12 mb-10">
                             <div className="col-lg-12">
                                 <div className="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-6">
@@ -992,7 +997,7 @@ export default function DigitalMarketing() {
                             </div>
                         </div>
                         <TestimonialCarousel />
-                    </div> */}
+                    </div>
 
                     <style jsx>{`
                         .testimonials-section {
@@ -1060,29 +1065,29 @@ export default function DigitalMarketing() {
                             </div>
                             {/* Right: FAQ Accordion */}
                             <div className="col-lg-8">
-                                <h2 className="white-clr display-3 fw-bold mb-12">Digital Marketing FAQs</h2>
+                                <h2 className="white-clr display-3 fw-bold mb-12">Frequently Asked Questions</h2>
 
                                 <div className="faq-wrapper d-flex flex-column gap-6">
                                     {[
                                         {
-                                            q: "What digital marketing services do you offer?",
-                                            a: "We offer a full range of digital marketing services, including SEO, Google Ads and PPC management, social media marketing, content marketing, and conversion rate optimization, all aligned with a clear growth strategy."
+                                            q: "What is AI strategy and marketing?",
+                                            a: "AI strategy and marketing use artificial intelligence, including machine learning and predictive analytics, to plan, execute, and optimize marketing efforts. It helps businesses make data-driven decisions, personalize customer experiences, and continuously improve performance."
                                         },
                                         {
-                                            q: "How long does it take to see results from digital marketing?",
-                                            a: "SEO typically shows results within 3 to 6 months, while paid campaigns such as Google Ads and social ads can generate results within the first 30 to 60 days, with continuous improvement over time."
+                                            q: "How does AI consulting help businesses grow?",
+                                            a: "AI consulting helps businesses identify where AI can create the most value and builds a clear plan for implementation. This ensures better decision-making, reduced wasted spend, and improved growth through data-driven strategies."
                                         },
                                         {
-                                            q: "Do you manage Google Ads and social media campaigns?",
-                                            a: "Yes, we manage Google Ads, Facebook, Instagram, and other paid campaigns, including strategy, setup, optimization, and performance tracking."
+                                            q: "Do you provide AI strategy services in Karachi?",
+                                            a: "Yes, we provide AI strategy and marketing services in Karachi and work with businesses remotely across different regions."
                                         },
                                         {
-                                            q: "Can you improve ROI from existing campaigns?",
-                                            a: "Yes, we audit your current campaigns, refine targeting and messaging, optimize landing pages, and implement proper tracking to reduce wasted spend and improve ROI."
+                                            q: "What industries benefit from AI marketing?",
+                                            a: "AI marketing benefits industries such as e-commerce, fintech, healthcare, real estate, SaaS, and professional services. Any business using customer data or running digital campaigns can improve performance with AI-driven strategies."
                                         },
                                         {
-                                            q: "Do you provide performance reports?",
-                                            a: "Yes, we provide regular reports with key metrics, insights, and recommendations, along with dashboards for real-time performance tracking."
+                                            q: "How long does AI implementation planning take?",
+                                            a: "AI strategy planning typically takes 2 to 4 weeks, while full implementation planning can take 4 to 8 weeks depending on complexity and business requirements."
                                         }
                                     ].map((item, index) => (
                                         <div key={index} className="faq-item">
@@ -1149,12 +1154,13 @@ export default function DigitalMarketing() {
                     <div className="container position-relative z-1">
                         {/* THE CARD */}
                         <div className="conversion-card mx-auto p-xxl-15 p-xl-12 p-8 text-center">
-                            <h2 className="display-2 fw-black black-clr mb-8">Let’s Grow Your Brand Online</h2>
+                            <h2 className="display-2 fw-black black-clr mb-8">Ready to Build Your AI Growth Strategy?</h2>
                             <p className="black-clr fs-4 opacity-75 mb-12 max-w-700 mx-auto">
-                            Stop guessing and start scaling with data-driven digital marketing. We help you increase visibility, generate leads, and achieve consistent growth across search, ads, and social.                     </p>
+                                Move from guesswork to a data-driven AI strategy that fuels growth. Share your business goals, and we’ll create a tailored AI plan to deliver measurable results.
+                            </p>
 
                             <button onClick={() => setModalOpen(true)} className="book-call-btn d-inline-flex align-items-center gap-4 py-4 px-10 rounded-pill bg-theme text-black fw-bold text-uppercase ls-2">
-                                Talk to a Digital Marketing Expert
+                                Talk to an AI Expert
                                 <div className="calendar-icon-wrap d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style={{ width: '45px', height: '45px' }}>
                                     <i className="far fa-calendar-alt" style={{ color: '#000' }} />
                                 </div>

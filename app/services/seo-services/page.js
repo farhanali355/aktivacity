@@ -24,36 +24,36 @@ export default function SEOServices() {
         setActiveDeliv(activeDeliv === index ? null : index)
     }
 
-  const deliverables = [
-    {
-        title: "SEO Audit",
-        desc: "We conduct a deep technical and competitor analysis to uncover exactly what is holding your website back from ranking. Every issue — from broken links to content gaps — is identified, prioritized, and mapped into a clear action plan."
-    },
-    {
-        title: "Keyword Research",
-        desc: "We go beyond search volume to understand the real intent behind every query — mapping local Karachi searches alongside national keywords that drive qualified traffic. You rank for terms your actual customers are typing, not just popular ones."
-    },
-    {
-        title: "On-Page SEO",
-        desc: "Every page is optimized from the ground up — title tags, meta descriptions, heading structure, schema markup, and content aligned with search intent. We ensure Google and AI search systems fully understand what each page is about and who it serves."
-    },
-    {
-        title: "Technical SEO",
-        desc: "We fix the foundational issues that silently kill rankings — slow page speed, crawl errors, poor indexing, duplicate content, and broken internal links. A technically clean website is the non-negotiable base every SEO strategy must be built on."
-    },
-    {
-        title: "Local SEO",
-        desc: "We optimize your Google Business Profile, build local citations, and strengthen geo-specific signals so your business appears in Karachi's local search results and Google Maps when nearby customers are ready to buy."
-    },
-    {
-        title: "Semantic Content",
-        desc: "We build topic clusters and pillar content strategies that establish your brand as a topical authority in your niche. Search engines and AI systems reward websites that cover subjects deeply and consistently — and that is exactly how we build your content."
-    },
-    {
-        title: "Tracking & Reporting",
-        desc: "You get access to real-time dashboards showing keyword rankings, organic traffic, and lead performance updated continuously. No confusing reports, no vanity metrics — just clear data showing exactly how your SEO investment is performing."
-    }
-];
+    const deliverables = [
+        {
+            title: "SEO Audit",
+            desc: "We conduct a deep technical and competitor analysis to uncover exactly what is holding your website back from ranking. Every issue — from broken links to content gaps — is identified, prioritized, and mapped into a clear action plan."
+        },
+        {
+            title: "Keyword Research",
+            desc: "We go beyond search volume to understand the real intent behind every query — mapping local Karachi searches alongside national keywords that drive qualified traffic. You rank for terms your actual customers are typing, not just popular ones."
+        },
+        {
+            title: "On-Page SEO",
+            desc: "Every page is optimized from the ground up — title tags, meta descriptions, heading structure, schema markup, and content aligned with search intent. We ensure Google and AI search systems fully understand what each page is about and who it serves."
+        },
+        {
+            title: "Technical SEO",
+            desc: "We fix the foundational issues that silently kill rankings — slow page speed, crawl errors, poor indexing, duplicate content, and broken internal links. A technically clean website is the non-negotiable base every SEO strategy must be built on."
+        },
+        {
+            title: "Local SEO",
+            desc: "We optimize your Google Business Profile, build local citations, and strengthen geo-specific signals so your business appears in Karachi's local search results and Google Maps when nearby customers are ready to buy."
+        },
+        {
+            title: "Semantic Content",
+            desc: "We build topic clusters and pillar content strategies that establish your brand as a topical authority in your niche. Search engines and AI systems reward websites that cover subjects deeply and consistently — and that is exactly how we build your content."
+        },
+        {
+            title: "Tracking & Reporting",
+            desc: "You get access to real-time dashboards showing keyword rankings, organic traffic, and lead performance updated continuously. No confusing reports, no vanity metrics — just clear data showing exactly how your SEO investment is performing."
+        }
+    ];
 
     return (
         <>
@@ -79,15 +79,15 @@ export default function SEOServices() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                              SEO Services in Karachi That Drive Rankings, Traffic & Leads
+                                                SEO Services in Karachi That Drive Results
                                             </h1>
                                             <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-Result-Driven SEO Agency Built for Google, AI Search & the Pakistan Market                                            </h4>
+                                                Data-Driven SEO Agency Built for Google, AI Search, and Local Market Success                                            </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-At Aktivacity, we deliver professional SEO services in Karachi combining technical SEO, audience-focused content, and deep local market insights. We optimize your brand for Google's evolving algorithms and AI-driven search systems — building sustainable visibility that drives real, measurable growth for your business across Pakistan.</p>                                            <div className="hero-cta-form">
+                                                At Aktivacity, we deliver professional SEO services in Karachi combining technical SEO, audience-focused content, and deep local market insights. We optimize your brand for Google's evolving algorithms and AI-driven search systems, building sustainable visibility that drives real, measurable growth for your business across Pakistan.</p>                                            <div className="hero-cta-form">
                                                 <form className="d-flex flex-sm-row flex-column gap-3">
                                                     <button type="submit" className="hero-box-btn py-3 px-xxl-10 px-6 fw-bold whitespace-nowrap">
-Book Your Free SEO Strategy Call                                                        <span className="rot60 d-inline-block ms-2">
+                                                        Book Your Free SEO Strategy Call                                                        <span className="rot60 d-inline-block ms-2">
                                                             <i className="fas fa-arrow-up" />
                                                         </span>
                                                     </button>
@@ -411,7 +411,7 @@ Book Your Free SEO Strategy Call                                                
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-Why Businesses Are Invisible on Google                                    </h2>
+                                        Why Businesses Are Invisible on Google                                    </h2>
                                     {/* <p className="pra-clr fs-5 mb-0">
                                         Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
                                     </p> */}
@@ -442,7 +442,7 @@ Why Businesses Are Invisible on Google                                    </h2>
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Slow Website Speed</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                   Unoptimized images and poor hosting increase bounce rates and signal poor user experience — two factors Google directly penalizes in its ranking algorithm.
+                                                    Unoptimized images and poor hosting increase bounce rates and signal poor user experience — two factors Google directly penalizes in its ranking algorithm.
                                                 </p>
                                             </div>
                                         </div>
@@ -457,7 +457,7 @@ Why Businesses Are Invisible on Google                                    </h2>
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Weak Technical SEO Setup</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                Broken links, missing sitemaps, and no mobile optimization prevent Google from properly crawling and indexing your website — keeping you permanently off page one.
+                                                    Broken links, missing sitemaps, and no mobile optimization prevent Google from properly crawling and indexing your website — keeping you permanently off page one.
                                                 </p>
                                             </div>
                                         </div>
@@ -574,10 +574,10 @@ Why Businesses Are Invisible on Google                                    </h2>
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-What Our SEO Services Include                               </h2>
+                                    What Our SEO Services Include                               </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
-                                  Our comprehensive SEO services include on-page optimization, technical SEO audits, and high-quality link building to improve your search rankings. We provide keyword research, content strategy, and performance tracking to drive organic traffic. Our data-driven approach ensures long-term visibility and sustainable growth for your business.
+                                    Our comprehensive SEO services include on-page optimization, technical SEO audits, and high-quality link building to improve your search rankings. We provide keyword research, content strategy, and performance tracking to drive organic traffic. Our data-driven approach ensures long-term visibility and sustainable growth for your business.
                                 </p>
                             </div>
 
@@ -669,11 +669,11 @@ What Our SEO Services Include                               </h2>
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-Ready to Rank Higher in Pakistan's Search Results?                                 </h3>
+                                    Ready to Rank Higher in Pakistan's Search Results?                                 </h3>
                             </div>
 
                             <Link href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase z-1 d-flex align-items-center gap-3 fs-6">
-Book a CALL
+                                Book a CALL
                                 <span className="rot60 d-inline-block transition-all">
                                     <i className="fas fa-arrow-up theme-clr" />
                                 </span>
@@ -755,11 +755,11 @@ Book a CALL
                                             Our Process
                                         </div>
                                     </div>
-                                    <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{fontSize:"37px"}}>
+                                    <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{ fontSize: "37px" }}>
                                         Streamlined SEO Process
                                     </h2>
                                     <p className="pra-clr fs-6 lh-base opacity-75" >
-Our 5-step SEO process is engineered for efficiency, eliminating guesswork with proven phases that align technical precision, local insights, and AI-ready optimization, delivering faster rankings and sustained growth for businesses.                    </p>
+                                        Our 5-step SEO process is engineered for efficiency, eliminating guesswork with proven phases that align technical precision, local insights, and AI-ready optimization, delivering faster rankings and sustained growth for businesses.                    </p>
                                 </div>
                             </div>
 
@@ -925,7 +925,7 @@ Our 5-step SEO process is engineered for efficiency, eliminating guesswork with 
                                 Our Edge
                             </div>
                             <h2 className="white-clr display-4 fw-bold mb-0">
-Why Businesses Choose Aktivacity                            </h2>
+                                Why Businesses Choose Aktivacity                            </h2>
                         </div>
 
                         <ChooseCarousel />
@@ -975,7 +975,7 @@ Why Businesses Choose Aktivacity                            </h2>
                                         <span className="white-clr fs-xs fw-bold ls-1 text-uppercase">100+ Reviews</span>
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-0 text-lg-end lh-sm max-w-700">
-What Our Clients Say                                    </h2>
+                                        What Our Clients Say                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -1151,7 +1151,7 @@ What Our Clients Say                                    </h2>
                         <div className="conversion-card mx-auto p-xxl-15 p-xl-12 p-8 text-center">
                             <h2 className="display-2 fw-black black-clr mb-8">Let's Grow Your Organic Visibility</h2>
                             <p className="black-clr fs-4 opacity-75 mb-12 max-w-700 mx-auto">
-Stop losing leads to competitors ranking higher. Professional SEO services in Pakistan built for Karachi businesses and national growth.                           </p>
+                                Stop losing leads to competitors ranking higher. Professional SEO services in Pakistan built for Karachi businesses and national growth.                           </p>
 
                             <button onClick={() => setModalOpen(true)} className="book-call-btn d-inline-flex align-items-center gap-4 py-4 px-10 rounded-pill bg-theme text-black fw-bold text-uppercase ls-2">
                                 Talk to an SEO Expert

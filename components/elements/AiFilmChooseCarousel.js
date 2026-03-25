@@ -3,33 +3,32 @@ import React from 'react'
 
 const items = [
   {
-    title: "Discover",
-    icon: "fas fa-search",
-    desc: "We start by analyzing your business goals, data ecosystems, and existing marketing infrastructure to get a clear understanding of where you stand and where you want to go."
+    title: "Storytelling-Driven AI Production",
+    desc: "We combine human creative direction with AI video production to ensure a unique narrative tailored to your brand."
   },
   {
-    title: "Identify",
-    icon: "fas fa-bullseye",
-    desc: "We pinpoint the highest-impact AI opportunities specific to your business, filtering out distractions and ensuring your resources are focused on what matters most for growth."
+    title: "Cinematic Quality Across Content",
+    desc: "From ads to films, we provide premium, cinematic-quality videos at every stage of production."
   },
   {
-    title: "Design",
-    icon: "fas fa-pencil-ruler",
-    desc: "We build AI-powered marketing frameworks that are customized to your brand, audience, and growth objectives, ensuring the solutions are practical, executable, and scalable."
+    title: "Fast & Cost-Effective Production",
+    desc: "Achieve 70% faster production with 50%+ cost savings compared to traditional filmmaking, without compromising on quality."
   },
   {
-    title: "Optimize",
-    icon: "fas fa-chart-line",
-    desc: "We guide the implementation of your strategy, monitor performance in real-time, and continuously optimize to ensure that your AI-driven marketing keeps evolving and delivering results."
+    title: "Hybrid AI + Live-Action Filmmaking",
+    desc: "We blend real footage with AI-generated scenes, creating visually stunning content that stands out."
   },
   {
-    title: "Scale",
-    icon: "fas fa-expand-arrows-alt",
-    desc: "We ensure your AI marketing systems grow alongside your business by continuously evaluating, scaling, and adapting the solution to maximize ROI and business efficiency over time."
+    title: "Brand-Consistent, Reference-Driven AI",
+    desc: "Our AI production respects your brand guidelines and incorporates your style frames and references for perfect alignment."
+  },
+  {
+    title: "Scalable Creative Solutions",
+    desc: "Provide weekly creative variations to optimize marketing campaigns and improve ROAS."
   }
 ]
 
-export default function AiStrategyChooseCarousel() {
+export default function AiFilmChooseCarousel() {
   // Create a looped array for seamless sliding
   const extendedItems = [...items, ...items, ...items]
   const [index, setIndex] = React.useState(items.length) // Start at the middle set
@@ -88,7 +87,7 @@ export default function AiStrategyChooseCarousel() {
     <div className="choose-carousel-outer">
       <div className="carousel-container position-relative">
         <div className="choose-carousel" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-           <div className="overflow-hidden py-3">
+          <div className="overflow-hidden py-3">
             <div className="track d-flex" style={{
               width: `${(extendedItems.length / visible) * 100}%`,
               transform: `translateX(${(index * -100) / extendedItems.length}%)`,

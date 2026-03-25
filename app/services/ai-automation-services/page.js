@@ -27,15 +27,15 @@ export default function AiAutomation() {
     const deliverables = [
         {
             title: "AI Workflow Automation",
-            desc: "Map, automate, and orchestrate business processes end-to-end using AI workflow automation, task automation, and operational automation."
+            desc: "Map, automate, and orchestrate end-to-end business processes using AI workflow automation and intelligent task execution."
         },
         {
             title: "AI Business Process Automation",
-            desc: "Design business process automation to handle repetitive approvals, updates, notifications, and data sync across tools."
+            desc: "Automate repetitive approvals, updates, notifications, and data synchronization across tools using AI-driven business process automation."
         },
         {
             title: "AI Marketing Automation",
-            desc: "AI marketing automation, lead generation automation, campaign automation, and YouTube automation AI for consistent pipeline growth."
+            desc: "Develop AI chatbots and AI agents to handle customer support, FAQs, and guided workflows across websites, WhatsApp, and applications."
         },
         {
             title: "AI Chatbot & Automation Agents",
@@ -43,15 +43,15 @@ export default function AiAutomation() {
         },
         {
             title: "AI-Powered Lead Generation Systems",
-            desc: "Intelligent qualification, routing, and nurturing with AI for chatbots, forms, and CRM integrations."
+            desc: "Use AI agents to qualify, route, and nurture leads through chatbots, forms, and CRM integrations."
         },
         {
             title: "Robotic Process Automation (RPA)",
-            desc: "Use robotic process automation (RPA) and machine learning automation to handle rule-based back-office tasks at scale."
+            desc: "Automate rule-based back-office tasks using RPA and machine learning to improve efficiency and reduce manual workload."
         },
         {
             title: "AI Integration & System Orchestration",
-            desc: "AI model integration, API & system integration, and cloud-based orchestration connecting CRM, ERP, support tools, and custom platforms."
+            desc: "Integrate AI models, APIs, and business systems to connect CRM, ERP, and internal tools into a unified automation ecosystem."
         }
     ];
     return (
@@ -78,16 +78,16 @@ export default function AiAutomation() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                                AI Automation Agency in Karachi
+                                              AI Automation Services in Karachi
                                             </h1>
-                                            {/* <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              Your Trusted Partner for Custom Websites & Web Applications That Drive Real Business Growth
-                                            </h4> */}
+                                            <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
+                                              Automate workflows and scale your business with AI agents and intelligent automation systems.
+                                            </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-                                                Aktivacity provides AI automation solutions in Karachi that help businesses enhance operational processes and reduce manual workload by leveraging machine learning, automated systems, and data-driven platforms designed for contemporary workgroups. We build complete AI business automation systems that integrate all your operational tools and handle repetitive tasks, enabling your team to focus on essential business functions as the top AI automation agency in Karachi. </p>
+                                              We design and implement AI automation systems and AI agents that streamline operations, reduce manual work, and improve efficiency. From workflow automation to system integrations, our solutions help your business run faster and scale with less effort.</p>
                                             <div className="hero-cta-form">
                                                 <Link href="/contact" className="hero-box-btn py-3 px-xxl-8 px-6 fw-bold whitespace-nowrap d-inline-flex align-items-center text-decoration-none">
-                                                    Book a Free AI Automation Consultation
+                                                   Book a Free AI Automation Consultation
                                                     <span className="rot60 d-inline-block ms-3">
                                                         <i className="fas fa-arrow-up" />
                                                     </span>
@@ -424,11 +424,11 @@ export default function AiAutomation() {
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-                                        The Automation Challenges We Solve
+                                       Why Your Business Needs AI Automation
                                     </h2>
-                                    {/* <p className="pra-clr fs-5 mb-0">
-                                        Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
-                                    </p> */}
+                                    <p className="pra-clr fs-5 mb-0">
+                                        Automate processes & reduce manual work
+                                    </p>
                                 </div>
 
                                 <div className="problem-cards-wrap d-flex flex-column gap-4">
@@ -456,7 +456,7 @@ export default function AiAutomation() {
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Disconnected Systems</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Your CRM, forms, email tools, and internal apps don’t talk to each other, creating data silos and delays; our API & system integration fixes that.
+                                                   Your tools don’t communicate, creating data silos, delays, and inefficiencies across operations.
                                                 </p>
                                             </div>
                                         </div>
@@ -471,7 +471,7 @@ export default function AiAutomation() {
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Limited Scalability</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    As leads, orders, or tickets grow, manual processes break. Enterprise automation and workflow orchestration keep operations stable at scale.
+                                                    As your business grows, manual processes break and slow down operations without automation.
                                                 </p>
                                             </div>
                                         </div>
@@ -486,7 +486,7 @@ export default function AiAutomation() {
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Slow Decision-Making</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Without predictive analytics and real-time insights, decisions are slow and reactive instead of fast and data-driven.
+                                                  Lack of real-time insights leads to delayed decisions instead of fast, data-driven actions.
                                                 </p>
                                             </div>
                                         </div>
@@ -507,9 +507,9 @@ export default function AiAutomation() {
                                     </div>
                                     {/* Decorative Elements */}
                                     {/* Decorative Elements removed as per user request */}
-                                    {/* <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
-                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">No Website, No Business Growth</h3>
-                                    </div> */}
+                                    <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
+                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">Manual Work Slows Growth</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -587,10 +587,10 @@ export default function AiAutomation() {
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-                                    Our AI Automation Services                                </h2>
+                                  Our AI Automation Services                             </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
-                                    We provide full-stack AI automation services in Karachi that combine workflows, agents, and integrations into one scalable automation layer for your business.
+                                 We design and implement AI automation systems that combine workflows, AI agents, and integrations into a scalable automation layer for your business.
                                 </p>
                             </div>
 
@@ -682,11 +682,11 @@ export default function AiAutomation() {
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-                                    Ready to Automate & Scale Your Business?                              </h3>
+                                 Ready to Automate & Scale Your Business?                     </h3>
                             </div>
 
                             <a href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase d-flex align-items-center gap-3 fs-6" style={{ position: 'relative', zIndex: 10 }}>
-                                Get a Free Automation Audit
+                               Get a Free Automation Audit
                                 <span className="rot60 d-inline-block transition-all">
                                     <i className="fas fa-arrow-up theme-clr" />
                                 </span>
@@ -770,10 +770,10 @@ export default function AiAutomation() {
                                         </div>
                                     </div>
                                     <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{ fontSize: "37px" }}>
-                                        Our AI Automation Process
+                                      Our AI Automation Process
                                     </h2>
                                     <p className="pra-clr fs-6 lh-base opacity-75" >
-                                        Our process aligns AI automation with your real business needs so you avoid “shiny tools” and focus on practical efficiency gains.                                    </p>
+                                      A structured approach to design, build, and optimize AI automation systems aligned with your business goals.</p>
                                 </div>
                             </div>
 
@@ -781,23 +781,23 @@ export default function AiAutomation() {
                             {[
                                 {
                                     step: "01",
-                                    title: "Analyze Workflows & Identify Bottlenecks",
-                                    points: ["Mapping current procedures, equipment, and transitions now will provide the chance to enhance operations, marketing, and customer service processes through automation."]
+                                    title: "Workflow Analysis & Bottleneck Identification",
+                                    points: ["We analyze your current workflows, tools, and processes to identify inefficiencies and automation opportunities."]
                                 },
                                 {
                                     step: "02",
-                                    title: "Design AI-Powered Automation Strategy",
-                                    points: ["Using AI workflow management, smart virtual assistants working with appropriate integrated solutions, we can develop an automation plan that reflects and supports overall business goals."]
+                                    title: "AI Automation Strategy Design",
+                                    points: ["We define the right automation approach using AI agents, workflows, and integrations aligned with your business objectives."]
                                 },
                                 {
                                     step: "03",
-                                    title: "Build & Integrate Intelligent Systems",
-                                    points: ["The implementation of AI automation agents, AI chatbots, RPA, and AI models will be achieved by integrating them into the existing technology architecture."]
+                                    title: "Build & System Integration",
+                                    points: ["We develop and integrate AI automation systems, including AI agents, chatbots, and RPA, into your existing tools and platforms."]
                                 },
                                 {
                                     step: "04",
-                                    title: "Test, Deploy & Optimize Performance",
-                                    points: ["After establishing the initial rollout of projects through carefully controlled trials, we will determine the level of operational efficiencies, time saving, and performance, and continue to improve each process through ongoing cycles of continuous improvement."]
+                                    title: "Testing, Deployment & Optimization",
+                                    points: ["We test, deploy, and continuously optimize automation systems to improve performance, efficiency, and scalability."]
                                 }
                             ].map((item, index) => (
                                 <div key={index} className="col-lg-4 mb-4">

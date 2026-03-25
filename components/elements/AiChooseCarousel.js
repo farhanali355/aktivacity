@@ -3,29 +3,29 @@ import React from 'react'
 
 const items = [
   {
-    title: "Local AI Automation Agency in Karachi",
+    title: "Experienced AI Automation Team",
     icon: "fas fa-map-marker-alt",
-    desc: "We understand what tools, infrastructure, and business environments the companies in Karachi and Pakistan utilize."
+    desc: "We understand business workflows, tools, and systems, helping you implement automation that fits your operations."
   },
   {
-    title: "Business-Focused AI Strategy, Not Hype",
+    title: "Business-Focused Automation Strategy",
     icon: "fas fa-bullseye",
-    desc: "Each automation project has specific objectives, whether it is reducing costs, saving time, or improving performance."
+    desc: "Every solution is designed to reduce costs, save time, and improve performance based on clear business goals."
   },
   {
-    title: "Secure & Scalable Automation Architecture",
+    title: "Secure & Scalable Architecture",
     icon: "fas fa-shield-alt",
-    desc: "We create scalable solutions considering trackable, permissioned, and compliant systems."
+    desc: "We build automation systems that are secure, scalable, and designed to grow with your business."
   },
   {
     title: "Seamless System Integration",
     icon: "fas fa-link",
-    desc: "We have extensive experience in API and system mergers, along with existing CRM, ERP, and tailored systems."
+    desc: "We integrate AI automation with your existing CRM, ERP, and tools for smooth and connected operations."
   },
   {
-    title: "Ongoing Optimization & Monitoring",
+    title: "Continuous Optimization & Support",
     icon: "fas fa-chart-line",
-    desc: "We will continue to monitor, enhance, and provide assistance as your data and processes change."
+    desc: "We monitor, improve, and evolve your automation systems as your business and data grow."
   }
 ]
 

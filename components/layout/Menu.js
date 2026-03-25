@@ -158,39 +158,31 @@ export default function Menu() {
                                         titleHref: "/services/web-development-services",
                                         links: [
                                             { title: "Web Development Services", href: "/services/web-development-services" },
-                                            { title: "Software Development", href: "/services/software-development" },
-                                            { title: "Mobile App Development", href: "/oops" },
-                                            { title: "SaaS Development", href: "/oops" }
+                                            { title: "Software Development", href: "/services/software-development" }
                                         ]
                                     },
                                     {
                                         category: "Digital Marketing",
                                         titleHref: "/services/digital-marketing-services",
                                         links: [
-                                            { title: "SEO Optimization", href: "/services/seo-services" },
-                                            { title: "Social Media Marketing", href: "/oops" },
-                                            { title: "Paid Ads (PPC)", href: "/oops" },
-                                            { title: "Content Marketing", href: "/oops" }
+                                            { title: "SEO Optimization", href: "/services/seo-services" }
                                         ]
                                     },
                                     {
                                         category: "AI Services",
                                         titleHref: "/services/ai-automation-services",
                                         links: [
+                                            { title: "Ai Strategy & Marketing", href: "/services/ai-strategy-marketing" },
                                             { title: "AI Automation", href: "/services/ai-automation-services" },
-                                            { title: "Ai Film Making & Video Production", href: "/services/ai-film-making-video-production" },
-                                            { title: "Motion Graphics", href: "/oops" },
-                                            { title: "3D Animation", href: "/oops" }
+                                            { title: "Ai Film Making & Video Production", href: "/services/ai-film-making-video-production" }
                                         ]
                                     },
                                     {
                                         category: "Brand Design",
                                         titleHref: "/services/ui-ux-design",
                                         links: [
-                                            { title: "Logo & Visual Identity", href: "/oops" },
-                                            { title: "UI/UX Design", href: "/services/ui-ux-design" },
-                                            { title: "Brand Strategy", href: "/oops" },
-                                            { title: "Packaging Design", href: "/oops" }
+                                            { title: "Graphic Design & Branding", href: "/services/graphic-design-branding" },
+                                            { title: "UI/UX Design", href: "/services/ui-ux-design" }
                                         ]
                                     }
                                 ].map((col, idx) => (

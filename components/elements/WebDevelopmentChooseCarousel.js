@@ -3,33 +3,32 @@ import React from 'react'
 
 const items = [
   {
-    title: "Discover",
-    icon: "fas fa-search",
-    desc: "We start by analyzing your business goals, data ecosystems, and existing marketing infrastructure to get a clear understanding of where you stand and where you want to go."
+    title: "Experienced Web Development Team",
+    desc: "Years of hands-on experience building websites and applications for businesses across Pakistan — we know what works in your market."
   },
   {
-    title: "Identify",
-    icon: "fas fa-bullseye",
-    desc: "We pinpoint the highest-impact AI opportunities specific to your business, filtering out distractions and ensuring your resources are focused on what matters most for growth."
+    title: "Modern Tech Stack, Built to Scale",
+    desc: "We build with React, Next.js, and Node.js — the same technologies powering the world's fastest, most scalable digital products."
   },
   {
-    title: "Design",
-    icon: "fas fa-pencil-ruler",
-    desc: "We build AI-powered marketing frameworks that are customized to your brand, audience, and growth objectives, ensuring the solutions are practical, executable, and scalable."
+    title: "Mobile-First, Performance",
+    desc: "Every build is optimized for speed, Core Web Vitals, and flawless performance across all devices — because slow websites lose customers."
   },
   {
-    title: "Optimize",
-    icon: "fas fa-chart-line",
-    desc: "We guide the implementation of your strategy, monitor performance in real-time, and continuously optimize to ensure that your AI-driven marketing keeps evolving and delivering results."
+    title: "Agile Workflow, Full Transparency",
+    desc: "No black boxes. You get a clear roadmap, weekly deliverables, and constant communication — so you're always in control of your project."
   },
   {
-    title: "Scale",
-    icon: "fas fa-expand-arrows-alt",
-    desc: "We ensure your AI marketing systems grow alongside your business by continuously evaluating, scaling, and adapting the solution to maximize ROI and business efficiency over time."
+    title: "Local Insight, Global Standards",
+    desc: "We understand the Pakistani market deeply while delivering code quality and design standards that compete on a global level."
+  },
+  {
+    title: "Long-Term Support, Not Just Delivery",
+    desc: "We stay with you after launch — handling maintenance, updates, and technical support so your digital product keeps growing."
   }
 ]
 
-export default function AiStrategyChooseCarousel() {
+export default function WebDevelopmentChooseCarousel() {
   // Create a looped array for seamless sliding
   const extendedItems = [...items, ...items, ...items]
   const [index, setIndex] = React.useState(items.length) // Start at the middle set
@@ -88,7 +87,7 @@ export default function AiStrategyChooseCarousel() {
     <div className="choose-carousel-outer">
       <div className="carousel-container position-relative">
         <div className="choose-carousel" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-           <div className="overflow-hidden py-3">
+          <div className="overflow-hidden py-3">
             <div className="track d-flex" style={{
               width: `${(extendedItems.length / visible) * 100}%`,
               transform: `translateX(${(index * -100) / extendedItems.length}%)`,

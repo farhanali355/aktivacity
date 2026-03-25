@@ -3,24 +3,24 @@ import React from 'react'
 
 const items = [
   {
-    title: "Experienced Digital Marketing Agency in Karachi",
-    desc: "Years of experience managing campaigns for local and national brands across multiple industries."
+    title: "Experienced Digital Marketing Team",
+    desc: "Years of experience managing campaigns across multiple industries and business models."
   },
   {
     title: "Data-Driven, ROI-Focused Approach",
-    desc: "Every decision—SEO, paid media, or social—is guided by performance data, KPIs, and clear ROI targets."
+    desc: "Every decision is guided by performance data, clear KPIs, and measurable business outcomes."
   },
   {
-    title: "Integrated SEO, Paid Ads & Social Strategy",
-    desc: "We align SEO services in Karachi, PPC services in Karachi, and social media marketing services Karachi into a unified growth plan."
+    title: "Integrated Marketing Strategy",
+    desc: "We align SEO, paid ads, and social media into a unified strategy for consistent growth."
   },
   {
-    title: "Transparent Reporting and Optimization",
-    desc: "Clear dashboards, monthly reports, and regular strategy calls so you always know what’s happening and why."
+    title: "Transparent Reporting & Optimization",
+    desc: "Clear dashboards, regular reports, and ongoing optimization ensure full visibility and continuous improvement."
   },
   {
-    title: "Long-Term Partnership Mindset",
-    desc: "We operate as an extension of your in-house team, focusing on sustainable growth rather than short-term hacks."
+    title: "Long-Term Growth Partnership",
+    desc: "We work as an extension of your team, focusing on sustainable growth and long-term results."
   }
 ]
 

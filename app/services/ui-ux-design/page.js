@@ -3,8 +3,8 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState, useEffect } from 'react'
 import UiUxShowcaseSlider from '@/components/elements/UiUxShowcaseSlider'
-import ChooseCarousel from '@/components/elements/ChooseCarousel'
-import TestimonialCarousel from '@/components/elements/TestimonialCarousel'
+import UiUxChooseCarousel from '@/components/elements/UiUxChooseCarousel'
+import UiUxTestimonialCarousel from '@/components/elements/UiUxTestimonialCarousel'
 
 export default function WebApp() {
     const [activeDeliv, setActiveDeliv] = useState(0)
@@ -28,37 +28,30 @@ export default function WebApp() {
         {
             title: "UX Strategy",
             desc: "Comprehensive user research, journey mapping, and persona development to understand user needs and behaviors.",
-            icon: "fas fa-user-check"
         },
         {
             title: "UI Design",
             desc: "Modern Figma-based interfaces with cohesive visual systems that align with your brand identity.",
-            icon: "fas fa-draw-polygon"
         },
         {
             title: "Wireframing",
             desc: " Low and high-fidelity layouts designed for responsive, user-friendly experiences across all devices.",
-            icon: "fas fa-mobile-alt"
         },
         {
             title: "Prototyping",
             desc: "Interactive, clickable mobile and web prototypes showcasing intuitive user flows and real-time interactions.",
-            icon: "fas fa-window-maximize"
         },
         {
             title: "Usability Testing",
             desc: "In-depth analysis using heatmaps, user interviews, and A/B testing to refine and validate designs.",
-            icon: "fas fa-sitemap"
         },
         {
             title: "Website Redesign",
             desc: "Conversion-optimized redesigns that enhance usability, aesthetics, and overall site performance.",
-            icon: "fas fa-chart-line"
         },
         {
             title: "Design Systems",
             desc: "Scalable component libraries and design guidelines to maintain consistency and speed up future development.",
-            icon: "fas fa-brush"
         }
     ]
 
@@ -86,13 +79,13 @@ export default function WebApp() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                              UI/UX Design Services in Karachi
+                                                UI/UX Design Services in Karachi
                                             </h1>
-                                            {/* <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              Creating user-centric digital experiences that drive conversions and engagement. From wireframing to high-fidelity Figma prototypes, we design for success in the Pakistan market.
-                                            </h4> */}
+                                            <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
+                                               Design user experiences that improve engagement and conversions.
+                                            </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-Aktivacity crafts a user-centered digital experience that boosts conversions, elevates engagement, and builds brand trust. Our UI/UX design experts blend creativity and strategy to create seamless interfaces for apps, websites, and digital platforms. These results are derived from UX principles, research, usability testing, and other protocols to perfectly align with your brand.  </p>
+                                              We design user-centered digital experiences that improve usability, increase conversions, and build brand trust. From websites to mobile apps, our UI/UX solutions are based on research, usability testing, and real user behavior. </p>
                                             <div className="hero-cta-form">
                                                 <form className="d-flex flex-sm-row flex-column gap-3">
                                                     <button type="submit" className="hero-box-btn py-3 px-xxl-10 px-6 fw-bold whitespace-nowrap">
@@ -320,23 +313,6 @@ Aktivacity crafts a user-centered digital experience that boosts conversions, el
                             overflow: hidden;
                             position: relative;
                         }
-                        .marquee-box::before, .marquee-box::after {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            width: 150px;
-                            height: 100%;
-                            z-index: 2;
-                            pointer-events: none;
-                        }
-                        .marquee-box::before {
-                            left: 0;
-                            background: linear-gradient(to right, #030303 20%, transparent 100%);
-                        }
-                        .marquee-box::after {
-                            right: 0;
-                            background: linear-gradient(to left, #030303 20%, transparent 100%);
-                        }
                         .marquee-wrapper {
                             width: 100%;
                             display: flex;
@@ -427,11 +403,11 @@ Aktivacity crafts a user-centered digital experience that boosts conversions, el
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-3 fw-bold mb-4">
-                                        The UX Challenges We Solve
+                                        Why Good UI/UX Design Matters
                                     </h2>
-                                    {/* <p className="pra-clr fs-5 mb-0">
-                                        Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
-                                    </p> */}
+                                    <p className="pra-clr fs-5 mb-0">
+                                       Improve usability & engagement
+                                    </p>
                                 </div>
 
                                 <div className="problem-cards-wrap d-flex flex-column gap-4">
@@ -510,9 +486,9 @@ Aktivacity crafts a user-centered digital experience that boosts conversions, el
                                     </div>
                                     {/* Decorative Elements */}
                                     {/* Decorative Elements removed as per user request */}
-                                    {/* <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
-                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">No Website, No Business Growth</h3>
-                                    </div> */}
+                                    <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
+                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">Bad UX Kills Conversions</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -591,7 +567,7 @@ Aktivacity crafts a user-centered digital experience that boosts conversions, el
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-Our UI/UX Design Services                                </h2>
+                                    Our UI/UX Design Services                                </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
                                     We don't just build products; we deliver competitive advantages. Every line of code is an investment in your market dominance.
@@ -689,11 +665,11 @@ Our UI/UX Design Services                                </h2>
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-Ready to Improve Your Digital Experience?                               </h3>
+                                    Ready to Improve Your Digital Experience?                               </h3>
                             </div>
 
                             <Link href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase z-1 d-flex align-items-center gap-3 fs-6">
-Get a Free UX Strategy Call
+                                Get a Free UX Strategy Call
                                 <span className="rot60 d-inline-block transition-all">
                                     <i className="fas fa-arrow-up theme-clr" />
                                 </span>
@@ -779,7 +755,7 @@ Get a Free UX Strategy Call
                                         Our 5-Step UI/UX Design Process
                                     </h2>
                                     <p className="pra-clr fs-5 opacity-75 mb-10 sub-headline">
-                                        Creating intuitive, user-centric digital experiences requires a structured approach. Our 5-step process ensures every design decision is backed by research, strategy, and user insights, resulting in visually engaging, high-performing interfaces that truly connect with your audience.                                    </p>
+                                      A structured approach to design user-focused experiences that improve usability and performance.                       </p>
 
                                 </div>
                             </div>
@@ -790,31 +766,31 @@ Get a Free UX Strategy Call
                                     step: "01",
                                     title: "User Research",
                                     icon: "fas fa-search",
-                                    points: ["We begin with in-depth UX research, competitor analysis, and user interviews to understand audience needs and market opportunities."]
+                                    points: ["We analyze user behavior, business goals, and competitors to understand needs and define the right design direction."]
                                 },
                                 {
                                     step: "02",
                                     title: "Wireframing",
                                     icon: "fas fa-pencil-ruler",
-                                    points: ["Our team creates a clear information architecture, structured wireframes, and defined user flows to map out seamless navigation and interactions."]
+                                    points: ["We create clear layouts, user flows, and information architecture to structure navigation and interactions."]
                                 },
                                 {
                                     step: "03",
                                     title: "Visual Design",
                                     icon: "fas fa-flask",
-                                    points: ["We design clean, mobile-first interfaces that integrate your brand identity while ensuring visual consistency and user appeal."]
+                                    points: ["We design clean, consistent interfaces that align with your brand and enhance user experience."]
                                 },
                                 {
                                     step: "04",
                                     title: "Prototyping & Testing",
                                     icon: "fas fa-palette",
-                                    points: ["Interactive prototypes are developed and tested through usability sessions, followed by iterative refinements based on user feedback."]
+                                    points: ["We build interactive prototypes and test them to validate usability and refine user flows."]
                                 },
                                 {
                                     step: "05",
                                     title: "QA & Optimization",
                                     icon: "fas fa-rocket",
-                                    points: ["We enhance performance, apply final design polish, and prepare a developer-ready handoff to ensure flawless implementation."]
+                                    points: ["We finalize designs, optimize details, and prepare developer-ready assets for smooth implementation."]
                                 }
                             ].map((item, index) => (
                                 <div key={index} className="col-lg-4 mb-4">
@@ -955,7 +931,7 @@ Get a Free UX Strategy Call
                             </h2>
                         </div>
 
-                        <ChooseCarousel />
+                        <UiUxChooseCarousel />
                     </div>
 
                     <style jsx>{`
@@ -1002,11 +978,11 @@ Get a Free UX Strategy Call
                                         <span className="white-clr fs-xs fw-bold ls-1 text-uppercase">100+ Reviews</span>
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-0 text-lg-end lh-sm max-w-700">
-What Our Clients Say                                    </h2>
+                                        What Our Clients Say                                    </h2>
                                 </div>
                             </div>
                         </div>
-                        <TestimonialCarousel />
+                        <UiUxTestimonialCarousel />
                     </div>
 
                     <style jsx>{`
@@ -1099,7 +1075,7 @@ What Our Clients Say                                    </h2>
                                             q: "Can you redesign existing platforms?",
                                             a: "Yes - website redesign, app redesigns, design system migrations with zero downtime."
                                         }
-                                        
+
                                     ].map((item, index) => (
                                         <div key={index} className="faq-item">
                                             <div
@@ -1115,7 +1091,7 @@ What Our Clients Say                                    </h2>
                                                 <p className="pra-clr fs-6 mb-0 lh-lg opacity-75">
                                                     {item.a}
                                                 </p>
-                                            </div>  
+                                            </div>
                                         </div>
                                     ))}
                                 </div>
@@ -1167,7 +1143,7 @@ What Our Clients Say                                    </h2>
                         <div className="conversion-card mx-auto p-xxl-15 p-xl-12 p-8 text-center">
                             <h2 className="display-2 fw-black black-clr mb-8">Let's Design Better Digital Experiences</h2>
                             <p className="black-clr fs-4 opacity-75 mb-12 max-w-700 mx-auto">
-Stop losing 73% of visitors to poor UX. UI/UX design services in Karachi that deliver 68% conversion growth, 247% engagement lift, and 92% user satisfaction.                          </p>
+                                Stop losing 73% of visitors to poor UX. UI/UX design services in Karachi that deliver 68% conversion growth, 247% engagement lift, and 92% user satisfaction.                          </p>
 
                             <button onClick={() => setModalOpen(true)} className="book-call-btn d-inline-flex align-items-center gap-4 py-4 px-10 rounded-pill bg-theme text-black fw-bold text-uppercase ls-2">
                                 Talk to Our UI/UX Experts

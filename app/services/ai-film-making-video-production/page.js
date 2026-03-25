@@ -3,8 +3,8 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState, useEffect } from 'react'
 import AiUseCasesSlider from '@/components/elements/AiUseCasesSlider'
-import AiStrategyChooseCarousel from '@/components/elements/AiStrategyChooseCarousel'
-import TestimonialCarousel from '@/components/elements/TestimonialCarousel'
+import AiFilmChooseCarousel from '@/components/elements/AiFilmChooseCarousel'
+import AiFilmTestimonial from '@/components/elements/AiFilmTestimonial'
 
 export default function AiFilmProduction() {
     const [activeDeliv, setActiveDeliv] = useState(0)
@@ -24,63 +24,71 @@ export default function AiFilmProduction() {
         setActiveDeliv(activeDeliv === index ? null : index)
     }
 
-    const strategyUseCases = [
+    const filmUseCases = [
         {
-            category: 'Strategy',
-            title: 'Personalized Marketing Journeys',
-            desc: 'Use AI personalization systems to tailor emails, ads, and on-site experiences to each visitor.',
-            image: 'https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=2031&auto=format&fit=crop'
+            category: 'Commercials',
+            title: 'Dynamic Brand Commercials',
+            desc: 'Create visually stunning high-end commercials with AI-generated environments and seamless cinematic transitions.',
+            image: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2000&auto=format&fit=crop'
         },
         {
-            category: 'Analytics',
-            title: 'Predictive Lead Scoring',
-            desc: 'Apply predictive analytics to score leads based on behavior and likelihood to convert, improving sales focus.',
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
+            category: 'E-commerce',
+            title: 'Hyper-Realistic Product Demos',
+            desc: 'Showcase products in any environment or lighting without physical studio setups using AI-powered rendering.',
+            image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=2000&auto=format&fit=crop'
         },
         {
-            category: 'Optimization',
-            title: 'Campaign Automation Optimization',
-            desc: 'Use AI campaign optimization to adjust bids, budgets, and audiences in near real time across channels.',
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop'
+            category: 'Ads',
+            title: 'High-Conversion Social Hooks',
+            desc: 'Generate multiple variations of video hooks and ads to test performance and increase engagement on social platforms.',
+            image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2000&auto=format&fit=crop'
         },
         {
-            category: 'Insights',
-            title: 'Customer Behavior Forecasting',
-            desc: 'Forecast churn, upsell potential, and buying cycles using a machine learning strategy and customer history.',
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
+            category: 'Training',
+            title: 'Automated Educational Videos',
+            desc: 'Scale your onboarding and training materials into high-quality videos using AI avatars and automated script-to-video tools.',
+            image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2000&auto=format&fit=crop'
         },
         {
-            category: 'Leadership',
-            title: 'Growth Analytics Systems',
-            desc: 'Build integrated growth analytics and reporting layers that give leadership a live view of performance and next-best actions.',
-            image: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070&auto=format&fit=crop'
+            category: 'VFX',
+            title: 'Advanced Cinematic VFX',
+            desc: 'Incorporate Hollywood-level visual effects and background replacements into your videos using cost-efficient AI tools.',
+            image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2000&auto=format&fit=crop'
         }
     ];
 
     const deliverables = [
         {
-            title: "AI-Driven Marketing Strategy Development",
-            desc: "End-to-end AI marketing strategy that connects channels, audiences, and data to clear revenue and growth targets."
+            title: "AI Brand Films & Commercials",
+            desc: "We create cinematic brand films and commercials using generative AI video production. By combining AI technology with storytelling, we produce visually stunning ads and campaigns that resonate with your target audience and drive conversions."
         },
         {
-            title: "Predictive Analytics & Customer Insights",
-            desc: "Predictive customer insights using machine learning strategy and historical performance to forecast demand and prioritize high-value segments."
+            title: "AI Animated Video Services",
+            desc: "Our AI animated video services include 2D/3D animations for explainers, product demos, and storytelling. With AI-powered tools, we deliver high-quality animation at scale, creating engaging content that educates and entertains."
         },
         {
-            title: "AI Campaign Optimization Frameworks",
-            desc: "Structures for always-on AI campaign optimization, budget shifting, creative testing, and audience refinement using data-driven decisions."
+            title: "AI Video Production & Editing",
+            desc: "From script to final cut, our AI video production & editing service combines AI-generated footage with professional editing, color grading, and sound. This process ensures cinematic quality and creative freedom while maintaining efficiency."
         },
         {
-            title: "Personalization Engines for Engagement",
-            desc: "Design of AI personalization systems that adapt content, offers, and experiences to each user to improve customer engagement and retention."
+            title: "AI Video Post-Production & VFX",
+            desc: "Enhance your existing footage with AI-powered post-production services. We use AI for footage cleanup, motion graphics, and visual effects to elevate your content and achieve a polished, cinematic look that fits your brand’s vision."
         },
         {
-            title: "Marketing Automation Planning",
-            desc: "Blueprint for AI marketing automation, integrating journeys, triggers, and intelligent automation alignment with your funnels."
+            title: "Reference-Driven AI Video Creation",
+            desc: "Our reference-driven AI video creation ensures brand consistency throughout your videos. By integrating your style frames, logos, and creative references, we deliver visuals that perfectly align with your brand identity across all campaigns."
         },
         {
-            title: "Performance Dashboards & ROI Tracking",
-            desc: "Centralized performance optimization dashboards combining campaign KPIs, marketing analytics, and ROI measurement."
+            title: "AI Training & Educational Video",
+            desc: "Scale your training content effortlessly with AI-powered video production. We specialize in creating onboarding, compliance, and product training videos at scale, all without the need for costly studio shoots."
+        },
+        {
+            title: "Hybrid (Live-Action + AI) Filmmaking",
+            desc: "We offer hybrid filmmaking that combines live-action with AI-generated environments and characters. This blend of real footage and AI provides the best of both worlds, creating unique, immersive visuals that cannot be achieved with traditional methods."
+        },
+        {
+            title: "Creative Direction for AI Films",
+            desc: "We provide expert creative direction for your AI films, ensuring that the story, script, and visual strategy align perfectly. Our goal is to ensure AI supports your narrative while maintaining the artistic and cinematic integrity of your project."
         }
     ];
     return (
@@ -107,16 +115,16 @@ export default function AiFilmProduction() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                                AI Strategy & Marketing Agency in Karachi
+                                                AI Filmmaking Services for Cinematic Brand Stories
                                             </h1>
-                                            {/* <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              Your Trusted Partner for Custom Websites & Web Applications That Drive Real Business Growth
-                                            </h4> */}
+                                            <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
+                                                Transform ideas into stunning visuals with AI-powered video, animation and filmmaking.
+                                            </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-                                                Aktivacity provides expert consulting services in Karachi for AI-driven marketing. We specialize in creating AI-created designs based on an organization's data. We combine the use of AI models, customer information, and your marketing campaigns, helping to make intelligent decisions and increase ROI (return-on-investment) through effective marketing campaigns. </p>
+                                                Synaryverse, an AI filmmaking agency in Karachi, combines AI-powered video creation with cinematic storytelling. We bring your ideas to life faster and more affordably, delivering stunning, brand-aligned results. From AI animation to full-scale production, we create high-conversion content that drives engagement and boosts visibility.</p>
                                             <div className="hero-cta-form">
                                                 <Link href="/contact" className="hero-box-btn py-3 px-xxl-8 px-6 fw-bold whitespace-nowrap d-inline-flex align-items-center text-decoration-none">
-                                                    Book a Free AI Strategy Consultation
+                                                    Request AI Video Strategy Call
                                                     <span className="rot60 d-inline-block ms-3">
                                                         <i className="fas fa-arrow-up" />
                                                     </span>
@@ -301,11 +309,11 @@ export default function AiFilmProduction() {
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-                                        The Strategic Challenges We Solve
+                                        Why Your Brand Needs AI Video Now
                                     </h2>
-                                    {/* <p className="pra-clr fs-5 mb-0">
-                                        Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
-                                    </p> */}
+                                    <p className="pra-clr fs-5 mb-0">
+                                        Optimized Box Content with One-Line Descriptions
+                                    </p>
                                 </div>
 
                                 <div className="problem-cards-wrap d-flex flex-column gap-4">
@@ -316,9 +324,9 @@ export default function AiFilmProduction() {
                                                 <i className="fas fa-robot theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Marketing Without Data Intelligence</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Faster Production</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Decisions are made on gut feel instead of data-driven marketing strategy, with no predictive customer insights guiding spend and channel focus.
+                                                    AI video production accelerates creative testing and reduces delays, delivering content 3x faster than traditional shoots.
                                                 </p>
                                             </div>
                                         </div>
@@ -331,9 +339,9 @@ export default function AiFilmProduction() {
                                                 <i className="fas fa-unlink theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Disconnected Growth Systems</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Budget-Friendly Creativity</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Your CRM, ads, analytics, and automation tools don’t align with business goals, limiting scalable growth systems and consistent performance.
+                                                    AI filmmaking reduces costs by enabling multiple locations and advanced VFX without stretching your budget.
                                                 </p>
                                             </div>
                                         </div>
@@ -346,9 +354,9 @@ export default function AiFilmProduction() {
                                                 <i className="fas fa-expand-arrows-alt theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Slow Optimization Cycles</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Scale Content Effortlessly</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Manual analysis slows down learning; campaigns are not using AI campaign optimization or predictive analytics to adapt in real time.
+                                                    Easily scale your video content, from ads to explainers, without the need for frequent studio bookings.
                                                 </p>
                                             </div>
                                         </div>
@@ -361,9 +369,9 @@ export default function AiFilmProduction() {
                                                 <i className="fas fa-hourglass-half theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Unclear AI Adoption Roadmap</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Custom, High-Impact Visuals</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    You know AI is important, but lack an AI readiness assessment, AI adoption roadmap, and clear use‑case analysis to start confidently.
+                                                    AI-powered video creation produces unique, bold visuals that set your brand apart from stock footage.
                                                 </p>
                                             </div>
                                         </div>
@@ -381,6 +389,11 @@ export default function AiFilmProduction() {
                                             className="img-fluid w-100 h-100 object-fit-cover"
                                         />
                                         <div className="image-overlay-glow" />
+                                    </div>
+                                    {/* Decorative Elements */}
+                                    {/* Decorative Elements removed as per user request */}
+                                    <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
+                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">Unlock Faster AI Video Solutions</h3>
                                     </div>
                                 </div>
                             </div>
@@ -458,10 +471,10 @@ export default function AiFilmProduction() {
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-                                    Our AI Strategy & Marketing Services                           </h2>
+                                    Our AI Filmmaking & Video Services                           </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
-                                    We help you architect an AI-enabled marketing engine, connecting strategy, data, and technology into one growth framework.
+                                    We combine cinematic storytelling with advanced generative AI tools to produce high-impact video content that elevates your brand and drives results.
                                 </p>
                             </div>
 
@@ -553,11 +566,11 @@ export default function AiFilmProduction() {
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-                                    Ready to Scale With AI Intelligence?                             </h3>
+                                    Ready to Create Your AI Brand Film?                             </h3>
                             </div>
 
                             <a href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase d-flex align-items-center gap-3 fs-6" style={{ position: 'relative', zIndex: 10 }}>
-                                Get Your AI Strategy Audit
+                                Request AI Video Strategy
                                 <span className="rot60 d-inline-block transition-all">
                                     <i className="fas fa-arrow-up theme-clr" />
                                 </span>
@@ -641,10 +654,10 @@ export default function AiFilmProduction() {
                                         </div>
                                     </div>
                                     <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{ fontSize: "37px" }}>
-                                        Our Strategic Process
+                                        Our AI Filmmaking & Video Production Process
                                     </h2>
                                     <p className="pra-clr fs-6 lh-base opacity-75" >
-                                        Our structured process ensures AI is applied where it matters most, aligned with strategy, not just tools.                                    </p>
+                                        We follow a structured, collaborative process that combines AI technology with human creativity, ensuring that your video project is executed efficiently, creatively, and aligned with your brand goals.                                   </p>
                                 </div>
                             </div>
 
@@ -652,23 +665,28 @@ export default function AiFilmProduction() {
                             {[
                                 {
                                     step: "01",
-                                    title: "Analyze Business Goals & Data Ecosystems",
-                                    points: ["We review your objectives, funnels, and data sources to define where AI marketing strategy and analytics can have the highest impact."]
+                                    title: "Discover & Develop the Story",
+                                    points: ["We start by analyzing your brand and understanding your campaign objectives. Through audience insights and reference gathering, we create a comprehensive map for your project, ensuring a solid foundation for creative direction."]
                                 },
                                 {
                                     step: "02",
-                                    title: "Identify High-Impact AI Opportunities",
-                                    points: ["Through AI readiness assessment and use‑case analysis, we select initiatives that drive higher marketing ROI and efficiency."]
+                                    title: "Script, Storyboard & Visual Plan",
+                                    points: ["Our team develops professional scripts, detailed scene planning, and mood boards that act as references for the AI generation process, ensuring that your vision is brought to life with precision and consistency."]
                                 },
                                 {
                                     step: "03",
-                                    title: "Design AI-Enabled Marketing Frameworks",
-                                    points: ["We architect your AI growth planning, predictive models, personalization flows, and campaign optimization structure."]
+                                    title: "AI Scene Generation & Production",
+                                    points: [" Using generative AI, we create stunning scenes, characters, and VFX that blend seamlessly with live-action footage or stock footage, enhancing your project with visual depth and creativity."]
                                 },
                                 {
                                     step: "04",
-                                    title: "Guide Implementation & Optimization",
-                                    points: ["We collaborate with your teams to roll out AI systems, define KPIs, and create feedback loops for continuous improvement."]
+                                    title: "Editing, VFX & Delivery",
+                                    points: ["Our experts perform cinematic editing, color grading, and premium sound design, ensuring that the final product is polished, platform-optimized, and ready for immediate deployment across digital channels."]
+                                },
+                                {
+                                    step: "05",
+                                    title: "Final Review & Optimization",
+                                    points: ["We offer a final review of your project to ensure it aligns with your vision and brand identity. Continuous optimization is done based on feedback, ensuring that the video delivers optimal performance and impact."]
                                 }
                             ].map((item, index) => (
                                 <div key={index} className="col-lg-4 mb-4">
@@ -754,11 +772,11 @@ export default function AiFilmProduction() {
                                 Use Cases
                             </div>
                             <h2 className="white-clr display-4 fw-bold mb-0 text-uppercase ls-2">
-                                AI Strategy Use Cases
+                                AI Filmmaking Use Cases
                             </h2>
                         </div>
 
-                        <AiUseCasesSlider slides={strategyUseCases} />
+                        <AiUseCasesSlider slides={filmUseCases} />
                     </div>
 
                     <style jsx>{`
@@ -804,12 +822,12 @@ export default function AiFilmProduction() {
                             <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-2 px-4 theme-clr gap-3 mb-4">
                                 Our Edge
                             </div>
-                            <h2 className="white-clr display-4 fw-bold mb-0">
-                                Why Choose Aktivacity
+                            <h2 className="white-clr display-5 fw-bold mb-0 mx-auto" style={{ maxWidth: '900px' }}>
+                                Why Choose Synaryverse as Your AI Filmmaking Agency
                             </h2>
                         </div>
 
-                        <AiStrategyChooseCarousel />
+                        <AiFilmChooseCarousel />
                     </div>
 
                     <style jsx>{`
@@ -860,7 +878,7 @@ export default function AiFilmProduction() {
                                 </div>
                             </div>
                         </div>
-                        <TestimonialCarousel />
+                        <AiFilmTestimonial />
                     </div>
 
                     <style jsx>{`
@@ -929,29 +947,41 @@ export default function AiFilmProduction() {
                             </div>
                             {/* Right: FAQ Accordion */}
                             <div className="col-lg-8">
-                                <h2 className="white-clr display-3 fw-bold mb-12">AI Automation FAQs</h2>
+                                <h2 className="white-clr display-3 fw-bold mb-12">AI Filmmaking FAQs</h2>
 
                                 <div className="faq-wrapper d-flex flex-column gap-6">
                                     {[
                                         {
-                                            q: "What is AI strategy and marketing?",
-                                            a: "The utilization of AI in your marketing strategy and campaign creation includes prediction analytics, individualization of messages to customers, and automation of repetitive tasks. These tools enable you to be more judicious with your advertising expenditures, develop automated tools to drive growth within your business, and create marketing strategies based on data rather than instinct or subjectivity."
+                                            q: "What videos can an AI video production company create?",
+                                            a: "We create cinematic brand films, performance ads, animated explainers, training videos, and social content, all fully production-ready."
                                         },
                                         {
-                                            q: "How does AI consulting help businesses grow?",
-                                            a: "AI consulting services will help your business by identifying the highest value use cases, creating an AI adoption roadmap, and developing frameworks to improve your targeting, customer engagement, and overall efficiency in operations."
+                                            q: "How does AI filmmaking differ from traditional production?",
+                                            a: " AI compresses pre-production and VFX timelines, while human expertise handles storytelling, editing, and final finishing for quality results."
                                         },
                                         {
-                                            q: "Do you provide AI strategy services in Karachi?",
-                                            a: "Yes, as an AI strategy & marketing agency in Karachi, we help local/regional brands that are looking for AI-driven growth solutions."
+                                            q: "Will AI videos look fake or off-brand?",
+                                            a: "Reference-driven AI ensures videos align with your brand style and guidelines, delivering cinematic, on-brand consistency."
                                         },
                                         {
-                                            q: "What industries benefit from AI marketing?",
-                                            a: "E‑commerce, SaaS, business services (i.e., companies providing services to other businesses), education, health and wellness, and B2B (business-to-business) companies all benefit from their AI marketing strategies because they have repeat purchasing behaviours and large data sets on their customers."
+                                            q: "Can you mix live-action with AI animation?",
+                                            a: " Yes! We use a hybrid model that blends real footage with AI-generated environments, characters, and even transitions."
                                         },
                                         {
-                                            q: "How long does AI implementation planning take?",
-                                            a: "Typically implementing AI strategy consulting and planning takes 4-8 weeks depending on the complexity of data and the number of identified use cases, with one of multiple phases of implementation to occur from 2-8 months."
+                                            q: "How long does an AI video project take?",
+                                            a: "Brand films/ads: 2-4 weeks Explainers: 1-2 weeks Training series: 3-5 weeks"
+                                        },
+                                        {
+                                            q: "Is AI video production more affordable?",
+                                            a: " Yes! AI video production provides a 50-70% cost reduction compared to traditional shoots, while maintaining equal or better cinematic quality."
+                                        },
+                                        {
+                                            q: "What about usage rights and brand safety?",
+                                            a: "We provide full commercial rights, brand watermark protection, compliance review, and human final approval to ensure your video is safe and secure."
+                                        },
+                                        {
+                                            q: "How many ad/social variations can you provide?",
+                                            a: "We deliver 10-25 variations per master creative for platform-specific performance testing and optimization."
                                         }
                                     ].map((item, index) => (
                                         <div key={index} className="faq-item">
@@ -1018,12 +1048,12 @@ export default function AiFilmProduction() {
                     <div className="container position-relative z-1">
                         {/* THE CARD */}
                         <div className="conversion-card mx-auto p-xxl-15 p-xl-12 p-8 text-center">
-                            <h2 className="display-2 fw-black black-clr mb-8">Let’s Build Your AI Growth Strategy</h2>
+                            <h2 className="display-2 fw-black black-clr mb-8">Ready to Bring Your Vision to Life with AI Video?</h2>
                             <p className="black-clr fs-4 opacity-75 mb-12 max-w-700 mx-auto">
-                                If you’re ready to move beyond guesswork and build a data-driven, AI-enabled marketing engine, Aktivacity can help you plan and execute the right AI strategy for your business.                         </p>
+                                Transform your ideas into stunning, high-conversion videos with our AI-powered filmmaking services. Whether it's a brand film, explainer, or training video, we deliver cinematic quality faster and more affordably. Let's make your next project a success.                       </p>
 
                             <button onClick={() => setModalOpen(true)} className="book-call-btn d-inline-flex align-items-center gap-4 py-4 px-10 rounded-pill bg-theme text-black fw-bold text-uppercase ls-2">
-                                Talk to an AI Strategy Expert
+                                Book Your Free AI Video Strategy Call
                                 <div className="calendar-icon-wrap d-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style={{ width: '45px', height: '45px' }}>
                                     <i className="far fa-calendar-alt" style={{ color: '#000' }} />
                                 </div>

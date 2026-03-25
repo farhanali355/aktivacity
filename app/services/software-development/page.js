@@ -4,8 +4,8 @@ import Link from "next/link"
 import { useState, useEffect } from 'react'
 import ShowcaseSlider from '@/components/elements/ShowcaseSlider'
 import SoftwareShowcaseSlider from '@/components/elements/SoftwareShowcaseSlider'
-import ChooseCarousel from '@/components/elements/ChooseCarousel'
-import TestimonialCarousel from '@/components/elements/TestimonialCarousel'
+import SoftwareDevelopmentChooseCarousel from '@/components/elements/SoftwareDevelopmentChooseCarousel'
+import SoftwareDevelopmentTestimonialCarousel from '@/components/elements/SoftwareDevelopmentTestimonialCarousel'
 
 export default function SoftwareDevelopment() {
     const [activeDeliv, setActiveDeliv] = useState(0)
@@ -27,39 +27,32 @@ export default function SoftwareDevelopment() {
 
     const deliverables = [
         {
-            title: "Custom Website Development",
-            desc: "Tailored custom software solutions for your workflows.",
-            icon: "fas fa-globe"
+            title: "Custom Software Development",
+            desc: "We build tailored software solutions designed around your workflows, helping you automate processes, improve efficiency, and gain full control over your operations.",
         },
         {
             title: "Web Application Development",
-            desc: "Scalable web application development plus custom CMS development.",
-            icon: "fas fa-window-maximize"
+            desc: "Develop fast, scalable web applications and custom CMS platforms that streamline business processes and deliver seamless user experiences.",
         },
         {
             title: "Mobile Application Development",
-            desc: "Hybrid mobile app development for iOS and Android.",
-            icon: "fas fa-mobile-alt"
+            desc: "Create high-performance mobile applications for iOS and Android that enhance user engagement and extend your digital presence.",
         },
         {
-            title: "SaaS Development Services",
-            desc: "Multi-tenant SaaS platform development.",
-            icon: "fas fa-cloud"
+            title: "SaaS Development",
+            desc: "Build secure, multi-tenant SaaS platforms with scalable architecture, subscription models, and seamless user management.",
         },
         {
             title: "CRM Software Development",
-            desc: "Custom CRM development plus lead management solutions.",
-            icon: "fas fa-users-cog"
+            desc: "Design custom CRM systems that centralize customer data, automate sales processes, and improve lead management.",
         },
         {
             title: "Cloud Application Development",
-            desc: "Cloud-native applications plus API integration services.",
-            icon: "fas fa-server"
+            desc: "Develop cloud-native applications with secure infrastructure, seamless integrations, and scalable performance using modern cloud technologies.",
         },
         {
             title: "Enterprise Software Development",
-            desc: "Workflow management systems plus ERP solutions.",
-            icon: "fas fa-city"
+            desc: "Build robust enterprise systems including ERP and workflow management solutions to optimize operations and support business growth.",
         }
     ]
 
@@ -87,13 +80,13 @@ export default function SoftwareDevelopment() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                                Custom Software Development Company in Pakistan
+                                                Custom Software Development Services
                                             </h1>
-                                            {/* <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              Your Trusted Partner for Custom Software, Web & Mobile Applications That Drive Real Business Growth
-                                            </h4> */}
+                                            <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
+                                                Build custom software that automates operations, improves efficiency, and scales with your business.
+                                            </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-                                                Aktivacity is one of the leading experts in providing custom software development services in Pakistan. We deliver custom mobile solutions, web applications, powerful automation systems, and cloud architecture to increase efficiency, drive measurable growth, and reduce cost.</p>
+                                                Aktivacity is a software development company helping businesses build web applications, mobile apps, CRM systems, and SaaS platforms. We create solutions that streamline operations, reduce manual work, and support long-term growth.</p>
                                             <div className="hero-cta-form">
                                                 <form className="d-flex flex-sm-row flex-column gap-3">
                                                     <button type="submit" className="hero-box-btn py-3 px-xxl-10 px-6 fw-bold whitespace-nowrap">
@@ -428,11 +421,11 @@ export default function SoftwareDevelopment() {
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-                                        The Software Challenges We Solve
+                                        Why Your Business Needs Custom Software
                                     </h2>
-                                    {/* <p className="pra-clr fs-5 mb-0">
-                                        Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
-                                    </p> */}
+                                    <p className="pra-clr fs-5 mb-0">
+                                        Automate workflows, and scale without limits.
+                                    </p>
                                 </div>
 
                                 <div className="problem-cards-wrap d-flex flex-column gap-4">
@@ -443,9 +436,9 @@ export default function SoftwareDevelopment() {
                                                 <i className="fas fa-puzzle-piece theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Off-the-Shelf Tools Don't Fit Your Business</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Off-the-Shelf Software Limits Growth</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Generic software limits productivity and flexibility for Pakistan businesses.
+                                                    Generic tools force you to adapt your processes, reducing flexibility and long-term efficiency.
                                                 </p>
                                             </div>
                                         </div>
@@ -458,9 +451,9 @@ export default function SoftwareDevelopment() {
                                                 <i className="fas fa-tachometer-alt theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Scalability & Performance Issues</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Systems That Don’t Scale With You</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Poor systems slow growth and increase operational costs.
+                                                    Outdated or poorly built systems create bottlenecks as your business grows.
                                                 </p>
                                             </div>
                                         </div>
@@ -473,9 +466,9 @@ export default function SoftwareDevelopment() {
                                                 <i className="fas fa-random theme-clr fs-3" />
                                             </div>
                                             <div className="card-text">
-                                                <h5 className="white-clr mb-2 fw-bold">Manual Workflows & Data Silos</h5>
+                                                <h5 className="white-clr mb-2 fw-bold">Manual Work & Disconnected Workflows</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Lack of business automation software reduces efficiency and visibility.
+                                                    Repetitive tasks and scattered tools waste time, increase errors, and reduce visibility.
                                                 </p>
                                             </div>
                                         </div>
@@ -490,7 +483,7 @@ export default function SoftwareDevelopment() {
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Security & Reliability Risks</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Weak infrastructure leads to downtime and data loss for Karachi enterprises.
+                                                    Unstable systems and weak infrastructure put your data, operations, and customer trust at risk.
                                                 </p>
                                             </div>
                                         </div>
@@ -511,9 +504,9 @@ export default function SoftwareDevelopment() {
                                     </div>
                                     {/* Decorative Elements */}
                                     {/* Decorative Elements removed as per user request */}
-                                    {/* <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
-                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">No Website, No Business Growth</h3>
-                                    </div> */}
+                                    <div className="experience-badge position-absolute bottom-0 start-0 mb-n5 ms-n5 p-xxl-5 p-4 bg-theme rounded-4 d-none d-md-block shadow-lg">
+                                        <h3 className="black-clr fw-bold mb-0 text-nowrap fs-4">Outdated Systems Kill Growth</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -592,11 +585,11 @@ export default function SoftwareDevelopment() {
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-                                    Our Software Development Services                             </h2>
-                                {/* <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
+                                    Our Software Development Services                          </h2>
+                                <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
-                                    We don't just build products; we deliver competitive advantages. Every line of code is an investment in your market dominance.
-                                </p> */}
+                                    We design and develop custom software tailored to your workflows, helping you automate operations, eliminate inefficiencies, and scale without relying on rigid off-the-shelf tools.
+                                </p>
                             </div>
 
                             {/* Right Column: Interactive List */}
@@ -690,7 +683,7 @@ export default function SoftwareDevelopment() {
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-                                    Ready to Build Your Custom Software Solution? </h3>
+                                    Ready to Build Your Custom Software Solution?</h3>
                             </div>
 
                             <Link href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase z-1 d-flex align-items-center gap-3 fs-6">
@@ -781,8 +774,7 @@ export default function SoftwareDevelopment() {
 
                                     </h2>
                                     <p className="pra-clr fs-6 lh-base opacity-75" >
-                                       
-Our proven 5-phase development process—from discovery to ongoing support—delivers efficient, high-quality, scalable software tailored for the dynamic Pakistan market, ensuring seamless execution, minimal disruptions, and maximum value.</p>
+                                        A structured approach to build scalable, reliable software with faster delivery and minimal risk.</p>
                                 </div>
                             </div>
 
@@ -792,31 +784,31 @@ Our proven 5-phase development process—from discovery to ongoing support—del
                                     step: "01",
                                     title: "Discovery & Analysis",
                                     icon: "fas fa-search",
-                                    points: ["Business needs + technical requirements mapping for the Pakistan market."]
+                                    points: ["We understand your business goals, workflows, and technical requirements to define the right solution."]
                                 },
                                 {
                                     step: "02",
                                     title: "Architecture & Design",
                                     icon: "fas fa-pencil-ruler",
-                                    points: ["Scalable software solutions + agile software development planning."]
+                                    points: ["We design scalable system architecture and user-focused interfaces for long-term performance."]
                                 },
                                 {
                                     step: "03",
                                     title: "Development & Testing",
                                     icon: "fas fa-code-branch",
-                                    points: ["Software testing and QA + continuous integration."]
+                                    points: ["We build your solution using modern technologies with continuous testing to ensure quality and reliability."]
                                 },
                                 {
                                     step: "04",
                                     title: "Deployment & Optimization",
                                     icon: "fas fa-rocket",
-                                    points: ["Cloud deployment + performance tuning."]
+                                    points: ["We deploy your software in a secure environment and optimize it for speed, stability, and performance."]
                                 },
                                 {
                                     step: "05",
                                     title: "Support & Evolution",
                                     icon: "fas fa-handshake",
-                                    points: ["Software maintenance and support + feature roadmap."]
+                                    points: ["We provide ongoing maintenance, updates, and improvements to keep your software aligned with business growth."]
                                 }
                             ].map((item, index) => (
                                 <div key={index} className="col-lg-4 mb-4">
@@ -953,11 +945,11 @@ Our proven 5-phase development process—from discovery to ongoing support—del
                                 Our Edge
                             </div>
                             <h2 className="white-clr display-4 fw-bold mb-0">
-                                Why Choose Aktivacity
+                                Why Choose Aktivacity For Software Development?
                             </h2>
                         </div>
 
-                        <ChooseCarousel />
+                        <SoftwareDevelopmentChooseCarousel />
                     </div>
 
                     <style jsx>{`
@@ -1008,7 +1000,7 @@ Our proven 5-phase development process—from discovery to ongoing support—del
                                 </div>
                             </div>
                         </div>
-                        <TestimonialCarousel />
+                        <SoftwareDevelopmentTestimonialCarousel />
                     </div>
 
                     <style jsx>{`
@@ -1082,24 +1074,24 @@ Our proven 5-phase development process—from discovery to ongoing support—del
                                 <div className="faq-wrapper d-flex flex-column gap-6">
                                     {[
                                         {
-                                            q: "What is custom software development?",
-                                            a: "Tailored custom software solutions built specifically for your Pakistan business workflows vs generic off-the-shelf tools."
+                                            "q": "What is custom software development?",
+                                            "a": "Custom software development is the process of building software tailored to your specific business needs, workflows, and goals, instead of using generic off-the-shelf tools."
                                         },
                                         {
-                                            q: "How long does custom application development services take?",
-                                            a: "MVP: 8-12 weeks. Enterprise: 4-9 months. Agile software development delivers value every 2 weeks."
+                                            "q": "How long does custom software development take?",
+                                            "a": "The timeline depends on the project scope. A basic MVP typically takes 8–12 weeks, while complex or enterprise systems can take 4–9 months. Development is usually delivered in phases with regular updates."
                                         },
                                         {
-                                            q: "Do you provide software development services Pakistan wide?",
-                                            a: "Yes - Karachi headquarters with delivery to Lahore, Islamabad, Faisalabad + remote Pakistan teams."
+                                            "q": "Do you provide end-to-end software development services?",
+                                            "a": "Yes, we handle everything from initial planning and design to development, deployment, and ongoing support."
                                         },
                                         {
-                                            q: "Can you build scalable cloud-based systems?",
-                                            a: "Yes - Cloud native applications on AWS, Azure, Google Cloud with auto-scaling + 99.9% uptime."
+                                            "q": "Can you build scalable cloud-based applications?",
+                                            "a": "Yes, we develop cloud-native applications using platforms like AWS, Azure, and Google Cloud, ensuring high performance, scalability, and reliability."
                                         },
                                         {
-                                            q: "Do you offer ongoing maintenance and support?",
-                                            a: "24/7 software maintenance and support + monthly security updates + feature evolution."
+                                            "q": "Do you offer ongoing maintenance and support?",
+                                            "a": "Yes, we provide continuous support, including performance monitoring, security updates, bug fixes, and feature enhancements."
                                         }
                                     ].map((item, index) => (
                                         <div key={index} className="faq-item">

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Custom Software Development Company in Pakistan | Aktivacity",
-  description: "Custom software development company in Pakistan delivering software development services for web, mobile, SaaS development services, CRM software development, and enterprise software development. Karachi-based scalable solutions.",
+  title: "Custom Software Development Company in Karachi | Aktivacity",
+  description: "Custom software development company in Karachi, Pakistan delivering scalable web, mobile, SaaS, CRM, and enterprise solutions to streamline operations and drive business growth.",
 };
 
 export default function SoftwareLayout({ children }) {

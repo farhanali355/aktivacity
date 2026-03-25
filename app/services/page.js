@@ -60,6 +60,7 @@ export default function Service() {
             tagline: "The Future of Storytelling.",
             desc: "Pioneering cinematic production through GenAI and Unreal Engine 5. We create visual assets that push the boundaries of reality.",
             subCapabilities: [
+                { title: "Ai Strategy & Marketing", href: "/services/ai-strategy-marketing" },
                 { title: "Ai Automation", href: "/services/ai-automation-services" },
                 { title: "Ai Film Making & Video Production", href: "/services/ai-film-making-video-production" },
                 { title: "Motion Graphics", href: "/404" },
@@ -74,6 +75,7 @@ export default function Service() {
             tagline: "Visual Identity Systems.",
             desc: "Minimalist excellence translated into high-fidelity brand identities. We craft visual languages that resonate and endure in a noisy market.",
             subCapabilities: [
+                { title: "Graphic Design & Branding", href: "/services/graphic-design-branding" },
                 { title: "Logo & Visual Identity", href: "/404" },
                 { title: "UI/UX Design", href: "/services/ui-ux-design" },
                 { title: "Brand Strategy", href: "/404" }

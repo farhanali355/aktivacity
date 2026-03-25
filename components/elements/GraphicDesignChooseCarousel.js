@@ -3,33 +3,33 @@ import React from 'react'
 
 const items = [
   {
-    title: "Discover",
-    icon: "fas fa-search",
-    desc: "We start by analyzing your business goals, data ecosystems, and existing marketing infrastructure to get a clear understanding of where you stand and where you want to go."
+    title: "Creative Graphic Design Agency in Karachi",
+    icon: "fas fa-map-marker-alt",
+    desc: "Local insight with brand and campaign experience across Pakistan and beyond."
   },
   {
-    title: "Identify",
+    title: "Strategy-Driven, Branding-Led Design Approach",
     icon: "fas fa-bullseye",
-    desc: "We pinpoint the highest-impact AI opportunities specific to your business, filtering out distractions and ensuring your resources are focused on what matters most for growth."
+    desc: "Every visual decision is rooted in brand strategy, not just aesthetics."
   },
   {
-    title: "Design",
-    icon: "fas fa-pencil-ruler",
-    desc: "We build AI-powered marketing frameworks that are customized to your brand, audience, and growth objectives, ensuring the solutions are practical, executable, and scalable."
+    title: "Consistent High-Quality Output",
+    icon: "fas fa-check-circle",
+    desc: "Robust brand systems and brand guidelines ensure consistency everywhere your brand appears."
   },
   {
-    title: "Optimize",
+    title: "Fast Turnaround and Collaboration",
+    icon: "fas fa-clock",
+    desc: "Clear communication, structured feedback rounds, and dependable delivery timelines."
+  },
+  {
+    title: "Business-Focused Visual Storytelling",
     icon: "fas fa-chart-line",
-    desc: "We guide the implementation of your strategy, monitor performance in real-time, and continuously optimize to ensure that your AI-driven marketing keeps evolving and delivering results."
-  },
-  {
-    title: "Scale",
-    icon: "fas fa-expand-arrows-alt",
-    desc: "We ensure your AI marketing systems grow alongside your business by continuously evaluating, scaling, and adapting the solution to maximize ROI and business efficiency over time."
+    desc: "Design that supports professional brand image, market differentiation, and real business outcomes."
   }
 ]
 
-export default function AiStrategyChooseCarousel() {
+export default function GraphicDesignChooseCarousel() {
   // Create a looped array for seamless sliding
   const extendedItems = [...items, ...items, ...items]
   const [index, setIndex] = React.useState(items.length) // Start at the middle set
@@ -88,7 +88,7 @@ export default function AiStrategyChooseCarousel() {
     <div className="choose-carousel-outer">
       <div className="carousel-container position-relative">
         <div className="choose-carousel" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-           <div className="overflow-hidden py-3">
+          <div className="overflow-hidden py-3">
             <div className="track d-flex" style={{
               width: `${(extendedItems.length / visible) * 100}%`,
               transform: `translateX(${(index * -100) / extendedItems.length}%)`,

@@ -3,8 +3,8 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState, useEffect } from 'react'
 import ShowcaseSlider from '@/components/elements/ShowcaseSlider'
-import ChooseCarousel from '@/components/elements/ChooseCarousel'
-import TestimonialCarousel from '@/components/elements/TestimonialCarousel'
+import WebDevelopmentChooseCarousel from '@/components/elements/WebDevelopmentChooseCarousel'
+import WebDevelopmentTestimonialCarousel from '@/components/elements/WebDevelopmentTestimonialCarousel'
 
 export default function WebApp() {
     const [activeDeliv, setActiveDeliv] = useState(0)
@@ -75,13 +75,13 @@ export default function WebApp() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                               Web Development Services in Karachi
+                                                Web Development Services in Karachi
                                             </h1>
                                             <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              Your Trusted Partner for Custom Websites & Web Applications That Drive Real Business Growth
+                                                Your Trusted Partner for Custom Websites & Web Applications That Drive Real Business Growth
                                             </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
- Aktivacity is a Karachi-based web development agency helping businesses across Pakistan build powerful digital experiences. We specialize in custom websites, web applications, e-commerce stores, and mobile apps — combining modern technology with strategic design to drive user engagement, expand your digital presence, and deliver measurable business growth. Partner with us and get a digital solution built to perform.                                            </p>
+                                                Aktivacity is a Karachi-based web development agency helping businesses across Pakistan build powerful digital experiences. We specialize in custom websites, web applications, e-commerce stores, and mobile apps — combining modern technology with strategic design to drive user engagement, expand your digital presence, and deliver measurable business growth. Partner with us and get a digital solution built to perform.                                            </p>
                                             <div className="hero-cta-form">
                                                 <form className="d-flex flex-sm-row flex-column gap-3">
                                                     <button type="submit" className="hero-box-btn py-3 px-xxl-10 px-6 fw-bold whitespace-nowrap">
@@ -416,7 +416,7 @@ export default function WebApp() {
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-                                      The Web & App Challenges We Solve
+                                        The Web & App Challenges We Solve
                                     </h2>
                                     {/* <p className="pra-clr fs-5 mb-0">
                                         Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
@@ -580,7 +580,7 @@ export default function WebApp() {
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-Our Web & App Development Services                                </h2>
+                                    Our Web & App Development Services                                </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
                                     We don't just build products; we deliver competitive advantages. Every line of code is an investment in your market dominance.
@@ -675,11 +675,11 @@ Our Web & App Development Services                                </h2>
                                     <img src="/assets/img/element/download.png" alt="Aktiva Logo" style={{ width: '85px', height: '85px', objectFit: 'contain' }} />
                                 </div>
                                 <h3 className="white-clr mb-0 fs-5 fw-medium text-center text-sm-start">
-Ready to Build a High-Performing Digital Platform?                                  </h3>
+                                    Ready to Build a High-Performing Digital Platform?                                  </h3>
                             </div>
 
                             <Link href="/contact" className="cta-btn radius100 py-2 px-xxl-8 px-5 border border-theme bg-transparent white-clr fw-bold text-uppercase z-1 d-flex align-items-center gap-3 fs-6">
-Get a Free Strategy Call
+                                Get a Free Strategy Call
                                 <span className="rot60 d-inline-block transition-all">
                                     <i className="fas fa-arrow-up theme-clr" />
                                 </span>
@@ -761,11 +761,11 @@ Get a Free Strategy Call
                                             Our Process
                                         </div>
                                     </div>
-                                    <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{fontSize:"37px"}}>
+                                    <h2 className="white-clr display-3 fw-bold mb-8 lh-1" style={{ fontSize: "37px" }}>
                                         Our Streamlined Development Process
                                     </h2>
                                     <p className="pra-clr fs-6 lh-base opacity-75" >
-This structured approach eliminates bottlenecks, accelerates launch timelines, and guarantees scalable solutions that evolve with your Karachi business needs.                                    </p>
+                                        This structured approach eliminates bottlenecks, accelerates launch timelines, and guarantees scalable solutions that evolve with your Karachi business needs.                                    </p>
                                 </div>
                             </div>
 
@@ -935,7 +935,7 @@ This structured approach eliminates bottlenecks, accelerates launch timelines, a
                             </h2>
                         </div>
 
-                        <ChooseCarousel />
+                        <WebDevelopmentChooseCarousel />
                     </div>
 
                     <style jsx>{`
@@ -982,11 +982,11 @@ This structured approach eliminates bottlenecks, accelerates launch timelines, a
                                         <span className="white-clr fs-xs fw-bold ls-1 text-uppercase">100+ Reviews</span>
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-0 text-lg-end lh-sm max-w-700">
-What Our Clients Say                                    </h2>
+                                        What Our Clients Say                                    </h2>
                                 </div>
                             </div>
                         </div>
-                        <TestimonialCarousel />
+                        <WebDevelopmentTestimonialCarousel />
                     </div>
 
                     <style jsx>{`
@@ -1166,7 +1166,7 @@ What Our Clients Say                                    </h2>
                         <div className="conversion-card mx-auto p-xxl-15 p-xl-12 p-8 text-center">
                             <h2 className="display-2 fw-black black-clr mb-8">Let's Build Your Digital Platform</h2>
                             <p className="black-clr fs-4 opacity-75 mb-12 max-w-700 mx-auto">
-Stop losing customers to slow, outdated websites. Web development agency in Karachi delivers high-performance web development services in Karachi that convert visitors into revenue.                            </p>
+                                Stop losing customers to slow, outdated websites. Web development agency in Karachi delivers high-performance web development services in Karachi that convert visitors into revenue.                            </p>
 
                             <button onClick={() => setModalOpen(true)} className="book-call-btn d-inline-flex align-items-center gap-4 py-4 px-10 rounded-pill bg-theme text-black fw-bold text-uppercase ls-2">
                                 BOOK A CALL

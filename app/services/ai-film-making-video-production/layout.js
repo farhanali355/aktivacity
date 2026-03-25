@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "AI Strategy & Marketing Agency in Karachi | Aktivacity",
-  description: "AI strategy & marketing agency in Karachi helping brands design AI-driven marketing strategies, predictive analytics, and AI consulting services for scalable, data-driven growth."
+  title: "AI Filmmaking Agency in Karachi | Video Production Services",
+  description: "AI Filmmaking & video production services in Karachi, combining generative AI with cinematic storytelling. Cost-efficient, scalable, and high-conversion video creation."
 };
 
 export default function AiFilmProductionLayout({ children }) {
