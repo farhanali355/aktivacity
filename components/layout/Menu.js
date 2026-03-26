@@ -148,14 +148,13 @@ export default function Menu() {
                     </button>
 
                     {/* Mega Menu Content */}
-                    {/* Mega Menu Content */}
-                    <div className="mega-menu-content p-xxl-12 p-xl-10 p-lg-8">
-                        <div className="container-fluid">
+                    <div className="mega-menu-content p-xxl-12 p-xl-10 p-lg-8" style={{ opacity: 0, visibility: 'hidden', pointerEvents: 'none', transform: 'translateX(-50%) translateY(20px)' }}>
+                        <div className="container-fluid px-0">
                             <div className="row g-6">
                                 {[
                                     {
                                         category: "Development",
-                                        titleHref: "/services/web-development-services",
+                                        titleHref: null,
                                         links: [
                                             { title: "Web Development Services", href: "/services/web-development-services" },
                                             { title: "Software Development", href: "/services/software-development" }
@@ -163,14 +162,15 @@ export default function Menu() {
                                     },
                                     {
                                         category: "Digital Marketing",
-                                        titleHref: "/services/digital-marketing-services",
+                                        titleHref: null,
                                         links: [
-                                            { title: "SEO Optimization", href: "/services/seo-services" }
+                                            { title: "Digital Marketing Services", href: "/services/digital-marketing-services" },
+                                            { title: "SEO Services", href: "/services/seo-services" }
                                         ]
                                     },
                                     {
                                         category: "AI Services",
-                                        titleHref: "/services/ai-automation-services",
+                                        titleHref: null,
                                         links: [
                                             { title: "Ai Strategy & Marketing", href: "/services/ai-strategy-marketing" },
                                             { title: "AI Automation", href: "/services/ai-automation-services" },
@@ -179,7 +179,7 @@ export default function Menu() {
                                     },
                                     {
                                         category: "Brand Design",
-                                        titleHref: "/services/ui-ux-design",
+                                        titleHref: null,
                                         links: [
                                             { title: "Graphic Design & Branding", href: "/services/graphic-design-branding" },
                                             { title: "UI/UX Design", href: "/services/ui-ux-design" }
@@ -309,19 +309,21 @@ export default function Menu() {
                     position: absolute;
                     top: 100%;
                     left: 50%;
-                    transform: translateX(-50%) translateY(20px);
                     width: 1150px;
                     background: #e9fe49;
                     border-radius: 40px;
-                    opacity: 0;
-                    visibility: hidden;
-                    pointer-events: none;
                     transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
                                 transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
                                 visibility 0.4s ease;
                     box-shadow: 0 40px 100px rgba(0,0,0,0.5);
                     z-index: 1000;
                     margin-top: 10px;
+                }
+                .mega-menu-parent:hover .mega-menu-content {
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                    pointer-events: auto !important;
+                    transform: translateX(-50%) translateY(0) !important;
                 }
                 .mega-menu-content * {
                     color: #000 !important;

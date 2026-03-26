@@ -5,6 +5,7 @@ export default function ContactCTA() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        phone: '',
         message: ''
     });
 
@@ -20,7 +21,7 @@ export default function ContactCTA() {
         // Handle form submission here
         console.log("Form Submitted", formData);
         alert("Thanks for contacting us! We'll get back to you soon.");
-        setFormData({ name: '', email: '', message: '' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
     };
 
     return (
@@ -36,7 +37,7 @@ export default function ContactCTA() {
                                 Ready to Build Something <span className="theme-clr">Extraordinary?</span>
                             </h2>
                             <p className="text-white opacity-75 fs-5">
-                                Let's discuss your vision. Share your details, and our team will contact you to craft a personalized strategy.
+                             Let's discuss your vision. Share your details, and our team will contact you to craft a personalized strategy for digital transformation.
                             </p>
                         </div>
 
@@ -78,6 +79,19 @@ export default function ContactCTA() {
                                         onChange={handleChange}
                                         className="form-control bg-transparent text-white border-0 py-3"
                                         placeholder="Enter your email"
+                                        style={{ borderBottom: '1px solid rgba(255,255,255,0.2) !important', borderRadius: 0, paddingLeft: 0 }}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="text-white mb-2 ps-2">Phone Number</label>
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        className="form-control bg-transparent text-white border-0 py-3"
+                                        placeholder="Enter your phone number"
                                         style={{ borderBottom: '1px solid rgba(255,255,255,0.2) !important', borderRadius: 0, paddingLeft: 0 }}
                                         required
                                     />

@@ -6119,3 +6119,305 @@ input.main-search-input::placeholder {
 #staff-image {
     height: 100%;
 }
+.review-card-modern {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white !important;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.review-card-modern:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #e9fe49 !important;
+    transform: translateY(-2px);
+}
+
+.review-card-modern:hover span, 
+.review-card-modern:hover svg {
+    display: inline-block;
+    animation: flip-text-modern 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes flip-text-modern {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+.fs-seven {
+    font-size: 14px;
+}
+
+/* Tech Stack Cards - Service1.js */
+.service-card {
+    height: 350px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(233, 254, 73, 0.15);
+    border-color: #e9fe49 !important;
+}
+
+.img-wrapper img {
+    transition: transform 0.8s ease !important;
+    filter: brightness(0.7);
+}
+
+.service-card:hover .img-wrapper img {
+    transform: scale(1.1) !important;
+    filter: brightness(0.9);
+}
+
+.overlay-content {
+    background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.4), transparent);
+    height: 100%;
+    transform: translateY(0) !important;
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.explore-btn {
+    background-color: #e9fe49 !important;
+    color: black !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    transition: all 0.4s ease !important;
+    border: 1px solid #e9fe49 !important;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.service-card:hover .explore-btn {
+    background-color: transparent !important;
+    color: #e9fe49 !important;
+    border-color: #e9fe49 !important;
+}
+
+/* ========= Services Modal Popup ========= */
+.svc-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    background: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    z-index: 10000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+}
+
+.svc-modal {
+    background: linear-gradient(135deg, #141414 0%, #0d0d0d 100%) !important;
+    border: 1px solid rgba(233, 254, 73, 0.35) !important;
+    border-radius: 24px !important;
+    padding: 40px !important;
+    max-width: 460px !important;
+    width: 100% !important;
+    position: relative !important;
+    box-shadow: 0 0 60px rgba(233, 254, 73, 0.08), 0 30px 80px rgba(0, 0, 0, 0.6) !important;
+    animation: svcPopIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+@keyframes svcPopIn {
+    from { opacity: 0; transform: scale(0.85) translateY(30px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.svc-modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e9fe49, transparent);
+    border-radius: 50%;
+}
+
+.svc-close {
+    position: absolute !important;
+    top: 16px !important;
+    right: 20px !important;
+    background: rgba(255,255,255,0.07) !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    border-radius: 50% !important;
+    width: 34px !important;
+    height: 34px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #aaa !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    line-height: 1 !important;
+    transition: all 0.3s ease !important;
+}
+
+.svc-close:hover {
+    color: #e9fe49 !important;
+    border-color: #e9fe49 !important;
+    background: rgba(233, 254, 73, 0.1) !important;
+    transform: rotate(90deg) !important;
+}
+
+.svc-title {
+    color: #e9fe49 !important;
+    font-weight: 800 !important;
+    font-size: 1.25rem !important;
+    margin-bottom: 4px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+}
+
+.svc-subtitle {
+    color: rgba(255,255,255,0.45) !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 24px !important;
+    letter-spacing: 0.5px !important;
+}
+
+.svc-links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+}
+
+.svc-link {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    padding: 16px 20px !important;
+    border-radius: 14px !important;
+    background: rgba(255,255,255,0.04) !important;
+    border: 1px solid rgba(255,255,255,0.07) !important;
+    text-decoration: none !important;
+    color: #e0e0e0 !important;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
+    transition: all 0.3s ease !important;
+    letter-spacing: 0.3px !important;
+}
+
+.svc-link:hover {
+    background: rgba(233, 254, 73, 0.08) !important;
+    border-color: rgba(233, 254, 73, 0.4) !important;
+    color: #e9fe49 !important;
+    transform: translateX(8px) !important;
+    box-shadow: 0 4px 20px rgba(233, 254, 73, 0.07) !important;
+}
+
+.svc-link:hover .svc-dot {
+    transform: scale(1.4) !important;
+    box-shadow: 0 0 8px #e9fe49 !important;
+}
+
+.svc-link:hover .svc-arrow {
+    transform: translateX(4px) !important;
+    opacity: 1 !important;
+}
+
+.svc-dot {
+    width: 8px !important;
+    height: 8px !important;
+    min-width: 8px !important;
+    background: #e9fe49 !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+.svc-arrow {
+    margin-left: auto !important;
+    font-size: 12px !important;
+    color: #e9fe49 !important;
+    opacity: 0.4 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* ========= In-Card Slide Panel ========= */
+.slide-panel {
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(0,0,0,0.97) 0%, rgba(10,10,10,0.95) 100%) !important;
+    transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border-top: 1px solid transparent !important;
+    z-index: 5;
+}
+.slide-panel.slide-open {
+    height: 100% !important;
+    border-top-color: rgba(233, 254, 73, 0.3) !important;
+}
+.slide-label {
+    color: #e9fe49 !important;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+}
+.slide-link {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 14px 16px !important;
+    border-radius: 12px !important;
+    text-decoration: none !important;
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
+    border: 1px solid transparent !important;
+    transition: all 0.3s ease !important;
+    margin-bottom: 8px !important;
+    background: rgba(255,255,255,0.03) !important;
+}
+.slide-link:hover {
+    background: rgba(233,254,73,0.08) !important;
+    border-color: rgba(233,254,73,0.3) !important;
+    color: #e9fe49 !important;
+    transform: translateX(8px) !important;
+}
+.slide-dot {
+    width: 7px !important;
+    height: 7px !important;
+    min-width: 7px !important;
+    background: #e9fe49 !important;
+    border-radius: 50% !important;
+    transition: transform 0.3s ease !important;
+    display: inline-block !important;
+}
+.slide-link:hover .slide-dot {
+    transform: scale(1.5) !important;
+    box-shadow: 0 0 6px #e9fe49 !important;
+}
+.slide-arrow {
+    font-size: 11px !important;
+    color: #e9fe49 !important;
+    opacity: 0.4 !important;
+    transition: all 0.3s ease !important;
+    margin-left: auto !important;
+}
+.slide-link:hover .slide-arrow {
+    opacity: 1 !important;
+    transform: translateX(4px) !important;
+}
+
+
+

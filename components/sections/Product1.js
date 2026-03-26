@@ -20,15 +20,12 @@ export default function Product1({ data }) {
                                     <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-xxl-7 mb-xl-6 mb-5" data-aos="fade-up-right" data-aos-duration={1500}>
                                         {data?.tagline || 'WHY CHOOSE US'}
                                     </div>
-                                    <h2 className="stitle mb-xxl-8 mb-xl-7 mb-xl-5 mb-4" data-aos="fade-up" data-aos-duration={1600} dangerouslySetInnerHTML={{ __html: data?.heading || 'More Than an Agency <span class="fw-400 theme-clr" style="font-style: normal;">Your Digital Growth Partner in Pakistan</span>' }} />
+                                    <h2 className="stitle mb-xxl-8 mb-xl-7 mb-xl-5 mb-4" data-aos="fade-up" data-aos-duration={1600} dangerouslySetInnerHTML={{ __html: data?.heading || 'AI-First Creative & Growth Execution' }} />
                                     {data?.description ? (
                                         <p className="white-clr mb-xxl-9 mb-xl-7 mb-xl-6 mb-6 fs-5" style={{ lineHeight: '1.6', whiteSpace: 'pre-line' }} data-aos="fade-up" data-aos-duration={1900}>{data.description}</p>
                                     ) : (
                                         <p className="white-clr mb-xxl-9 mb-xl-7 mb-xl-6 mb-6 fs-5" style={{ lineHeight: '1.6' }} data-aos="fade-up" data-aos-duration={1900}>
-                                            This is not a history lesson. It's a value proposition. Our <strong>AI-Powered Creative Tech</strong> model provides a superior advantage by combining data-driven insights with world-class design.
-                                            <br /><br />
-                                            We are committed to the Pakistani market, leveraging a hybrid team of expert engineers and creative artists who believe that <strong>strategy, technology, and creativity</strong> must work as one.
-                                            What you can expect is more than just service—it's a partnership focused entirely on your <strong>measurable growth</strong>.
+                                            We go beyond traditional agency models by combining AI, creativity, and technology into one streamlined workflow. By rethinking how digital work is planned and executed, we help your team move faster, reduce back-and-forth, and maintain strong brand consistency across every channel. Acting as an extension of your business, we deliver high-quality design, development, and marketing that not only looks good but performs, scales, and drives measurable growth.
                                         </p>
                                     )}
                                     {/* <div className="discover-dating" data-aos="fade-up" data-aos-duration={2200}>

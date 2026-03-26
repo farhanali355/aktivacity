@@ -35,14 +35,14 @@ import { urlForImage } from "@/sanity/lib/image"
 export default function Testimonial1({ data }) {
     const testimonialData = data?.testimonials || [
         {
-            name: "Daniel Smith",
+            name: "Ahmed K.",
             img: "https://i.pravatar.cc/150?u=daniel",
-            text: "The level of professionalism and technical expertise provided by Aktivacity is simply unmatched. Our project was delivered on time and exceeded expectations."
+            text: "Aktivacity transformed our vision into a high-performing SaaS platform with AI-driven marketing that tripled our user base. True full-service tech & digital agency partners!"
         },
         {
-            name: "Sarah Johnson",
+            name: "Sarah M.",
             img: "https://i.pravatar.cc/150?u=sarah",
-            text: "Working with this team has been a game-changer for our digital presence. They truly understand how to bridge the gap between vision and reality."
+            text: "From UI/UX design to explainer videos, their end-to-end solutions delivered investor-ready results. Highly recommend this Software Development Company in Pakistan."
         },
         {
             name: "Michael Brown",
@@ -110,7 +110,7 @@ export default function Testimonial1({ data }) {
                 </div>
                 
                 {/* Custom Navigation */}
-                <div className="slider-nav-wrapper d-flex justify-content-center gap-3 mt-5">
+                <div className="slider-nav-wrapper d-flex justify-content-center gap-3 mt-5 mb-5">
                     <button className="cmn-prev nav-btn d-center">
                         <i className="fas fa-chevron-left" />
                     </button>

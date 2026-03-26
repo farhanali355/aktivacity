@@ -16,7 +16,7 @@ import Footer4 from './footer/Footer4'
 import Header1 from "./header/Header1"
 import Header2 from './header/Header2'
 
-export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, children }) {
+export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, breadcrumbSubTitle, children }) {
     const [scroll, setScroll] = useState(0)
     // Moblile Menu
     const [isMobileMenu, setMobileMenu] = useState(false)
@@ -53,7 +53,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
             <Search isSearch={isSearch} handleSearch={handleSearch} />
 
             <main className="main">
-                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} breadcrumbSubTitle={breadcrumbSubTitle} />}
 
                 {children}
             </main>

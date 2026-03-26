@@ -242,3 +242,56 @@
         width: 100%;
     }
 }
+/* Tech Stack Cards - Service1.js */
+.service-card {
+    height: 350px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(233, 254, 73, 0.15);
+    border-color: #e9fe49 !important;
+}
+
+.img-wrapper img {
+    transition: transform 0.8s ease !important;
+    filter: brightness(0.7);
+}
+
+.service-card:hover .img-wrapper img {
+    transform: scale(1.1) !important;
+    filter: brightness(0.9);
+}
+
+.overlay-content {
+    background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.4), transparent);
+    height: 100%;
+    transform: translateY(0) !important;
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.explore-btn {
+    background-color: #e9fe49 !important;
+    color: black !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    transition: all 0.4s ease !important;
+    border: 1px solid #e9fe49 !important;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.service-card:hover .explore-btn {
+    background-color: transparent !important;
+    color: #e9fe49 !important;
+    border-color: #e9fe49 !important;
+}

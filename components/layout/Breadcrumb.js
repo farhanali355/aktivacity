@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function Breadcrumb({ breadcrumbTitle }) {
+export default function Breadcrumb({ breadcrumbTitle, breadcrumbSubTitle }) {
     return (
         <>
 
@@ -12,6 +12,11 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                                 <h1 className="white mb-xxl-10 mb-xl-8 mb-6" data-aos="zoom-in-left" data-aos-duration={1800}>
                                     {breadcrumbTitle}
                                 </h1>
+                                {breadcrumbSubTitle && (
+                                    <p className="text-white fs-5 opacity-75 mb-xxl-10 mb-xl-8 mb-6 mx-auto" style={{ maxWidth: '800px' }} data-aos="fade-up" data-aos-duration={1900}>
+                                        {breadcrumbSubTitle}
+                                    </p>
+                                )}
                                 <ul className="breadcrumnd d-inline-flex align-items-center gap-2 pra-border radius100 py-xxl-3 py-2 px-xxl-4 px-4" data-aos="zoom-in-right" data-aos-duration={2000}>
                                     <li>
                                         <Link href="/" className="text-uppercase htheme">

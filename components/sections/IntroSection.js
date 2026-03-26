@@ -14,7 +14,7 @@ export default function IntroSection({ data }) {
                                 {data?.tagline || 'WHO WE ARE'}
                             </div>
                             <h2 className="stitle mb-4 text-white">
-                                {data?.heading || 'Bridge the Gap Between Vision & Reality'}
+                                {data?.heading || 'Your AI-Powered Digital Growth Partner'}
                             </h2>
                             <p className="text-white fs-4 mb-5 opacity-75 fw-light">
                                 {data?.subheading || 'Tired of juggling multiple vendors for your digital needs?'}
@@ -33,6 +33,7 @@ export default function IntroSection({ data }) {
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     );

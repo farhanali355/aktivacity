@@ -80,18 +80,18 @@ export default function AiAutomation() {
                                                 <span className="text-uppercase fw-bold ls-2">Innovation & Growth</span>
                                             </div>
                                             <h1 className="black-clr mb-xxl-8 mb-xl-6 mb-5 display-3 fw-bold">
-                                                Graphic Design Services in Karachi
+                                             Graphic Design & Branding Services in Karachi
                                             </h1>
-                                            {/* <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
-                                              Your Trusted Partner for Custom Websites & Web Applications That Drive Real Business Growth
-                                            </h4> */}
+                                            <h4 className="black-clr mb-xxl-6 mb-xl-5 mb-4 fw-medium opacity-75">
+                                            Transform your brand’s identity with creative, high-impact design that engages and leaves an impression.
+                                            </h4>
                                             <p className="black-clr mb-xxl-10 mb-xl-8 mb-6 fs-5 opacity-75">
-                                                Aktivacity delivers professional graphic design services in Karachi, creating visually compelling brand assets that strengthen identity, engage audiences, and support long-term business growth through strategic branding services and modern visual identity design. </p>
+                                            Aktivacity delivers professional graphic design services, creating visually compelling brand assets that enhance your visual identity, engage audiences, and support long-term business growth. Our strategic branding services and modern visual identity design ensure your brand stands out and thrives in a competitive market. </p>
                                             <div className="hero-cta-form">
                                                 <Link href="/contact" className="hero-box-btn py-3 px-xxl-8 px-6 fw-bold whitespace-nowrap d-inline-flex align-items-center text-decoration-none">
                                                     Get a Free Design Consultation
                                                     <span className="rot60 d-inline-block ms-3">
-                                                        <i className="fas fa-arrow-up" />
+                                                        <i className="fas fa-arrow-up"/>
                                                     </span>
                                                 </Link>
                                             </div>
@@ -426,7 +426,7 @@ export default function AiAutomation() {
                                         The Problem We Solve
                                     </div>
                                     <h2 className="white-clr display-5 fw-bold mb-6">
-                                        The Design Challenges We Solve
+                                        Why Brands Need Professional Graphic Design Services?
                                     </h2>
                                     {/* <p className="pra-clr fs-5 mb-0">
                                         Most businesses fail not because of their idea, but because their technology can't keep up with their growth.
@@ -443,7 +443,7 @@ export default function AiAutomation() {
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Weak Visual Identity</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Brands struggle to stand out because their graphic design and visual identity don’t reflect their positioning or personality.
+                                                 Brands struggle to stand out because their graphic design and visual identity don’t reflect their positioning or personality.
                                                 </p>
                                             </div>
                                         </div>
@@ -458,7 +458,7 @@ export default function AiAutomation() {
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Inconsistent Brand Assets</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Logos, colors, and typography look different across platforms, hurting visual consistency and professional perception.
+                                                 Logos, colors, and typography look different across platforms, hurting visual consistency and professional perception.
                                                 </p>
                                             </div>
                                         </div>
@@ -473,7 +473,7 @@ export default function AiAutomation() {
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Low Engagement Graphics</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Outdated or cluttered marketing graphics and social media graphics fail to capture attention or drive clicks.
+                                                Outdated or cluttered marketing graphics and social media graphics fail to capture attention or drive clicks.
                                                 </p>
                                             </div>
                                         </div>
@@ -488,7 +488,7 @@ export default function AiAutomation() {
                                             <div className="card-text">
                                                 <h5 className="white-clr mb-2 fw-bold">Outdated Creative Materials</h5>
                                                 <p className="pra-clr mb-0 small">
-                                                    Old presentations, brochures, and print design assets no longer match modern design standards or current brand direction.
+                                                Old presentations, brochures, and print design assets no longer match modern design standards or current brand direction.
                                                 </p>
                                             </div>
                                         </div>
@@ -589,10 +589,10 @@ export default function AiAutomation() {
                                     Our Expertise
                                 </div>
                                 <h2 className="white-clr display-4 fw-bold mb-6 lh-sm">
-                                    Our Graphic Design Services                               </h2>
+                                    Our Graphic Design Services                              </h2>
                                 <div className="divider-line w-25 bg-theme mb-6" style={{ height: '4px' }} />
                                 <p className="pra-clr fs-5">
-                                    As a creative graphic design agency in Karachi, we deliver end-to-end visuals for brands that need strategic, cohesive, and on-brand design across every touchpoint.
+                                   As a creative graphic design agency, we deliver end-to-end visuals for brands that need strategic, cohesive, and on-brand design across every touchpoint.
                                 </p>
                             </div>
 

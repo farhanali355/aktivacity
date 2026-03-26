@@ -17,7 +17,7 @@ const homePageData = {
       _type: 'heroBlock',
       _key: 'hero1',
       title: '<span class="theme-clr" style="font-size: inherit; line-height: inherit;">AI-Powered</span> Creative Tech <br /> & Digital Agency',
-      subtitle: 'Your go-to for Software, Digital Marketing & Video.',
+      subtitle: 'We combine AI, creativity, and technology to help brands grow, scale, and stay ahead in a competitive market.',
       buttonText: 'Book Free Consultation',
       buttonLink: '/contact'
     },
@@ -25,9 +25,9 @@ const homePageData = {
       _type: 'introBlock',
       _key: 'intro1',
       tagline: 'WHO WE ARE',
-      heading: 'Bridge the Gap Between Vision & Reality',
-      subheading: 'Tired of juggling multiple vendors for your digital needs?',
-      descriptionBox: 'As a leading <span className="theme-clr fw-bold">IT Company in Pakistan</span> and <span className="theme-clr fw-bold">Full Service Design & Development Agency</span>, we offer a <span className="text-decoration-underline text-white">unified strategy</span> that blends AI, technology, and creative storytelling.\nWe deliver <strong>integrated solutions</strong> and drive <strong>digital transformation</strong> for <strong>measurable business growth</strong>.'
+      heading: 'Your AI-Powered Digital Growth Partner',
+      subheading: 'Are you tired of managing multiple vendors for your digital needs?',
+      descriptionBox: 'Aktivacity is a full-service AI-powered digital agency in Pakistan, bringing together software development, digital marketing, branding, and video production into one seamless system.\n\nWe help businesses launch faster, attract the right audience, and increase revenue through AI, automation, and creative execution locally and globally.'
     },
     {
       _type: 'aboutBlock',
@@ -39,13 +39,13 @@ const homePageData = {
     {
       _type: 'serviceBlock',
       _key: 'service1',
-      tagline: 'Our Integrated <span class="theme-clr" style="font-style: normal;">Creative Tech Stack</span>',
-      description: 'We provide end-to-end expertise across four core pillars, ensuring your brand vision is executed flawlessly from code to campaign.',
+      tagline: 'Our Integrated <span class="theme-clr" style="font-style: normal;">Creative Tech Stack & Services</span>',
+      description: 'Bringing AI, marketing, development, and design into one streamlined system—built to help businesses execute faster, stay consistent, and achieve measurable growth.',
       servicesList: [
-        { _key: 's1', title: 'Web & App Development', description: 'Building scalable, high-performance web and mobile applications using cutting-edge AI and code.', page: '/services/web-development-services' },
-        { _key: 's2', title: 'Digital Marketing', description: 'Data-driven strategies to amplify your brand reach and ROI using AI-enhanced targeting.', page: '/graphic-main' },
-        { _key: 's3', title: 'AI Film & Video Production', description: 'Cinematic storytelling powered by AI for next-gen visual experiences and production efficiency.', page: '/services/seo-services' },
-        { _key: 's4', title: 'Brand & Design', description: 'User-centered design, branding, and interfaces that are beautiful, intuitive, and effective.', page: '/social-media' }
+        { _key: 's1', title: 'Development Services', description: 'Custom web, mobile, and SaaS development built for scalability, performance, and automation.', page: '/services/web-development-services' },
+        { _key: 's2', title: 'Digital Marketing (SEO & PPC)', description: 'SEO, PPC, and social strategies focused on increasing visibility, generating leads, and maximizing ROI.', page: '/graphic-main' },
+        { _key: 's3', title: 'AI Services (AI Videos, Filmmaking & Consulting)', description: 'AI-driven video production, filmmaking, and consulting to improve storytelling, efficiency, and decision-making.', page: '/services/seo-services' },
+        { _key: 's4', title: 'Designs & Branding', description: 'UI/UX, graphic design, and branding that build strong identities, enhance user experience, and increase conversions.', page: '/social-media' }
       ]
     },
     {

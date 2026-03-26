@@ -296,3 +296,39 @@
 	position: relative;
 	z-index: 9;
 }
+.review-card-modern {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white !important;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.review-card-modern:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #e9fe49 !important;
+    transform: translateY(-2px);
+}
+
+.review-card-modern:hover span, 
+.review-card-modern:hover svg {
+    display: inline-block;
+    animation: flip-text-modern 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes flip-text-modern {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+.fs-seven {
+    font-size: 14px;
+}

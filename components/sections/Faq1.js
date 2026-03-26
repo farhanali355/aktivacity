@@ -6,24 +6,24 @@ export default function Faq1({ data }) {
 
     const faqData = data?.faqs || [
         {
-            question: "What makes an \"AI-Powered Creative Tech Agency\" different from a regular digital agency?",
-            answer: "Unlike traditional agencies, we integrate Artificial Intelligence into every step—from data-driven strategy and automated marketing to AI-enhanced design and development. This ensures faster delivery, smarter insights, and superior measurable results."
+            question: "What makes an “AI-Powered Creative Tech Agency” different from other digital agencies?",
+            answer: "We go beyond standard offerings, with an emphasis on the integration of AI & automation with UI/UX, development, and video creation for smart business growth."
         },
         {
             question: "Do you work with startups/SMEs in Pakistan, or only large enterprises?",
-            answer: "We work with visionaries of all sizes. Whether you're an ambitious startup looking to disrupt the market or an established enterprise seeking digital transformation, our scalable solutions are tailored to your specific budget and goals."
+            answer: "We absolutely do. Our industry-aligned solutions cater to startups, SMEs, and enterprises, with particular emphasis on the Pakistani market."
         },
         {
-            question: "Can you handle both our software development and marketing campaign?",
-            answer: "Absolutely. That's our core strength. We are a full-service integrated partner, ensuring your technical product (website/app) and your marketing message are perfectly aligned for maximum impact and growth."
+            question: "Can you manage both our software development and your marketing campaigns?",
+            answer: "Yes, being a Full-Service Tech & Digital Agency, we offer a one-stop solution for all your needs."
         },
         {
-            question: "What is your typical project process and timeline?",
-            answer: "We follow an agile, transparent process: Discovery -> Strategy -> Design & Dev -> Deployment -> Growth. Timelines vary by project complexity, but our AI-powered workflows often allow us to deliver 30-40% faster than traditional standards."
+            question: "What is your standard project workflow and duration?",
+            answer: "We use a cooperative framework, with design thinking & agile development for the various phases. This includes the following: discovery (1-2 weeks), prototyping (2-4 weeks), development/test (4-8 weeks), launch/optimization."
         },
         {
-            question: "How do you measure the success and ROI of your projects?",
-            answer: "We focus on key performance indicators (KPIs) that matter to your business—leads generated, cost per acquisition, engagement rates, and revenue growth. We provide transparent reporting so you always know the value we're delivering."
+            question: "How do you track success and ROI on your projects?",
+            answer: "ROI, conversion, retention, and revenue growth, and other metrics tell the story. This is all tracked with GA and custom dashboards for the stakeholders."
         }
     ]
 

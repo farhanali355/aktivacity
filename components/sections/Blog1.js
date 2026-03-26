@@ -7,21 +7,18 @@ export default function Blog1() {
 
             <section className="home-blog-version1 pb-space pt-space">
                 <div className="container zindex position-relative">
-                    <div className="d-flex align-items-center justify-content-between flex-wrap gap-5 mb-xxl-15 mb-xl-12 mb-lg-10 mb-md-10 mb-sm-10 mb-9">
+                    <div className="mb-xxl-15 mb-xl-12 mb-lg-10 mb-md-10 mb-sm-10 mb-9">
                         <div className="pricing-title">
-                            <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5">
+                            <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-4">
                                 BLOG &amp; News
                             </div>
-                            <h2 className="stitle text-white">
+                            <h2 className="stitle text-white mb-4">
                                 Insights on <span className="fw-400 theme-clr" style={{ fontStyle: 'normal' }}>Tech, AI & Digital Growth</span>
                             </h2>
+                            <p className="text-white opacity-75 fs-5" style={{ maxWidth: '800px' }}>
+                                Stay updated with practical insights on AI, marketing, development, and digital growth covering trends, strategies, and real-world applications that help businesses perform better.
+                            </p>
                         </div>
-                        <Link href="/blog-grid" className="radius-btn d-inline-flex radius100 py-xxl-2 py-2 px-xxl-5 px-5 theme-border theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 style-2">
-                            View all Artcile
-                            <span className="rot60 d-inline-block">
-                                <i className="fas fa-arrow-up theme-clr" />
-                            </span>
-                        </Link>
                     </div>
                     <div className="row g-xxl-7 g-xl-6 g-4">
                         <div className="col-lg-4 col-md-6 col-sm-6">
@@ -99,6 +96,12 @@ export default function Blog1() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div className="mt-5 text-center" data-aos="fade-up" data-aos-duration="1400">
+                        <Link href="/blog-grid" className="btn btn-outline-theme rounded-pill py-3 px-5 fw-bold fs-5 text-uppercase theme-border theme-clr bg-transparent mt-4">
+                            View All Blogs
+                        </Link>
                     </div>
                 </div>
             </section>

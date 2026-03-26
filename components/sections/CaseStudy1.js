@@ -45,7 +45,7 @@ export default function CaseStudy1({ data }) {
                         </div>
                         <h2 className="stitle mb-xxl-8 mb-xl-7 mb-xl-5 mb-4 text-white" dangerouslySetInnerHTML={{ __html: data?.heading || 'Where Vision Meets <span class="theme-clr" style="font-style: normal;">Measurable Results</span>' }} />
                         <p className="white-clr mb-0 fs-5" style={{ maxWidth: '800px', margin: '0 auto', opacity: 0.8 }}>
-                            {data?.description || 'Explore how we’ve helped businesses like yours leverage integrated technology and creativity to solve complex challenges and achieve key objectives.'}
+                            {data?.description || 'Explore how businesses like yours achieved measurable growth—from 3X ROI to higher conversions and scalable product development—through strategy, technology, and creative execution.'}
                         </p>
                     </div>
                     <div className="row g-xxl-7 g-xl-5 g-4">
