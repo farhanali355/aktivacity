@@ -80,7 +80,7 @@ export default function Footer1() {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/protfolio" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                                    <Link href="/portfolio" className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                         <span className="ani-icons">
                                                             <i className="fas fa-angle-double-right pra-clr" />
                                                         </span>
