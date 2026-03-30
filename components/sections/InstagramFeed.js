@@ -21,7 +21,7 @@ export default function InstagramFeed() {
         const fetchInstagramFeed = async () => {
             try {
                 // YEH RAHA URL JO AAPKO REPLACE KARNA HAI
-                const beholdUrl = 'https://feeds.behold.so/anStEUI7rw9b69uTdrkp';
+                const beholdUrl = 'https://feeds.behold.so/iufeETuG7P63apV8GYLS';
                 
                 if (beholdUrl === 'YOUR_BEHOLD_URL_HERE') {
                     setLoading(false);
