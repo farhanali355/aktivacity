@@ -132,6 +132,9 @@ export default function Menu() {
                 <li className="menu-item hover-this">
                     <Link href="/study-details" className='linkss'><span>Portfolio</span></Link>
                 </li>
+                <li className="menu-item hover-this">
+                    <Link href="/blog-grid" className='linkss'><span>Blog</span></Link>
+                </li>
                 {/* <ul className="sub-menu px-lg-4 py-xxl-3 py-2" style={{ display: `${isAccordion == 3 ? "block" : "none"}` }}>
                         <li className="menu-link py-1">
                             <Link href="/study-grid" className="fw_500 white-clr">Case Study</Link>
