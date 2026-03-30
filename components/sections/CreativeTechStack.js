@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function CreativeTechStack() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -14,25 +15,42 @@ export default function CreativeTechStack() {
             title: "Development",
             content: "Scalable platforms and custom solutions built for performance and automation.",
             img: "/assets/img/element/development.jpg",
-            imgPos: { top: '-110px', left: '20%' }
+            imgPos: { top: '-110px', left: '20%' },
+            subServices: [
+                { title: "Web Development Services", href: "/services/web-development-services" },
+                { title: "Software Development", href: "/services/software-development" }
+            ]
         },
         {
             title: "Digital Marketing",
             content: "SEO, PPC, and growth strategies focused on visibility, leads, and revenue.",
             img: "/assets/img/element/digital.webp",
-            imgPos: { top: '-90px', left: '60%' }
+            imgPos: { top: '-90px', left: '60%' },
+            subServices: [
+                { title: "Digital Marketing Services", href: "/services/digital-marketing-services" },
+                { title: "SEO Services", href: "/services/seo-services" }
+            ]
         },
         {
             title: "Design & Branding",
             content: "User-focused design and brand systems that improve experience and conversion.",
             img: "/assets/img/element/branding.jpg",
-            imgPos: { top: '-120px', left: '45%' }
+            imgPos: { top: '-120px', left: '45%' },
+            subServices: [
+                { title: "Graphic Design & Branding", href: "/services/graphic-design-branding" },
+                { title: "UI/UX Design", href: "/services/ui-ux-design" }
+            ]
         },
         {
             title: "AI Services",
             content: "AI-powered content, video production, and consulting to enhance creativity and efficiency.",
             img: "/assets/img/element/video.jpg",
-            imgPos: { top: '-100px', left: '10%' }
+            imgPos: { top: '-100px', left: '10%' },
+            subServices: [
+                { title: "Ai Strategy & Marketing", href: "/services/ai-strategy-marketing" },
+                { title: "AI Automation", href: "/services/ai-automation-services" },
+                { title: "Ai Film Making & Video Production", href: "/services/ai-film-making-video-production" }
+            ]
         }
     ];
 
@@ -97,7 +115,7 @@ export default function CreativeTechStack() {
                                             transition: 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)',
                                             zIndex: 20,
                                             boxShadow: '0 20px 40px rgba(0,0,0,0.6)',
-                                            border: 'none' // Removed border as requested
+                                            border: 'none'
                                         }}
                                     >
                                         <div className="position-absolute w-100 h-100" style={{ background: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.4))' }}></div>
@@ -112,7 +130,7 @@ export default function CreativeTechStack() {
                                         <span 
                                             className="fw-normal" 
                                             style={{ 
-                                                fontSize: '2rem', // Made a bit bigger
+                                                fontSize: '2rem',
                                                 transition: 'all 0.4s ease',
                                                 color: activeIndex === index || hoveredIndex === index ? '#E3FF04' : '#fff',
                                                 letterSpacing: '0.5px',
@@ -141,18 +159,40 @@ export default function CreativeTechStack() {
                                     <div 
                                         className="accordion-collapse overflow-hidden"
                                         style={{ 
-                                            maxHeight: activeIndex === index ? '200px' : '0px', 
-                                            transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                                            maxHeight: activeIndex === index ? '500px' : '0px', 
+                                            transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
                                             opacity: activeIndex === index ? '1' : '0'
                                         }}
                                     >
                                         <div className={`mt-4 ${activeIndex === index ? 'd-block' : 'd-none'}`}>
-                                            <p className="white-clr opacity-75 mb-0 fs-5 ps-4" style={{ 
+                                            <p className="white-clr opacity-75 mb-5 fs-5 ps-4" style={{ 
                                                 borderLeft: '2px solid #E3FF04', 
                                                 lineHeight: '1.8',
                                             }}>
                                                 {item.content}
                                             </p>
+
+                                            <ul className="list-unstyled ps-4 ms-1 d-flex flex-column gap-3 mb-4">
+                                                {item.subServices.map((sub, sIdx) => (
+                                                    <li key={sIdx} className="sub-service-item" style={{ 
+                                                        transition: 'all 0.3s ease',
+                                                        animation: activeIndex === index ? `fadeInUp 0.5s ease forwards ${sIdx * 0.15}s` : 'none',
+                                                        opacity: 0
+                                                    }}>
+                                                        <Link href={sub.href} className="text-decoration-none d-flex align-items-center gap-3 group">
+                                                            <span className="dot" style={{ 
+                                                                width: '8px', 
+                                                                height: '8px', 
+                                                                backgroundColor: '#E3FF04', 
+                                                                borderRadius: '50%',
+                                                                boxShadow: '0 0 10px rgba(227,255,4,0.5)',
+                                                                transition: 'all 0.3s ease'
+                                                            }}></span>
+                                                            <span className="white-clr opacity-75 sub-link-text" style={{ fontSize: '1.15rem', transition: 'all 0.3s ease' }}>{sub.title}</span>
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -161,6 +201,32 @@ export default function CreativeTechStack() {
                     </div>
                 </div>
             </div>
+
+            <style jsx>{`
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(15px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                .sub-service-item:hover .dot {
+                    transform: scale(1.5);
+                    box-shadow: 0 0 15px rgba(227,255,4,0.8);
+                }
+                .sub-service-item:hover .sub-link-text {
+                    opacity: 1 !important;
+                    color: #E3FF04 !important;
+                    transform: translateX(8px);
+                }
+                .sub-link-text {
+                    display: inline-block;
+                }
+            `}</style>
         </section>
     );
 }
+

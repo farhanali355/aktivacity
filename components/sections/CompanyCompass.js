@@ -20,7 +20,7 @@ export default function CompanyCompass() {
         {
             title: "Integrity & Impact",
             desc: "Focused on results that create real value, with transparency at every step",
-            icon: "fas fa-shield-halved"
+            icon: "fas fa-shield-alt"
         }
     ];
 
