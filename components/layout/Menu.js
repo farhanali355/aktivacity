@@ -130,7 +130,7 @@ export default function Menu() {
                 {/* </li> */}
                 {/* <li className="menu-item position-relative"> */}
                 <li className="menu-item hover-this">
-                    <Link href="/study-details" className='linkss'><span>Portfolio</span></Link>
+                    <Link href="/study-grid" className='linkss'><span>Portfolio</span></Link>
                 </li>
                 <li className="menu-item hover-this">
                     <Link href="/blog-grid" className='linkss'><span>Blog</span></Link>

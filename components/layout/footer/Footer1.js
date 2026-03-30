@@ -80,7 +80,7 @@ export default function Footer1() {
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link href="/study-details" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                                    <Link href="/study-grid" className="d-flex align-items-center gap-2 flink-items pra-clr">
                                                         <span className="ani-icons">
                                                             <i className="fas fa-angle-double-right pra-clr" />
                                                         </span>
@@ -101,6 +101,14 @@ export default function Footer1() {
                                                             <i className="fas fa-angle-double-right pra-clr" />
                                                         </span>
                                                         Services
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="/blog-grid" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                                                        <span className="ani-icons">
+                                                            <i className="fas fa-angle-double-right pra-clr" />
+                                                        </span>
+                                                        Blog
                                                     </Link>
                                                 </li>
                                                 <li>
