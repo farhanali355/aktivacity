@@ -51,12 +51,16 @@ export default function InstagramFeed() {
         spaceBetween: 24,
         speed: 10000,          // Balanced speed for the continuous marquee
         loop: true,
-        allowTouchMove: true,  // Allow mouse sliding / touching
-        freeMode: true,        // Solves the slow drag physics
+        allowTouchMove: true,
+        grabCursor: true,
+        freeMode: {
+            enabled: true,
+            momentum: false,
+        },
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true, // Pause automatically when user hovers/touches to drag
+            pauseOnMouseEnter: true,
         },
         breakpoints: {
             320: { slidesPerView: 1.5 },
@@ -91,16 +95,6 @@ export default function InstagramFeed() {
                     <Swiper 
                         {...swiperOptions} 
                         className="instagram-marquee-swiper"
-                        onSliderFirstMove={(swiper) => {
-                            // Jab user slide ko mouse se pakray ga to speed free ho jaye gi
-                            swiper.params.speed = 0; 
-                        }}
-                        onTouchEnd={(swiper) => {
-                            // Mouse chorne par wapis apni speed me aa jaye
-                            setTimeout(() => {
-                                swiper.params.speed = 10000;
-                            }, 10);
-                        }}
                     >
                         {itemsToDisplay.map((item, index) => {
                             // Check media type from Behold Data
@@ -149,7 +143,7 @@ export default function InstagramFeed() {
 
             <style jsx>{`
                 :global(.instagram-marquee-swiper .swiper-wrapper) {
-                    transition-timing-function: linear !important;
+                    transition-timing-function: linear;
                 }
                 .instagram-item video, 
                 .instagram-item img {
