@@ -32,7 +32,9 @@ export default function InstagramFeed() {
                 const data = await response.json();
                 
                 if (data && data.posts && data.posts.length > 0) {
-                    setPosts(data.posts);
+                    // Filter to show only videos/reels
+                    const videoPosts = data.posts.filter(post => post.mediaType === 'VIDEO');
+                    setPosts(videoPosts);
                 }
             } catch (error) {
                 console.error("Error fetching Instagram data:", error);
