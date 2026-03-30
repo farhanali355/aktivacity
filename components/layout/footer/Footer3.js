@@ -9,7 +9,7 @@ export default function Footer3() {
 
             <footer className="footer-version-three bg1-clr">
                 <div className="container">
-                    <div className="footer-topversion-one pb-20">
+                    <div className="footer-topversion-one pb-10">
                         <div className="footer-v3-titlewrap d-flex align-items-center gap-xxl-15 gap-xl-10 gap-md-8 gap-sm-5 gap-3 pb-xxl-15 pb-xl-10 pb-8">
                             <span className="footer-v3-title" data-aos="zoom-in-right" data-aos-duration={1800}>
                                 Let’s talk!
@@ -263,7 +263,7 @@ export default function Footer3() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="footer-bottom-redesign pt-0 pb-10">
+                            <div className="footer-bottom-redesign pt-0 pb-4">
                                 <div className="container">
                                     {/* Review Cards Row */}
                                     <div className="d-flex flex-wrap justify-content-center gap-4 mb-8" data-aos="fade-up" data-aos-duration={1000}>
@@ -299,7 +299,7 @@ export default function Footer3() {
                                             <Link href="#" className="pra-clr fs-seven">Privacy Policy</Link>
                                             <Link href="#" className="pra-clr fs-seven">Manage Cookies</Link>
                                         </div>
-                                        <p className="pra-clr fs-seven">
+                                        <p className="pra-clr fs-seven mb-0">
                                             © Copyright {new Date().getFullYear()} by <Link href="/" className="theme-clr fw-bold">AKTIVACITY</Link>
                                         </p>
                                     </div>
