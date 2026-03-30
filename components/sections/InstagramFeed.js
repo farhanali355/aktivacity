@@ -32,8 +32,7 @@ export default function InstagramFeed() {
                 const data = await response.json();
                 
                 if (data && data.posts && data.posts.length > 0) {
-                    // Filter or limit posts if needed, here we take first 10
-                    setPosts(data.posts.slice(0, 10));
+                    setPosts(data.posts);
                 }
             } catch (error) {
                 console.error("Error fetching Instagram data:", error);
@@ -117,8 +116,7 @@ export default function InstagramFeed() {
                                                 background: '#222',
                                                 border: '1px solid rgba(255,255,255,0.08)'
                                             }}>
-                                            
-                                            {isVideo ? (
+                                                                                        {isVideo ? (
                                                 <video 
                                                     src={mediaSrc}
                                                     poster={thumbnailSrc}
@@ -126,13 +124,15 @@ export default function InstagramFeed() {
                                                     loop 
                                                     muted 
                                                     playsInline 
-                                                    className="w-100 h-100 object-fit-cover"
+                                                    className="w-100 h-100"
+                                                    style={{ objectFit: 'cover', display: 'block' }}
                                                 />
                                             ) : (
                                                 <img 
                                                     src={thumbnailSrc} 
                                                     alt={item.caption || "Aktivacity Social"} 
-                                                    className="w-100 h-100 object-fit-cover" 
+                                                    className="w-100 h-100" 
+                                                    style={{ objectFit: 'cover', display: 'block' }}
                                                     loading="lazy"
                                                 />
                                             )}
@@ -148,6 +148,13 @@ export default function InstagramFeed() {
             <style jsx>{`
                 :global(.instagram-marquee-swiper .swiper-wrapper) {
                     transition-timing-function: linear !important;
+                }
+                .instagram-item video, 
+                .instagram-item img {
+                    object-fit: cover !important;
+                    width: 100% !important;
+                    height: 100% !important;
+                    display: block !important;
                 }
             `}</style>
         </section>
