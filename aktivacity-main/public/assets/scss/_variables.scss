@@ -1,0 +1,31 @@
+:root {
+	--body: #ffffff;
+	--black: #000;
+	--white: #fff;
+	--spantext: #757575;
+	--theme: #E3FF04;
+	--bg1: #161616;
+	--bg2: #1b1b1b;
+	--bg3: #fff;
+	--border1: #454750;
+	--pra-clr: #bebebe;
+	--dd-clr: #dadada;
+	--place: #858585;
+	--tag: #646464;
+	--bspan: #ababab;
+}
+
+// Theme Color - Defualt Colors
+$black: var(--black);
+$white: var(--white);
+$theme: var(--theme);
+$bg1: var(--bg1);
+$bg2: var(--bg2);
+$bg3: var(--bg3);
+$spantext: var(--spantext);
+$border1: var(--border1);
+$pra-clr: var(--pra-clr);
+$dd-clr: var(--dd-clr);
+$place: var(--place);
+$tag: var(--tag);
+$bspan: var(--bspan);
