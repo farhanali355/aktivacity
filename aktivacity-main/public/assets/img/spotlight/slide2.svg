@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="100%" height="100%" fill="#000" />
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#g)" opacity="0.06"/>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0057ff" />
+      <stop offset="100%" stop-color="#00c6ff" />
+    </linearGradient>
+  </defs>
+  <g fill="#e9fe49" font-family="Montserrat, sans-serif" font-weight="700">
+    <text x="80" y="120" font-size="32">E-COMMERCE</text>
+    <text x="80" y="260" font-size="88">ShopMax Increased</text>
+    <text x="80" y="360" font-size="88">Checkout Conversion</text>
+    <text x="80" y="460" font-size="88">With A Streamlined UX</text>
+  </g>
+  <g transform="translate(80,680)" fill="#cbd5da" font-family="Inter, sans-serif" font-size="28">
+    <text>Reduced cart abandonment by 28% in 6 weeks.</text>
+    <text y="40">Implemented one-click checkout and optimized product pages.</text>
+  </g>
+  <circle cx="1440" cy="500" r="220" fill="#0b1221" opacity="0.35" />
+</svg>

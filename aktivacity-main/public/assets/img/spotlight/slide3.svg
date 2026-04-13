@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="100%" height="100%" fill="#000" />
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0077cc" />
+      <stop offset="100%" stop-color="#00a8ff" />
+    </linearGradient>
+  </defs>
+  <g fill="#e9fe49" font-family="Montserrat, sans-serif" font-weight="700">
+    <text x="80" y="120" font-size="32">HEALTHCARE</text>
+    <text x="80" y="260" font-size="88">HealthPlus Improved</text>
+    <text x="80" y="360" font-size="88">Patient Retention with</text>
+    <text x="80" y="460" font-size="88">Mobile-first Design</text>
+  </g>
+  <g transform="translate(80,680)" fill="#cbd5da" font-family="Inter, sans-serif" font-size="28">
+    <text>Mobile appointment flow reduced support calls by 18%.</text>
+    <text y="40">Accessible design for varied user demographics.</text>
+  </g>
+  <rect x="1100" y="220" width="420" height="560" rx="16" fill="#071018" opacity="0.4" />
+</svg>
