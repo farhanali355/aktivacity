@@ -120,9 +120,7 @@ export default function About() {
                                                         Cross-functional execution
                                                     </li>
                                                 </ul>
-                                                <p className="theme-clr m-0 fst-italic fw-medium">
-                                                    <i className="fas fa-info-circle me-2"></i> This reduces delays, improves quality, and ensures consistency across every touchpoint from product to marketing.
-                                                </p>
+                                              
                                             </div>
                                         </div>
                                     </div>
@@ -132,11 +130,11 @@ export default function About() {
                     </section>
                     {/* Cmn About End */}
 
-                    {/* Company Compass Section */}
-                    <CompanyCompass />
-
                     {/* Creative Tech Stack */}
                     <CreativeTechStack />
+
+                    {/* Company Compass Section */}
+                    <CompanyCompass />
 
                     {/* Workplace Culture & Leadership CTA */}
                     <WorkplaceCulture />
@@ -148,7 +146,7 @@ export default function About() {
                             <div className="d-flex align-items-center justify-content-between flex-wrap gap-5 mb-xxl-15 mb-xl-12 mb-lg-10 mb-md-10 mb-sm-10 mb-9">
                                 <div className="pricing-title">
                                     <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5">
-                                        oUR experts
+                                        OUR EXPERTS
                                     </div>
                                     <h2 className="stitle white-clr">
                                         Meet our <span className="fw-400 theme-clr">creative</span> staff
@@ -163,21 +161,21 @@ export default function About() {
                             </div>
                             <div className="row g-xxl-7 g-xl-5 g-4 justify-content-center">
                                 {[{
-                                    name: "SUMMAYA HIDAYAT", role: "Senior Human Resources", img: "summaya-4.jpeg", fb: "https://www.facebook.com/", ig: "https://www.instagram.com/", in: "https://www.linkedin.com/in/summaya-hidayat-6a2828315"
+                                    name: "SUMMAYA HIDAYAT", role: "Human Resources Manager", img: "summaya-4.jpg", fb: "https://www.facebook.com/", ig: "https://www.instagram.com/", in: "https://www.linkedin.com/in/summaya-hidayat-6a2828315"
                                 }, {
-                                    name: "YOUSIF ALI DHAREJO", role: "Project Management", img: "yousif-2.jpeg", fb: "https://www.facebook.com/share/1ETXs9kdjc/", ig: "https://www.instagram.com/dharejo_here", in: "https://www.linkedin.com/in/yousif-ali-dharejo"
+                                    name: "YOUSIF ALI DHAREJO", role: "Sales Executive", img: "yousif-2.jpeg", fb: "https://www.facebook.com/share/1ETXs9kdjc/", ig: "https://www.instagram.com/dharejo_here", in: "https://www.linkedin.com/in/yousif-ali-dharejo"
                                 }, {
-                                    name: "SOORAJ CHHABRIA", role: "Sales Specialist", img: "sooraj-2.jpeg", fb: "https://facebook.com/sun4rt", ig: "https://instagram.com/sun4rt", in: "https://www.linkedin.com/in/sun4rt"
+                                    name: "SOORAJ CHHABRIA", role: "Project Manager", img: "sooraj-2.jpeg", fb: "https://facebook.com/sun4rt", ig: "https://instagram.com/sun4rt", in: "https://www.linkedin.com/in/sun4rt"
                                 }, {
                                     name: "FARHAN ALI", role: "Full Stack Developer", img: "farhan-5.jpeg", fb: "https://www.facebook.com/share/1CHwcL4SrF/", ig: "https://www.instagram.com/maybe_farhan.11", in: "https://www.linkedin.com/in/farhan-ali-084a45323"
                                 }, {
                                     name: "IQBAL RAZA", role: "SEO Specialist", img: "iqbal-3.jpeg", fb: "https://www.facebook.com/miraza606", ig: "https://www.instagram.com/miraza606/", in: "https://www.linkedin.com/in/miraza606"
                                 }, {
-                                    name: "FAIZAN SHAIKH", role: "Sales Specialist", img: "faizan-2.jpeg", fb: "https://www.facebook.com/share/16cETK5Uug/", ig: "https://www.instagram.com/xfayzy", in: "https://www.linkedin.com/in/faizan-sheikh-6080b122a"
+                                    name: "FAIZAN SHAIKH", role: "Business Development Executive", img: "faizan-2.jpeg", fb: "https://www.facebook.com/share/16cETK5Uug/", ig: "https://www.instagram.com/xfayzy", in: "https://www.linkedin.com/in/faizan-sheikh-6080b122a"
                                 }, {
-                                    name: "EHTESHAM RAFI", role: "Sales Specialist", img: "ahtisham-3.jpeg", fb: "https://www.facebook.com/", ig: "https://www.instagram.com/_ehteshamrafi_", in: "https://www.linkedin.com/in/ehteshamrafi/"
+                                    name: "KHIZER ULLAH KHAN", role: "Performance Marketer", img: "khizer.jpg", fb: "https://www.facebook.com/share/1HybsxJfFe/", ig: "https://www.instagram.com/khizerkhan7474?igsh=M2x2YmdieXBta3g5", in: "https://www.linkedin.com/in/khizer-khan-8ab774229/"
                                 }, {
-                                    name: "MUHAMMAD FARHAT", role: "Graphic Designer", img: "ahtisham-3.jpeg", fb: "https://www.facebook.com/", ig: "https://www.instagram.com/", in: "https://www.linkedin.com/"
+                                    name: "FAHAD RASOOL BUX", role: "Application Developer", img: "fahad.jpg", fb: "", ig: "", in: ""
                                 }].map((staff, idx) => (
                                     <Tilt options={toltOptions} key={idx} className="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fadein" data-aos-duration={1400 + (idx % 4) * 200}>
                                         <div className="team-staf-item tilt bg2-clr text-center py-xxl-8 py-xl-6 py-5 px-xxl-7 px-xl-5 px-4 mb-4">

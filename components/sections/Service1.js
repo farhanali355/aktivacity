@@ -63,7 +63,7 @@ const Service1 = ({ data }) => {
                 <div className="section-title mb-5" data-aos="fade-up" data-aos-duration="1000">
                     <h2 className="stitle text-white mb-3" dangerouslySetInnerHTML={{ __html: data?.tagline || 'Our Integrated <span class="theme-clr" style="font-style: normal;">Creative Tech Stack & Services</span>' }} />
                     <p className="text-white opacity-75 mx-auto fs-5" style={{ maxWidth: '800px' }}>
-                        {data?.description || 'Bringing AI, marketing, development, and design into one streamlined system—built to help businesses execute faster, stay consistent, and achieve measurable growth.'}
+                        {data?.description || 'Bringing AI, digital marketing, development, and design into one streamlined system—built to help businesses execute faster, stay consistent, and achieve measurable growth.'}
                     </p>
                 </div>
 

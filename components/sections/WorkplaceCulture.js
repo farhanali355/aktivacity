@@ -42,7 +42,7 @@ export default function WorkplaceCulture() {
                                     The atmosphere at Aktivacity thrives on the dynamic collaboration of engineers, strategists and designers&apos; ideas and energy. We value ongoing growth and focus on daily development in AI-focused workshops, creative sprints, and creating an energetic environment that is favorable for personal development and professional advancement.
                                 </p>
                                 
-                                <div className="culture-stats-row d-flex flex-wrap gap-xxl-8 gap-xl-6 gap-4">
+                                {/* <div className="culture-stats-row d-flex flex-wrap gap-xxl-8 gap-xl-6 gap-4">
                                     <div className="d-flex align-items-center gap-3">
                                         <h4 className="theme-clr mb-0 fw-bold fs-2">AI</h4>
                                         <span className="white-clr opacity-50">Focused Growth</span>
@@ -52,7 +52,7 @@ export default function WorkplaceCulture() {
                                         <h4 className="theme-clr mb-0 fw-bold fs-2">Energy</h4>
                                         <span className="white-clr opacity-50">High-Impact Results</span>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

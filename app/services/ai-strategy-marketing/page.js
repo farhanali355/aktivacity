@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import AiStrategyCaseSlider from '@/components/elements/AiStrategyCaseSlider'
 import AiStrategyChooseCarousel from '@/components/elements/AiStrategyChooseCarousel'
 import TestimonialCarousel from '@/components/elements/TestimonialCarousel'
+import PortfolioCTA from '@/components/sections/PortfolioCTA'
 
 export default function AiStrategyMarketing() {
     const [activeDeliv, setActiveDeliv] = useState(0)
@@ -1241,6 +1242,8 @@ export default function AiStrategyMarketing() {
                         }
                     `}</style>
                 </section>
+
+                <PortfolioCTA />
 
                 {/* STICKY CTA */}
                 <div className={`sticky-cta-wrap transition-all ${scrolled ? 'visible' : ''}`}>

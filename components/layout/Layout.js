@@ -16,7 +16,7 @@ import Footer4 from './footer/Footer4'
 import Header1 from "./header/Header1"
 import Header2 from './header/Header2'
 
-export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, breadcrumbSubTitle, children }) {
+export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, breadcrumbSubTitle, breadcrumbLabel, children }) {
     const [scroll, setScroll] = useState(0)
     // Moblile Menu
     const [isMobileMenu, setMobileMenu] = useState(false)
@@ -41,8 +41,15 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, brea
         const handleScroll = () => {
             setScroll(window.scrollY > 20)
         }
+        const openModalFn = () => setIsModalOpen(true)
+        
         window.addEventListener("scroll", handleScroll)
-        return () => window.removeEventListener("scroll", handleScroll)
+        window.addEventListener("openQuoteModal", openModalFn)
+        
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+            window.removeEventListener("openQuoteModal", openModalFn)
+        }
     }, [])
     return (
         <><div id="toper" />
@@ -53,7 +60,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, brea
             <Search isSearch={isSearch} handleSearch={handleSearch} />
 
             <main className="main">
-                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} breadcrumbSubTitle={breadcrumbSubTitle} />}
+                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} breadcrumbSubTitle={breadcrumbSubTitle} breadcrumbLabel={breadcrumbLabel} />}
 
                 {children}
             </main>

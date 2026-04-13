@@ -1035,17 +1035,17 @@ export default function WebApp() {
                                 <div className="connect-card p-xxl-10 p-xl-8 p-6 position-relative overflow-hidden">
                                     <div className="d-flex align-items-center gap-4 mb-8">
                                         <div className="profile-img-wrap">
-                                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Expert" className="rounded-circle" style={{ width: '80px', height: '80px', objectFit: 'cover' }} />
+                                            <img src="/assets/img/team/sibghat.png" alt="Sibghat Shaikh" className="rounded-circle" style={{ width: '80px', height: '80px', objectFit: 'cover' }} />
                                         </div>
                                         <div className="profile-info">
-                                            <h4 className="white-clr mb-1 fw-bold">Zain Ahmed</h4>
-                                            <p className="theme-clr fs-xs mb-0 fw-medium">Founder @ Aktivacity</p>
+                                            <h4 className="white-clr mb-1 fw-bold">Sibghat Shaikh</h4>
+                                            <p className="theme-clr fs-xs mb-0 fw-medium">CEO @ Aktivacity</p>
                                         </div>
                                     </div>
                                     <p className="pra-clr fs-5 mb-10 lh-base opacity-75">
-                                        “Have more questions or just curious about future possibilities? Feel free to connect with me on LinkedIn.”
+                                        “Have a question or are you planning something new? Let’s connect and explore.”
                                     </p>
-                                    <a href="#" className="linkedin-btn py-3 px-6 rounded-pill bg-white d-flex align-items-center justify-content-between transition-all">
+                                    <a href="https://www.linkedin.com/in/sibghatshaikh/" className="linkedin-btn py-3 px-6 rounded-pill bg-white d-flex align-items-center justify-content-between transition-all">
                                         <span className="black-clr fw-bold text-uppercase ls-1 fs-xs">Connect on LinkedIn</span>
                                         <div className="icon-circle bg-theme rounded-circle d-flex align-items-center justify-content-center" style={{ width: '30px', height: '30px', backgroundColor: '#0077B5' }}>
                                             <i className="fab fa-linkedin-in white-clr fs-xs" />

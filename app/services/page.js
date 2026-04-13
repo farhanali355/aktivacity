@@ -27,7 +27,7 @@ export default function Service() {
             id: '01',
             title: "Development Services",
             tagline: "Scalable Digital Foundations.",
-            desc: "We architect high-performance, future-ready digital platforms. From complex web ecosystems to immersive mobile experiences, we build for scale.",
+            desc: "Scalable web, mobile, and SaaS solutions built for performance, automation, and long-term growth.",
             subCapabilities: [
                 { title: "Web Development Services", href: "/services/web-development-services" },
                 { title: "Software Development", href: "/services/software-development" },
@@ -40,9 +40,9 @@ export default function Service() {
         },
         {
             id: '02',
-            title: "Digital Marketing",
+            title: "Digital Marketing (SEO & PPC)",
             tagline: "Growth Engineering at Scale.",
-            desc: "Precision growth through data-driven campaigns and proprietary algorithms. We transform market data into dominant brand presence and ROI.",
+            desc: "Search, paid media, and growth strategies designed to increase visibility, generate leads, and maximize ROI.",
             subCapabilities: [
                 { title: "SEO Optimization", href: "/services/seo-services" },
                 { title: "Digital Marketing", href: "/services/digital-marketing-services" },
@@ -58,7 +58,7 @@ export default function Service() {
             id: '03',
             title: "AI Services",
             tagline: "The Future of Storytelling.",
-            desc: "Pioneering cinematic production through GenAI and Unreal Engine 5. We create visual assets that push the boundaries of reality.",
+            desc: "AI-driven solutions that enhance content creation, automate workflows, and improve decision-making.",
             subCapabilities: [
                 { title: "Ai Strategy & Marketing", href: "/services/ai-strategy-marketing" },
                 { title: "Ai Automation", href: "/services/ai-automation-services" },
@@ -67,13 +67,13 @@ export default function Service() {
                 { title: "3D Animation", href: "/404" }
             ],
             tags: ["UE5", "GenAI", "Virtual Prod"],
-            image: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=1470&auto=format&fit=crop"
+            image: "https://www.channelpronetwork.com/wp-content/uploads/2024/09/New-AI-services.jpg"
         },
         {
             id: '04',
-            title: "Brand Design",
+            title: "Design & Branding",
             tagline: "Visual Identity Systems.",
-            desc: "Minimalist excellence translated into high-fidelity brand identities. We craft visual languages that resonate and endure in a noisy market.",
+            desc: "Creative design and brand systems that improve user experience, strengthen identity, and increase conversions.",
             subCapabilities: [
                 { title: "Graphic Design & Branding", href: "/services/graphic-design-branding" },
                 { title: "Logo & Visual Identity", href: "/404" },
@@ -86,17 +86,17 @@ export default function Service() {
     ]
 
     const stats = [
-        { label: "Lines of Scalable Code", val: "1.2M+", icon: "fa-terminal" },
-        { label: "Client ROI Elevation", val: "320%", icon: "fa-chart-line" },
-        { label: "Average Uptime Node", val: "99.9%", icon: "fa-server" },
-        { label: "AI Assets Generated", val: "15K+", icon: "fa-atom" }
+        { label: "AI Projects Delivered", val: "100+", icon: "fa-robot" },
+        { label: "Clients Served Globally", val: "50+", icon: "fa-globe" },
+        { label: "Years of AI Experience", val: "5+", icon: "fa-calendar-check" },
+        { label: "Client Satisfaction Rate", val: "95%+", icon: "fa-heart" }
     ]
 
     const industries = [
-        { name: "FinTech & Web3", desc: "Secure, decentralized architectures for the modern economy.", icon: "fa-coins" },
-        { name: "Entertainment AI", desc: "Generative pre-vis and virtual production for big screens.", icon: "fa-clapperboard" },
-        { name: "High-End E-comm", desc: "Conversion-first ecosystems for premium global brands.", icon: "fa-bag-shopping" },
-        { name: "SaaS Enterprise", desc: "Multi-tenant cloud platforms built for massive horizontal scale.", icon: "fa-cloud" }
+        { name: "Enterprises", desc: "Scalable solutions built for complex systems and long-term growth.", icon: "fa-building" },
+        { name: "E-commerce", desc: "Performance-driven strategies to increase sales, conversions, and retention.", icon: "fa-shopping-cart" },
+        { name: "Small Businesses", desc: "Smart, cost-effective solutions designed to accelerate growth and visibility.", icon: "fa-store" },
+        { name: "Creators & Personal Brands", desc: "Creative systems to build audience, influence, and monetization.", icon: "fa-clapperboard" }
     ]
 
     const stack = [
@@ -113,7 +113,7 @@ export default function Service() {
     ]
 
     return (
-        <Layout headerStyle={2} footerStyle={3} breadcrumbTitle="CAPABILITIES // MASSIVE EDITION">
+        <Layout headerStyle={2} footerStyle={3} breadcrumbTitle="AI & Digital Services <br/> For Growth & Scale" breadcrumbLabel="SERVICES" breadcrumbSubTitle="Integrated solutions designed to support every stage of your digital growth journey.">
             <div className="massive-service-container bg-black overflow-hidden font-inter">
 
                 {/* --- HERO V3 RELOADED --- */}
@@ -125,15 +125,15 @@ export default function Service() {
                     <div className="container position-relative z-index-2">
                         <div className="row align-items-center">
                             <div className="col-lg-7" data-aos="fade-right">
-                                <div className="capsule-badge d-inline-flex align-items-center mb-8 rounded-pill py-2">
-                                    <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">SYSTEM ACTIVE LOCATION GLOBAL</span>
+                                <div className="capsule-badge d-inline-flex align-items-center mb-8 rounded-pill py-2 px-5">
+                                    <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">Built for Speed, Scale & Performance</span>
                                 </div>
-                                <h1 className="white-clr display-1 fw-black mb-10 leading-tight">
+                                <h2 className="white-clr display-2 fw-black mb-10 leading-tight">
                                     High-Performance <br />
-                                    Digital <span className="theme-clr font-italic underline-offset-8">Arsenal</span>
-                                </h1>
+                                    Digital Systems for Growth
+                                </h2>
                                 <p className="white-clr opacity-50 fs-4 mb-15 tracking-tight" style={{ maxWidth: '650px' }}>
-                                    Aktivacity is a specialized engineering lab focused on dismantling the mediocre and rebuilding it with cinematic intensity and technical perfection.
+                                    Built to eliminate complexity, this system connects development, marketing, AI, and design into one streamlined workflow. The result is faster execution, stronger consistency, and digital experiences that are designed to perform, scale, and deliver measurable business outcomes.
                                 </p>
 
                             </div>
@@ -152,10 +152,10 @@ export default function Service() {
                 <section className="showcase-v3-extended" style={{ paddingTop: '100px', paddingBottom: '120px' }}>
                     <div className="container">
                         <div className="section-head mb-3" data-aos="fade-up">
-                            <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2">
-                                <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">THE SPECTRUM</span>
+                            <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2 px-5">
+                                <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">Everything You Need to Build & Grow</span>
                             </div>
-                            <h2 className="display-2 white-clr fw-black">Core Capabilities</h2>
+                            <h2 className="display-2 white-clr fw-black">Our Core Services</h2>
                         </div>
 
                         {services.map((item, idx) => (
@@ -192,6 +192,29 @@ export default function Service() {
                     </div>
                 </section>
 
+                {/* --- RESULTS BRIDGE --- */}
+                <section className="results-bridge position-relative overflow-hidden" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+                    <div className="massive-parallax-text" style={{ 
+                        transform: `translateX(${(scrollProgress - 0.3) * -40}%)`,
+                        top: '50%',
+                        fontSize: '25vw',
+                        opacity: 0.02
+                    }}>
+                        RESULTS
+                    </div>
+                    <div className="container position-relative z-index-2 text-center">
+                        <div className="section-head mb-0" data-aos="fade-up">
+                            <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2 px-5">
+                                <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">PERFORMANCE DRIVEN</span>
+                            </div>
+                            <h2 className="display-2 white-clr fw-black mb-6">Built for Measurable Results</h2>
+                            <p className="white-clr opacity-50 fs-5 mx-auto leading-relaxed" style={{ maxWidth: '800px' }}>
+                                Real outcomes across development, marketing, and AI-focused on performance, reliability, and scalable growth.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
                 {/* --- METRIC NEXUS (Counters) --- */}
                 <section className="metric-nexus bg-dark-v1 position-relative" style={{ paddingTop: '100px', paddingBottom: '120px' }}>
                     <div className="container">
@@ -201,7 +224,7 @@ export default function Service() {
                                     <div className="metric-box p-10 border-start border-theme border-opacity-20 hover-border-opacity-100 transition-all">
                                         <i className={`fas ${s.icon} theme-clr fs-1 mb-6`}></i>
                                         <h2 className="white-clr display-5 fw-black mb-2">{s.val}</h2>
-                                        <p className="white-clr opacity-50 small fw-bold tracking-widest text-uppercase">{s.label}</p>
+                                        <p className="white-clr opacity-50 small fw-bold tracking-metric text-uppercase">{s.label}</p>
                                     </div>
                                 </div>
                             ))}
@@ -210,7 +233,7 @@ export default function Service() {
                 </section>
 
                 {/* --- GLOBAL SCALE (Infinite Marquee) --- */}
-                <section className="global-scale-marquee border-y border-secondary border-opacity-10 bg-dark-v1" style={{ paddingTop: '80px', paddingBottom: '100px' }}>
+                <section className="global-scale-marquee border-y border-secondary border-opacity-10 bg-dark-v1" style={{ paddingTop: '50px', paddingBottom: '50px' }}>
                     <div className="marquee-wrap d-flex align-items-center gap-10">
                         {Array(6).fill(stack).flat().map((item, i) => (
                             <div key={i} className="marquee-item d-flex align-items-center gap-6" style={{ padding: '0 30px' }}>
@@ -236,22 +259,21 @@ export default function Service() {
                 <section className="industry-deep position-relative" style={{ paddingTop: '100px', paddingBottom: '120px' }}>
                     <div className="cyber-pattern-abs"></div>
                     <div className="container position-relative z-index-2">
-                        <div className="row g-5">
-                            <div className="col-lg-4" data-aos="fade-right">
+                        <div className="row g-5 align-items-center">
+                            <div className="col-lg-5" data-aos="fade-right">
                                 <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2">
                                     <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">SPECIALIZATIONS</span>
                                 </div>
-                                <h2 className="display-3 white-clr fw-black mt-6 mb-10">Industry <br /> Niche Ops</h2>
-                                <p className="white-clr opacity-50 fs-5 mb-12">We don't do general. We do specific. Deep immersion into high-stakes sectors.</p>
-                                <img src="/assets/img/service/industry_final.png" className="w-100 mt-10 floating-hero-img" style={{ filter: 'drop-shadow(0 0 20px rgba(233, 254, 73, 0.4))', opacity: 0.8 }} alt="Industry Decoration" />
+                                <h2 className="display-4 white-clr fw-black mt-6 mb-10 leading-tight">Services Built for <br /> High-Growth Industries</h2>
+                                <p className="white-clr opacity-50 fs-5 mb-0">Every industry has different challenges, goals, and growth paths. Our services are adapted to match your business model helping you scale efficiently, improve performance, and stay competitive in a rapidly evolving digital landscape.</p>
                             </div>
-                            <div className="col-lg-8">
+                            <div className="col-lg-7">
                                 <div className="row g-5">
                                     {industries.map((ind, i) => (
                                         <div key={i} className="col-md-6" data-aos="fade-left" data-aos-delay={i * 150}>
-                                            <div className="industry-card p-12 rounded-4 glass-card-massive border border-white border-opacity-5 hover-border-theme transition-all h-100">
+                                            <div className="industry-card px-8 py-10 rounded-4 glass-card-massive border border-white border-opacity-5 hover-border-theme transition-all h-100">
                                                 <i className={`fas ${ind.icon} theme-clr fs-1 mb-8 d-block`}></i>
-                                                <h3 className="white-clr mb-4">{ind.name}</h3>
+                                                <h3 className="white-clr mb-4 fs-4 fw-bold">{ind.name}</h3>
                                                 <p className="white-clr opacity-50 small mb-0">{ind.desc}</p>
                                             </div>
                                         </div>
@@ -327,6 +349,7 @@ export default function Service() {
                     .bg-theme { background: #e9fe49 !important; }
                     .border-theme { border-color: #e9fe49 !important; }
                     .fw-black { font-weight: 950; }
+                    .tracking-metric { letter-spacing: 0.15em; }
                     .tracking-widest { letter-spacing: 0.4em; }
                     .leading-tight { line-height: 1.1; }
                     .leading-none { line-height: 1; }

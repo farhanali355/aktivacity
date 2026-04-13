@@ -6,7 +6,7 @@ export default function BlogGrid() {
     return (
         <>
 
-            <Layout headerStyle={2} footerStyle={3} breadcrumbTitle="Blog Grid">
+            <Layout headerStyle={2} footerStyle={3} breadcrumbTitle="Our Blogs" breadcrumbSubTitle="Ideas, strategies, and trends to help businesses grow smarter in a fast-changing digital world.">
                 <section className="blog-grid pt-space pb-space">
                     <div className="container">
                         <div className="row g-xxl-7 g-xl-6 g-6">

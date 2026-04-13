@@ -6,7 +6,7 @@ import IntroSection from "@/components/sections/IntroSection"
 import Product1 from "@/components/sections/Product1"
 import Service1 from "@/components/sections/Service1"
 import Team1 from "@/components/sections/Team1"
-import Testimonial1 from "@/components/sections/Testimonial1"
+import HomeTestimonial from "@/components/sections/HomeTestimonial"
 import TextSLider1 from "@/components/sections/TextSLider1"
 import TextSLider2 from "@/components/sections/TextSLider2"
 import TextSLider3 from "@/components/sections/TextSLider3"
@@ -45,16 +45,18 @@ export default async function Home() {
                             case 'caseStudyBlock':
                                 return <CaseStudy1 key={index} data={block} />
                             case 'testimonialBlock':
-                                return <Testimonial1 key={index} data={block} />
+                                return <HomeTestimonial key={index} />
                             case 'faqBlock':
-                                return <Faq1 key={index} data={block} />
+                                return [
+                                    <Blog1 key={`blog-${index}`} />,
+                                    <Faq1 key={index} data={block} />
+                                ]
                             // Unknown blocks will be ignored or can show a fallback
                             default:
                                 return null
                         }
                     })}
                     <Watch1 />
-                    <Blog1 />
                     <ContactCTA />
                 </div>
             </Layout>

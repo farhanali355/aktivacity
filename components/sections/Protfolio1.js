@@ -30,7 +30,7 @@ export default function Protfolio1() {
     return (
         <>
 
-            <section className="protfolio-solution pb-space">
+            <section className="protfolio-solution pt-space pb-space">
                 <div className="container">
                     <div className="swiper protfolio-solutionwrap">
                         <Swiper {...swiperOptions} className="swiper-wrapper">

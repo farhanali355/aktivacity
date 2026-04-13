@@ -21,8 +21,8 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Aktivacity - AI-Powered Creativity in Motion.",
-  description: "AI-Powered Creativity in Motion.",
+  title: "AI-Powered Creative & Digital Agency in Pakistan | Aktivacity",
+  description: "Aktivacity delivers AI-powered creative, marketing, development, and branding services to help businesses grow, scale faster, and achieve measurable results locally and globally.",
 };
 
 export default function RootLayout({ children }) {
