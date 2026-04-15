@@ -4,6 +4,9 @@ import Link from "next/link"
 import { useState, useEffect, useRef } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import CaseStudy1 from "@/components/sections/CaseStudy1"
+import Testimonial1 from "@/components/sections/Testimonial1"
+import Faq1 from "@/components/sections/Faq1"
 
 export default function Service() {
     const [scrollProgress, setScrollProgress] = useState(0)
@@ -284,30 +287,39 @@ export default function Service() {
                     </div>
                 </section>
 
-                {/* --- PROTOCOL LAB (The Path) --- */}
+                {/* --- HOW WE WORK --- */}
                 <section className="protocol-path bg-dark-v1" style={{ paddingTop: '100px', paddingBottom: '120px' }}>
                     <div className="container">
-                        <div className="section-head mb-20">
-                            <h2 className="display-2 white-clr fw-black" data-aos="fade-up">THE PATH</h2>
+                        <div className="section-head mb-20 text-center" data-aos="fade-up">
+                            <div className="capsule-badge d-inline-flex align-items-center mb-6 rounded-pill py-2 px-5">
+                                <span className="theme-clr fw-bold tracking-widest tiny text-uppercase border border-grey-100 rounded-pill py-1 px-3">Simple, Scalable Process</span>
+                            </div>
+                            <h2 className="display-2 white-clr fw-black mb-6">How We Work</h2>
+                            <p className="white-clr opacity-50 fs-5 mx-auto leading-relaxed" style={{ maxWidth: '800px' }}>
+                                Every project follows a clear process that aligns strategy, execution, and performance. This ensures faster delivery, better collaboration, and outcomes that are built to scale.
+                            </p>
                         </div>
                         <div className="row g-0">
                             {[
-                                { step: "STRATEGY", title: "Technical Blueprinting" },
-                                { step: "DESIGN", title: "Visual Logic Architecture" },
-                                { step: "BUILD", title: "Atomic Engineering" },
-                                { step: "SCALE", title: "Growth Optimization" }
+                                { step: "01. Discover", title: "Understand your goals, users, and business challenges." },
+                                { step: "02. Plan", title: "Define strategy, roadmap, and execution priorities." },
+                                { step: "03. Build & Execute", title: "Design, develop, and launch with cross-functional execution." },
+                                { step: "04. Optimize & Scale", title: "Improve performance through data, iteration, and automation." }
                             ].map((p, i) => (
                                 <div key={i} className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay={i * 100}>
                                     <div className="path-node p-10 border-end border-secondary border-opacity-10 h-100 hover-bg-theme-opacity">
-                                        <span className="theme-clr fw-black tiny tracking-widest d-block mb-4">PHASE_{i + 1}</span>
                                         <h4 className="white-clr mb-3">{p.step}</h4>
-                                        <p className="white-clr opacity-25 tiny fw-bold mb-0">{p.title}</p>
+                                        <p className="white-clr opacity-50 small mb-0">{p.title}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </section>
+
+                <CaseStudy1 />
+                <Testimonial1 />
+                <Faq1 />
 
 
                 {/* --- FINAL PROTOCOL (The Call) --- */}

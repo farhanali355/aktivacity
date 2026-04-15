@@ -3,28 +3,28 @@ import React from 'react'
 
 const items = [
     {
-        name: "Tech Startup Founder",
-        location: "Karachi",
-        clientImg: "https://randomuser.me/api/portraits/men/45.jpg",
-        quote: "SaaS Pitch & Website Visuals: Refreshed presentation design and web graphics helped secure investor funding and improved demo conversions by 30%."
+        name: "Ahmed K.",
+        location: "Fintech Founder, Lahore",
+        clientImg: "https://randomuser.me/api/portraits/men/75.jpg",
+        quote: "Aktivacity transformed our vision into a high-performing SaaS platform with AI-driven marketing that tripled our user base. True full-service tech & digital agency partners!"
     },
     {
-        name: "E-commerce Director",
-        location: "Lahore",
-        clientImg: "https://randomuser.me/api/portraits/women/33.jpg",
-        quote: "E-commerce Creative Refresh: Updated social media graphics and product visuals led to a 40% increase in engagement and 22% higher campaign ROAS."
+        name: "Sara M.",
+        location: "Edtech CEO, Karachi",
+        clientImg: "https://randomuser.me/api/portraits/women/68.jpg",
+        quote: "From UI/UX design to explainer videos, their end-to-end solutions delivered investor-ready results. Highly recommend this Software Development Company in Pakistan."
     },
     {
-        name: "Corporate Marketing Head",
-        location: "Islamabad",
-        clientImg: "https://randomuser.me/api/portraits/men/22.jpg",
-        quote: "Corporate Identity Overhaul: A complete redesign of the brand logo, stationery, and corporate guidelines established a unified and premium market presence."
+        name: "Aisha N.",
+        location: "Founder, HealthTech Pakistan",
+        clientImg: "https://randomuser.me/api/portraits/women/52.jpg",
+        quote: "Working with Aktivacity as our technology and growth partner turned a complex product launch into a smooth, data-driven journey. Their full-stack team delivered fast, polished results."
     },
     {
-        name: "Retail Brand Manager",
-        location: "Dubai",
-        clientImg: "https://randomuser.me/api/portraits/women/65.jpg",
-        quote: "Product Packaging Success: The new vibrant and strategic packaging design helped increase retail shelf visibility, directly contributing to a 25% bump in offline sales."
+        name: "Bilal S.",
+        location: "COO, RetailTech Dubai",
+        clientImg: "https://randomuser.me/api/portraits/men/43.jpg",
+        quote: "Their integrated strategy combined development, branding, and digital ads into one system, helping us scale and retain customers with confidence."
     }
 ]
 

@@ -37,7 +37,7 @@ export default function CaseStudy1({ data }) {
     return (
         <>
 
-            <section className="case-study-vsesion01 bg2-clr pb-space">
+            <section className="case-study-vsesion01 bg2-clr pb-space" style={{ paddingTop: '100px' }}>
                 <div className="container">
                     <div className="section-title text-center mb-xxl-15 mb-xl-10 mb-8" data-aos="fade-up" data-aos-duration="1000">
                         <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-xxl-7 mb-xl-6 mb-5">

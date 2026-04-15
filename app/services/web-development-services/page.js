@@ -974,15 +974,16 @@ export default function WebApp() {
                         <div className="row align-items-center mb-xxl-15 mb-xl-12 mb-10">
                             <div className="col-lg-12">
                                 <div className="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-6">
+                                    <h2 className="white-clr display-5 fw-bold mb-0 text-lg-start lh-sm max-w-700">
+                                        What Our Clients Say
+                                    </h2>
                                     <div className="review-badge d-inline-flex align-items-center gap-3 py-2 px-4 border border-white-opacity rounded-pill">
                                         <div className="stars d-flex gap-1">
                                             {[1, 2, 3, 4, 5].map(s => <i key={s} className="fas fa-star theme-clr fs-xs" />)}
                                         </div>
                                         <div className="line bg-white-opacity" style={{ width: '1px', height: '15px' }} />
-                                        <span className="white-clr fs-xs fw-bold ls-1 text-uppercase">100+ Reviews</span>
+                                        <span className="white-clr fs-xs fw-bold ls-1 text-uppercase">Reviews from Multiple Platforms</span>
                                     </div>
-                                    <h2 className="white-clr display-5 fw-bold mb-0 text-lg-end lh-sm max-w-700">
-                                        What Our Clients Say                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -1035,7 +1036,7 @@ export default function WebApp() {
                                 <div className="connect-card p-xxl-10 p-xl-8 p-6 position-relative overflow-hidden">
                                     <div className="d-flex align-items-center gap-4 mb-8">
                                         <div className="profile-img-wrap">
-                                            <img src="/assets/img/team/sibghat.png" alt="Sibghat Shaikh" className="rounded-circle" style={{ width: '80px', height: '80px', objectFit: 'cover' }} />
+                                            <img src="/assets/img/team/sibghat-image.jpg" alt="Sibghat Shaikh" className="rounded-circle" style={{ width: '80px', height: '80px', objectFit: 'cover' }} />
                                         </div>
                                         <div className="profile-info">
                                             <h4 className="white-clr mb-1 fw-bold">Sibghat Shaikh</h4>

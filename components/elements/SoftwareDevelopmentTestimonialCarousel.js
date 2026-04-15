@@ -3,22 +3,28 @@ import React from 'react'
 
 const items = [
     {
-        name: "Fintech CEO",
-        location: "Karachi",
-        clientImg: "https://randomuser.me/api/portraits/men/32.jpg",
-        quote: "Custom workflow system reduced manual processing by 73%. Aktivacity understands Pakistan's business needs."
+        name: "Ahmed K.",
+        location: "Fintech Founder, Lahore",
+        clientImg: "https://randomuser.me/api/portraits/men/75.jpg",
+        quote: "Aktivacity transformed our vision into a high-performing SaaS platform with AI-driven marketing that tripled our user base. True full-service tech & digital agency partners!"
     },
     {
-        name: "SaaS Founder",
-        location: "Lahore",
-        clientImg: "https://randomuser.me/api/portraits/women/44.jpg",
-        quote: "Their SaaS platform scaled from 100 to 25K users without downtime. True enterprise capability."
+        name: "Sara M.",
+        location: "Edtech CEO, Karachi",
+        clientImg: "https://randomuser.me/api/portraits/women/68.jpg",
+        quote: "From UI/UX design to explainer videos, their end-to-end solutions delivered investor-ready results. Highly recommend this Software Development Company in Pakistan."
     },
     {
-        name: "Manufacturing Director",
-        location: "Faisalabad",
-        clientImg: "https://randomuser.me/api/portraits/men/85.jpg",
-        quote: "Legacy system migration was seamless. 45% efficiency gain across 8 factories."
+        name: "Aisha N.",
+        location: "Founder, HealthTech Pakistan",
+        clientImg: "https://randomuser.me/api/portraits/women/52.jpg",
+        quote: "Working with Aktivacity as our technology and growth partner turned a complex product launch into a smooth, data-driven journey. Their full-stack team delivered fast, polished results."
+    },
+    {
+        name: "Bilal S.",
+        location: "COO, RetailTech Dubai",
+        clientImg: "https://randomuser.me/api/portraits/men/43.jpg",
+        quote: "Their integrated strategy combined development, branding, and digital ads into one system, helping us scale and retain customers with confidence."
     }
 ]
 
