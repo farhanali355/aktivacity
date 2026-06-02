@@ -1,11 +1,11 @@
 'use client'
 import { useState } from 'react'
 
-export default function VideoPopup({ style }) {
+export default function VideoPopup({ style, videoUrl }) {
     const [isOpen, setOpen] = useState(false)
     
-    // Apni local video ka path
-    const localVideoPath = "/A2.mp4" // Yahan apni video ka path dijiye
+    // Apni local video ka path ya dynamic path
+    const localVideoPath = videoUrl || "/A2.mp4"
 
     return (
         <>

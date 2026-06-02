@@ -1,7 +1,6 @@
-
 import Link from "next/link"
 
-export default function Blog1() {
+export default function Blog1({ data }) {
     return (
         <>
 
@@ -10,11 +9,9 @@ export default function Blog1() {
                     <div className="mb-xxl-15 mb-xl-12 mb-lg-10 mb-md-10 mb-sm-10 mb-9">
                         <div className="pricing-title">
                             <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-4">
-                                BLOG &amp; News
+                                {data?.tagline || 'BLOG & News'}
                             </div>
-                            <h2 className="stitle text-white mb-4">
-                                Insights on <span className="fw-400 theme-clr" style={{ fontStyle: 'normal' }}>Tech, AI & Digital Growth</span>
-                            </h2>
+                            <h2 className="stitle text-white mb-4" dangerouslySetInnerHTML={{ __html: data?.heading || 'Insights on <span class="fw-400 theme-clr" style="font-style: normal;">Tech, AI & Digital Growth</span>' }} />
                             <p className="text-white opacity-75 fs-5" style={{ maxWidth: '800px' }}>
                                 Stay updated with practical insights on AI, marketing, development, and digital growth covering trends, strategies, and real-world applications that help businesses perform better.
                             </p>

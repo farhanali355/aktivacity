@@ -36,7 +36,7 @@ const items = [
     }
 ]
 
-export default function HomeTestimonial() {
+export default function HomeTestimonial({ data }) {
     const extendedItems = [...items, ...items, ...items, ...items]
     const [index, setIndex] = React.useState(items.length * 2)
     const [visible, setVisible] = React.useState(3)
@@ -96,9 +96,7 @@ export default function HomeTestimonial() {
                 <div className="row">
                     <div className="col-12 text-center mb-xxl-12 mb-xl-10 mb-8">
                         <div className="pricing-title">
-                            <h2 className="stitle white-clr mb-0" data-aos="fade-up" data-aos-duration="1500">
-                                What Our <strong style={{ color: '#E3FF04', fontWeight: 600 }}>Clients Say</strong>
-                            </h2>
+                             <h2 className="stitle white-clr mb-0" data-aos="fade-up" data-aos-duration="1500" dangerouslySetInnerHTML={{ __html: data?.heading || 'What Our <strong style="color: #E3FF04; font-weight: 600;">Clients Say</strong>' }} />
                         </div>
                     </div>
                 </div>

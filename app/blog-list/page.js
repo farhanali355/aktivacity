@@ -1,6 +1,16 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+
+export const metadata = {
+    title: "Blogs - AI, Digital Marketing & Tech Insights | Aktivacity",
+    description: "Explore Aktivacity's blog for practical insights on AI, tech & marketing - actionable strategies to help businesses grow in Pakistan and beyond.",
+    openGraph: {
+        title: "Blogs - AI, Digital Marketing & Tech Insights | Aktivacity",
+        description: "Explore Aktivacity's blog for practical insights on AI, tech & marketing - actionable strategies to help businesses grow in Pakistan and beyond.",
+    }
+}
+
 export default function BlogList() {
 
     return (

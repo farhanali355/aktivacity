@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-export default function ContactCTA() {
+export default function ContactCTA({ data }) {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -33,11 +33,9 @@ export default function ContactCTA() {
                             <div className="radius-btn text-uppercase cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 theme-clr gap-xxl-4 gap-3 mb-xxl-7 mb-xl-6 mb-5">
                                 LET'S TALK
                             </div>
-                            <h2 className="stitle text-white mb-4">
-                                Ready to Build Something <span className="theme-clr">Extraordinary?</span>
-                            </h2>
+                            <h2 className="stitle text-white mb-4" dangerouslySetInnerHTML={{ __html: data?.heading || 'Ready to Build Something <span class="theme-clr">Extraordinary?</span>' }} />
                             <p className="text-white opacity-75 fs-5">
-                             Let's discuss your vision. Share your details, and our team will contact you to craft a personalized strategy for digital transformation.
+                             {data?.description || "Let's discuss your vision. Share your details, and our team will contact you to craft a personalized strategy for digital transformation."}
                             </p>
                         </div>
 
@@ -48,7 +46,7 @@ export default function ContactCTA() {
                                 </div>
                                 <div>
                                     <span className="d-block text-white opacity-50 mb-1">Email Us</span>
-                                    <h5 className="text-white mb-0">hello@aktivacity.com</h5>
+                                    <h5 className="text-white mb-0">{data?.email || 'hello@aktivacity.com'}</h5>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +108,7 @@ export default function ContactCTA() {
                                     ></textarea>
                                 </div>
                                 <button type="submit" className="cmn-btn fw-bold w-100 py-3 rounded-pill bg-theme text-black border-0 d-flex align-items-center justify-content-center gap-2">
-                                    Start Your Journey
+                                    {data?.buttonText || 'Start Your Journey'}
                                     <i className="fas fa-arrow-right"></i>
                                 </button>
                             </form>
