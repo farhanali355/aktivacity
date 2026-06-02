@@ -26,6 +26,9 @@ export async function generateMetadata() {
     return {
         title: pageData?.metaTitle || "AI-Powered Creative & Digital Agency in Pakistan | Aktivacity",
         description: pageData?.metaDescription || "Aktivacity is an AI-powered creative & digital agency in Pakistan, helping brands grow through smarter development, marketing, design, and automation.",
+        alternates: {
+            canonical: "https://www.aktivacity.com",
+        },
         openGraph: {
             title: pageData?.metaTitle || "AI-Powered Creative & Digital Agency in Pakistan | Aktivacity",
             description: pageData?.metaDescription || "Aktivacity is an AI-powered creative & digital agency in Pakistan, helping brands grow through smarter development, marketing, design, and automation.",

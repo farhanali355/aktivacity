@@ -10,6 +10,9 @@ export async function generateMetadata() {
     return {
         title: pageData?.seo?.metaTitle || "AI Digital Services & Solutions - Web, SEO & Branding | Aktivacity",
         description: pageData?.seo?.metaDescription || "Explore Aktivacity's digital services: web development, SEO, digital marketing, AI automation, UI/UX design, and branding. Built to help businesses grow faster and scale smarter.",
+        alternates: {
+            canonical: "https://www.aktivacity.com/services",
+        },
         openGraph: {
             title: pageData?.seo?.metaTitle || "AI Digital Services & Solutions - Web, SEO & Branding | Aktivacity",
             description: pageData?.seo?.metaDescription || "Explore Aktivacity's digital services: web development, SEO, digital marketing, AI automation, UI/UX design, and branding. Built to help businesses grow faster and scale smarter.",
