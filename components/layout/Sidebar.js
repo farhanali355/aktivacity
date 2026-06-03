@@ -39,17 +39,17 @@ export default function Sidebar({ isSidebar, handleSidebar }) {
                                     Email
                                 </span>
                                 {/* <Link href="/javascript:void(0)" className="textp"> */}
-                                aktivacity@gmail.com
+                                support@aktivacity.com
                                 {/* </Link> */}
                             </div>
                         </div>
                         <div className="sub__contac-item">
                             <div className="content">
-                                <span className="address d-block">
+                                {/* <span className="address d-block">
                                     Call now
-                                </span>
+                                </span> */}
                                 {/* <Link href="/jasacript:void(0)" className="textp"> */}
-                                0210320438
+                                {/* 0210320438 */}
                                 {/* </Link> */}
                             </div>
                         </div>

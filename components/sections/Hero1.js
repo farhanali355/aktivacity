@@ -7,6 +7,8 @@ export default function Hero1({ data }) {
     useEffect(() => {
         // Video play ensure karta hoon
         if (videoRef.current) {
+            videoRef.current.muted = true; // React muted bug fix
+            videoRef.current.volume = 0;   // Extra ensure: volume 0
             videoRef.current.play().catch(error => {
                 console.log("Video autoplay failed:", error);
             });

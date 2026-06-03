@@ -192,20 +192,20 @@ export default function Footer3() {
                                                     <div className="icon theme-clr">
                                                         <i className="fas fa-envelope" />
                                                     </div>
-                                                    <Link href="mailto:aktivacity@gmail.com" className="pra-clr">aktivacity@gmail.com</Link>
+                                                    <Link href="mailto:support@aktivacity.com" className="pra-clr">support@aktivacity.com</Link>
                                                 </li>
-                                                <li className="d-flex align-items-center gap-3">
+                                                {/* <li className="d-flex align-items-center gap-3">
                                                     <div className="icon theme-clr">
                                                         <i className="fab fa-whatsapp" />
                                                     </div>
                                                     <Link href="https://wa.me/923001234567" className="pra-clr">+92 300 1234567</Link>
-                                                </li>
-                                                <li className="d-flex align-items-center gap-3">
+                                                </li> */}
+                                                {/* <li className="d-flex align-items-center gap-3">
                                                     <div className="icon theme-clr">
                                                         <i className="fas fa-phone-alt" />
                                                     </div>
                                                     <Link href="tel:+19179996843" className="pra-clr">+1 917 999 6843</Link>
-                                                </li>
+                                                </li> */}
                                                 <li className="d-flex align-items-start gap-3">
                                                     <div className="icon theme-clr mt-1">
                                                         <i className="fas fa-map-marker-alt" />

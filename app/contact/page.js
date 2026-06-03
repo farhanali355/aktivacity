@@ -95,9 +95,9 @@ export default function Contact() {
                                     <h5 className="white mt-xxl-7 mt-6 mb-xxl-7 mb-6">
                                         Phone &amp; Fax
                                     </h5>
-                                    <span className="msub d-block mb-2">
+                                    {/* <span className="msub d-block mb-2">
                                         Mobile : 0210320438
-                                    </span>
+                                    </span> */}
                                     {/* <span className="msub">Fax : +44-208-1234567</span> */}
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ export default function Contact() {
                                         Mail Address
                                     </h5>
                                     <span className="msub d-block mb-2">
-                                        aktivacity@gmail.com
+                                        support@aktivacity.com
                                     </span>
                                     <span className="msub">
                                         {/* Info.company@yahoo.com */}
@@ -233,15 +233,15 @@ export default function Contact() {
                                             </div>
 
                                             {/* ✅ WhatsApp Button */}
-                                            <a
-                                                href="https://wa.me/923001234567"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="whatsapp-icon-btn"
-                                            >
-                                                <i className="fab fa-whatsapp"></i>
-                                                <span>Let's Talk!</span>
-                                            </a>
+                                {/* <a
+                                href="https://wa.me/923001234567"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="whatsapp-icon-btn"
+                            >
+                                <i className="fab fa-whatsapp"></i>
+                                <span>Let's Talk!</span>
+                            </a> */}
                                         </div>
                                     </form>
                                 </div>
